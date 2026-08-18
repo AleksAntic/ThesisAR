@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 628cd516a59532849b7a2da6e8e1065a, type: 3}
+  m_Name: AnneFrankStone_EN
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  sequenceLabelId: AnneFrankStone_EN
+  narrativeCategory: 2
+  dialogueLines:
+  - subtitleText: This symbolic memorial stone is dedicated to the sisters Anne and
+      Margot Frank, who died here in March 1945. It was actually erected much later,
+      in June 1999, on the initiative of their cousin Buddy Elias for Anne's seventieth
+      birthday.
+    voiceClip: {fileID: 0}
+    animationTriggerKey: Point
+    duration: 0

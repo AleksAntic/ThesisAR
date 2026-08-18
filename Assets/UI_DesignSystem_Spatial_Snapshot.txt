@@ -1,0 +1,516 @@
+# === UI DESIGN SYSTEM DEEP SPATIAL REPORT ===
+Generated on: 2026-06-24 11:57:16
+Total Root Canvases: 1
+==================================================
+
+## 🏢 CANVAS ROOT: Canvas
+* Scaler: Mode=ScaleWithScreenSize, RefRes=(1080.00, 1920.00), Match=0
+
+### DEEP HIERARCHY & GEOMETRY ANALYSIS:
+    - **Stone_Popup_Panel** | `Panel/Image 🖼️` | `[PREFAB]`
+        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (900,0, 1500,0) | Anchors: Min(0,50, 0,50) Max(0,50, 0,50) | Pivot: (0,50, 0,50)
+        * [Graphic] Sprite: `32` | Type: `Simple` | Color: `#1D1818B4` | Raycast: True
+        * [Layout] `VerticalLayoutGroup` | Padding: `L:40 R:40 T:40 B:40`
+        - **Header_Bar** | `Container/Rect` | `[PREFAB]`
+            * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 100,0) | Anchors: Min(0,00, 0,00) Max(0,00, 0,00) | Pivot: (0,50, 0,50)
+            * [Layout] `VerticalLayoutGroup` | Padding: `L:20 R:20 T:10 B:10`
+            - **Text_Stone_ID** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(0,00, 0,00) | Pivot: (0,50, 0,50)
+                * [Typography] Font: `LiberationSans SDF` | Size: `36px` | Color: `#FFFFFFFF` | Align: `TopLeft` | Wrap: `ON` | Overflow: `Overflow`
+            - **Text_Coordinates** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(0,00, 0,00) | Pivot: (0,50, 0,50)
+                * [Typography] Font: `LiberationSans SDF` | Size: `36px` | Color: `#FFFFFFFF` | Align: `TopLeft` | Wrap: `ON` | Overflow: `Overflow`
+        - **Person_Info_Area** | `Container/Rect` | `[PREFAB]`
+            * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 225,8) | Anchors: Min(0,00, 0,00) Max(0,00, 0,00) | Pivot: (0,50, 0,50)
+            * [Layout] `VerticalLayoutGroup` | Padding: `L:20 R:20 T:15 B:15`
+            - **Text_Fullname** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(0,00, 0,00) | Pivot: (0,50, 0,50)
+                * [Typography] Font: `LiberationSans SDF` | Size: `36px` | Color: `#FFFFFFFF` | Align: `Top` | Wrap: `ON` | Overflow: `Overflow`
+                - **Btn_Person_Left** | `Button 🔲` | `[PREFAB]`
+                    * [Spatial] AnchoredPos: (40,0, 0,0) | SizeDelta: (40,0, 40,0) | Anchors: Min(0,00, 0,50) Max(0,00, 0,50) | Pivot: (0,50, 0,50)
+                    * [Graphic] Sprite: `White Move Left` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+                    - **Text (TMP)** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                        * [Spatial] AnchoredPos: (0,0, -75,3) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                        * [Typography] Font: `LiberationSans SDF` | Size: `24px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+                - **Btn_Person_Right** | `Button 🔲` | `[PREFAB]`
+                    * [Spatial] AnchoredPos: (-40,0, 0,0) | SizeDelta: (40,0, 40,0) | Anchors: Min(1,00, 0,50) Max(1,00, 0,50) | Pivot: (0,50, 0,50)
+                    * [Graphic] Sprite: `White Move Right` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+                    - **Text (TMP)** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                        * [Spatial] AnchoredPos: (0,0, -75,3) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                        * [Typography] Font: `LiberationSans SDF` | Size: `24px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+            - **Text_Dates** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(0,00, 0,00) | Pivot: (0,50, 0,50)
+                * [Typography] Font: `LiberationSans SDF` | Size: `36px` | Color: `#FFFFFFFF` | Align: `TopLeft` | Wrap: `ON` | Overflow: `Overflow`
+            - **Text_Inmate** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(0,00, 0,00) | Pivot: (0,50, 0,50)
+                * [Typography] Font: `LiberationSans SDF` | Size: `36px` | Color: `#FFFFFFFF` | Align: `TopLeft` | Wrap: `ON` | Overflow: `Overflow`
+            - **Badges_Horizontal_Group** | `Container/Rect` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (410,0, -188,2) | SizeDelta: (0,0, 45,0) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Layout] `HorizontalLayoutGroup` | Padding: `L:0 R:0 T:0 B:0`
+                * [Fitter] Horiz: `PreferredSize` | Vert: `Unconstrained`
+                - **Badge_Symbol** | `Panel/Image 🖼️` | `[PREFAB]`
+                    * [Spatial] AnchoredPos: (61,2, -22,5) | SizeDelta: (0,0, 45,0) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 0,50)
+                    * [Graphic] Sprite: `C` | Type: `Sliced` | Color: `#3A729CFF` | Raycast: True
+                    * [Layout] `HorizontalLayoutGroup` | Padding: `L:15 R:15 T:0 B:0`
+                    * [Fitter] Horiz: `PreferredSize` | Vert: `Unconstrained`
+                    - **Text_Label** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(0,00, 0,00) | Pivot: (0,50, 0,50)
+                        * [Typography] Font: `LiberationSans SDF` | Size: `14px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+                - **Badge_Camp** | `Panel/Image 🖼️` | `[PREFAB]`
+                    * [Spatial] AnchoredPos: (222,9, -22,5) | SizeDelta: (0,0, 45,0) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 0,50)
+                    * [Graphic] Sprite: `C` | Type: `Sliced` | Color: `#884B4BFF` | Raycast: True
+                    * [Layout] `HorizontalLayoutGroup` | Padding: `L:15 R:15 T:0 B:0`
+                    * [Fitter] Horiz: `PreferredSize` | Vert: `Unconstrained`
+                    - **Text_Label** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(0,00, 0,00) | Pivot: (0,50, 0,50)
+                        * [Typography] Font: `LiberationSans SDF` | Size: `14px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+        - **Language_Tabs_Group** | `Container/Rect` | `[PREFAB]`
+            * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 90,0) | Anchors: Min(0,00, 0,00) Max(0,00, 0,00) | Pivot: (0,50, 0,50)
+            * [Layout] `HorizontalLayoutGroup` | Padding: `L:0 R:0 T:0 B:0`
+            - **Btn_English** | `Button 🔲` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(0,00, 0,00) | Pivot: (0,50, 0,50)
+                * [Graphic] Sprite: `Button_Large_A` | Type: `Simple` | Color: `#211D1DB5` | Raycast: True
+                - **Text (TMP)** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                    * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                    * [Typography] Font: `LiberationSans SDF` | Size: `24px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+            - **Btn_German** | `Button 🔲` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(0,00, 0,00) | Pivot: (0,50, 0,50)
+                * [Graphic] Sprite: `Button_Large_A` | Type: `Simple` | Color: `#211D1DB5` | Raycast: True
+                - **Text (TMP)** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                    * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                    * [Typography] Font: `LiberationSans SDF` | Size: `24px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+            - **Btn_Hebrew** | `Button 🔲` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(0,00, 0,00) | Pivot: (0,50, 0,50)
+                * [Graphic] Sprite: `Button_Large_A` | Type: `Simple` | Color: `#211D1DB5` | Raycast: True
+                - **Text (TMP)** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                    * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                    * [Typography] Font: `LiberationSans SDF` | Size: `24px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+        - **Inscription_Scroll_View** | `ScrollView 📜` | `[PREFAB]`
+            * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 700,0) | Anchors: Min(0,00, 0,00) Max(0,00, 0,00) | Pivot: (0,50, 0,50)
+            * [Graphic] Sprite: `Background` | Type: `Sliced` | Color: `#000000B4` | Raycast: True
+            - **Viewport** | `Panel/Image 🖼️` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(0,00, 0,00) | Pivot: (0,00, 1,00)
+                * [Graphic] Sprite: `UIMask` | Type: `Sliced` | Color: `#FFFFFFFF` | Raycast: True
+                - **Content** | `Container/Rect` | `[PREFAB]`
+                    * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 80,0) | Anchors: Min(0,00, 1,00) Max(1,00, 1,00) | Pivot: (0,50, 1,00)
+                    * [Layout] `VerticalLayoutGroup` | Padding: `L:30 R:40 T:20 B:20`
+                    * [Fitter] Horiz: `Unconstrained` | Vert: `PreferredSize`
+                    - **Text_Dynamic_Inscription** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                        * [Spatial] AnchoredPos: (30,0, -20,0) | SizeDelta: (0,0, 40,0) | Anchors: Min(0,00, 0,00) Max(0,00, 0,00) | Pivot: (0,50, 1,00)
+                        * [Typography] Font: `LiberationSans SDF` | Size: `36px` | Color: `#FFFFFFFF` | Align: `TopLeft` | Wrap: `ON` | Overflow: `Overflow`
+            - **Scrollbar Horizontal** | `Panel/Image 🖼️` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 20,0) | Anchors: Min(0,00, 0,00) Max(0,00, 0,00) | Pivot: (0,00, 0,00)
+                * [Graphic] Sprite: `Background` | Type: `Sliced` | Color: `#FFFFFF00` | Raycast: True
+                    - **Handle** | `Panel/Image 🖼️` | `[PREFAB]`
+                        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (20,0, 20,0) | Anchors: Min(0,00, 0,00) Max(0,00, 0,00) | Pivot: (0,50, 0,50)
+                        * [Graphic] Sprite: `UISprite` | Type: `Sliced` | Color: `#5E5B5BB4` | Raycast: True
+            - **Scrollbar Vertical** | `Panel/Image 🖼️` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (8,0, 0,0) | Anchors: Min(1,00, 0,00) Max(1,00, 0,00) | Pivot: (1,00, 1,00)
+                * [Graphic] Sprite: `Background` | Type: `Sliced` | Color: `#643C3CB4` | Raycast: True
+                    - **Handle** | `Panel/Image 🖼️` | `[PREFAB]`
+                        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (20,0, 20,0) | Anchors: Min(0,00, 0,00) Max(0,00, 0,00) | Pivot: (0,50, 0,50)
+                        * [Graphic] Sprite: `UISprite` | Type: `Sliced` | Color: `#000000CA` | Raycast: True
+            - **Btn_Left** | `Button 🔲` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (145,0, 0,0) | SizeDelta: (70,0, 70,0) | Anchors: Min(0,00, 0,50) Max(0,00, 0,50) | Pivot: (0,50, 0,50)
+                * [Graphic] Sprite: `White Move Left` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+                - **Text (TMP)** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                    * [Spatial] AnchoredPos: (0,0, -75,3) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                    * [Typography] Font: `LiberationSans SDF` | Size: `24px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+            - **Btn_Play_Audio** | `Button 🔲` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (70,0, 70,0) | Anchors: Min(0,50, 0,50) Max(0,50, 0,50) | Pivot: (0,50, 0,50)
+                * [Graphic] Sprite: `White Sound On` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+                - **Text (TMP)** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                    * [Spatial] AnchoredPos: (0,0, -75,3) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                    * [Typography] Font: `LiberationSans SDF` | Size: `24px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+            - **Btn_Right** | `Button 🔲` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (-145,0, 0,0) | SizeDelta: (70,0, 70,0) | Anchors: Min(1,00, 0,50) Max(1,00, 0,50) | Pivot: (0,50, 0,50)
+                * [Graphic] Sprite: `White Move Right` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+                - **Text (TMP)** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                    * [Spatial] AnchoredPos: (0,0, -75,3) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                    * [Typography] Font: `LiberationSans SDF` | Size: `24px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+        - **Btn_GoToMap** | `Button 🔲` | `[PREFAB]`
+            * [Spatial] AnchoredPos: (716,0, -1372,0) | SizeDelta: (70,0, 70,0) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 0,50)
+            * [Graphic] Sprite: `White Find` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+            - **Text (TMP)** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, -68,6) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Typography] Font: `LiberationSans SDF` | Size: `24px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+        - **Btn_Close** | `Button 🔲` | `[PREFAB]`
+            * [Spatial] AnchoredPos: (-80,0, -80,0) | SizeDelta: (50,0, 50,0) | Anchors: Min(1,00, 1,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+            * [Graphic] Sprite: `X` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+            - **Text (TMP)** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Typography] Font: `LiberationSans SDF` | Size: `24px` | Color: `#323232FF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+        - **Origin_Selector_Panel** | `Panel/Image 🖼️` | `[SCENE]`
+            * [Spatial] AnchoredPos: (-365,0, -75,0) | SizeDelta: (320,0, 65,0) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,00, 1,00)
+            * [Graphic] Sprite: `Background` | Type: `Sliced` | Color: `#FFFFFF00` | Raycast: True
+            - **Dropdown_Checkpoints** | `TMP_Dropdown 🔘` | `[SCENE]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Graphic] Sprite: `Button_Large_A` | Type: `Simple` | Color: `#000000B4` | Raycast: True
+                * [Dropdown] Template: `Template`
+                - **Label** | `TextMeshProUGUI 📝` | `[SCENE]`
+                    * [Spatial] AnchoredPos: (-7,5, -0,5) | SizeDelta: (-35,0, -13,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                    * [Typography] Font: `LiberationSans SDF` | Size: `46,5px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+                - **Arrow** | `Panel/Image 🖼️` | `[SCENE]`
+                    * [Spatial] AnchoredPos: (-29,0, 0,0) | SizeDelta: (60,0, 30,0) | Anchors: Min(1,00, 0,50) Max(1,00, 0,50) | Pivot: (0,50, 0,50)
+                    * [Graphic] Sprite: `DropdownArrow` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+                - **Template** | `ScrollView 📜` | `[SCENE]`
+                    * [Spatial] AnchoredPos: (0,0, 2,0) | SizeDelta: (0,0, 170,0) | Anchors: Min(0,00, 0,00) Max(1,00, 0,00) | Pivot: (0,50, 1,00)
+                    * [Graphic] Sprite: `UISprite` | Type: `Sliced` | Color: `#000000B4` | Raycast: True
+                    - **Viewport** | `Panel/Image 🖼️` | `[SCENE]`
+                        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (-5,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,00, 1,00)
+                        * [Graphic] Sprite: `UIMask` | Type: `Sliced` | Color: `#000000B3` | Raycast: True
+                                - **Item Background** | `Panel/Image 🖼️` | `[SCENE]`
+                                    * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                                    * [Graphic] Sprite: `None (White)` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+                                - **Item Checkmark** | `Panel/Image 🖼️` | `[SCENE]`
+                                    * [Spatial] AnchoredPos: (10,0, 0,0) | SizeDelta: (20,0, 20,0) | Anchors: Min(0,00, 0,50) Max(0,00, 0,50) | Pivot: (0,50, 0,50)
+                                    * [Graphic] Sprite: `Checkmark` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+                                - **Item Label** | `TextMeshProUGUI 📝` | `[SCENE]`
+                                    * [Spatial] AnchoredPos: (5,0, -0,5) | SizeDelta: (-30,0, -3,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                                    * [Typography] Font: `LiberationSans SDF` | Size: `42,05px` | Color: `#FFFFFFFF` | Align: `Left` | Wrap: `ON` | Overflow: `Overflow`
+                    - **Scrollbar** | `Panel/Image 🖼️` | `[SCENE]`
+                        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (8,0, 0,0) | Anchors: Min(1,00, 0,00) Max(1,00, 1,00) | Pivot: (1,00, 1,00)
+                        * [Graphic] Sprite: `Background` | Type: `Sliced` | Color: `#553B3BB3` | Raycast: True
+                            - **Handle** | `Panel/Image 🖼️` | `[SCENE]`
+                                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (20,0, 20,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                                * [Graphic] Sprite: `UISprite` | Type: `Sliced` | Color: `#000000C9` | Raycast: True
+            - **Dropdown_zones** | `TMP_Dropdown 🔘` | `[SCENE]`
+                * [Spatial] AnchoredPos: (0,0, -90,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Graphic] Sprite: `Button_Large_A` | Type: `Simple` | Color: `#000000B4` | Raycast: True
+                * [Dropdown] Template: `Template`
+                - **Label** | `TextMeshProUGUI 📝` | `[SCENE]`
+                    * [Spatial] AnchoredPos: (-7,5, -0,5) | SizeDelta: (-35,0, -13,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                    * [Typography] Font: `LiberationSans SDF` | Size: `46,5px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+                - **Arrow** | `Panel/Image 🖼️` | `[SCENE]`
+                    * [Spatial] AnchoredPos: (-29,0, 0,0) | SizeDelta: (60,0, 30,0) | Anchors: Min(1,00, 0,50) Max(1,00, 0,50) | Pivot: (0,50, 0,50)
+                    * [Graphic] Sprite: `DropdownArrow` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+                - **Template** | `ScrollView 📜` | `[SCENE]`
+                    * [Spatial] AnchoredPos: (0,0, 2,0) | SizeDelta: (0,0, 170,0) | Anchors: Min(0,00, 0,00) Max(1,00, 0,00) | Pivot: (0,50, 1,00)
+                    * [Graphic] Sprite: `UISprite` | Type: `Sliced` | Color: `#000000B4` | Raycast: True
+                    - **Viewport** | `Panel/Image 🖼️` | `[SCENE]`
+                        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (-5,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,00, 1,00)
+                        * [Graphic] Sprite: `UIMask` | Type: `Sliced` | Color: `#000000B3` | Raycast: True
+                                - **Item Background** | `Panel/Image 🖼️` | `[SCENE]`
+                                    * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                                    * [Graphic] Sprite: `None (White)` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+                                - **Item Checkmark** | `Panel/Image 🖼️` | `[SCENE]`
+                                    * [Spatial] AnchoredPos: (10,0, 0,0) | SizeDelta: (20,0, 20,0) | Anchors: Min(0,00, 0,50) Max(0,00, 0,50) | Pivot: (0,50, 0,50)
+                                    * [Graphic] Sprite: `Checkmark` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+                                - **Item Label** | `TextMeshProUGUI 📝` | `[SCENE]`
+                                    * [Spatial] AnchoredPos: (5,0, -0,5) | SizeDelta: (-30,0, -3,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                                    * [Typography] Font: `LiberationSans SDF` | Size: `42,05px` | Color: `#FFFFFFFF` | Align: `Left` | Wrap: `ON` | Overflow: `Overflow`
+                    - **Scrollbar** | `Panel/Image 🖼️` | `[SCENE]`
+                        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (8,0, 0,0) | Anchors: Min(1,00, 0,00) Max(1,00, 1,00) | Pivot: (1,00, 1,00)
+                        * [Graphic] Sprite: `Background` | Type: `Sliced` | Color: `#553B3BB3` | Raycast: True
+                            - **Handle** | `Panel/Image 🖼️` | `[SCENE]`
+                                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (20,0, 20,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                                * [Graphic] Sprite: `UISprite` | Type: `Sliced` | Color: `#000000C9` | Raycast: True
+        - **Navigation_HUD_Panel** | `Panel/Image 🖼️` | `[SCENE]`
+            * [Spatial] AnchoredPos: (-39,0, -55,0) | SizeDelta: (550,0, 110,0) | Anchors: Min(0,50, 1,00) Max(0,50, 1,00) | Pivot: (0,50, 1,00)
+            * [Graphic] Sprite: `Button_Large_A` | Type: `Simple` | Color: `#000000B4` | Raycast: True
+            * [Layout] `VerticalLayoutGroup` | Padding: `L:10 R:10 T:10 B:10`
+            - **Text_Target_Stone** | `TextMeshProUGUI 📝` | `[SCENE]`
+                * [Spatial] AnchoredPos: (275,0, -30,0) | SizeDelta: (530,0, 40,0) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Typography] Font: `LiberationSans SDF` | Size: `36px` | Color: `#FFFFFFFF` | Align: `TopLeft` | Wrap: `ON` | Overflow: `Overflow`
+            - **Text_Distance_Indicator** | `TextMeshProUGUI 📝` | `[SCENE]`
+                * [Spatial] AnchoredPos: (275,0, -80,0) | SizeDelta: (530,0, 40,0) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Typography] Font: `LiberationSans SDF` | Size: `36px` | Color: `#FFFFFFFF` | Align: `TopLeft` | Wrap: `ON` | Overflow: `Overflow`
+        - **Btn_Hamburger** | `Button 🔲` | `[PREFAB]`
+            * [Spatial] AnchoredPos: (53,0, -72,0) | SizeDelta: (70,0, 70,0) | Anchors: Min(1,00, 1,00) Max(1,00, 1,00) | Pivot: (1,00, 1,00)
+            * [Graphic] Sprite: `White Select 2` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+            - **Text (TMP)** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, -75,3) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Typography] Font: `LiberationSans SDF` | Size: `24px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+    - **Onboarding_Panel** | `Panel/Image 🖼️` | `[SCENE]`
+        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+        * [Graphic] Sprite: `Background` | Type: `Sliced` | Color: `#000000EE` | Raycast: True
+        * [Layout] `VerticalLayoutGroup` | Padding: `L:0 R:0 T:0 B:0`
+        - **Text_Title** | `TextMeshProUGUI 📝` | `[SCENE]`
+            * [Spatial] AnchoredPos: (540,0, -841,3) | SizeDelta: (780,0, 37,5) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 0,50)
+            * [Typography] Font: `LiberationSans SDF` | Size: `45px` | Color: `#FFFFFFFF` | Align: `Top` | Wrap: `ON` | Overflow: `Overflow`
+        - **Text_Instructions** | `TextMeshProUGUI 📝` | `[SCENE]`
+            * [Spatial] AnchoredPos: (540,0, -928,8) | SizeDelta: (780,0, 37,5) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 0,50)
+            * [Typography] Font: `LiberationSans SDF` | Size: `22px` | Color: `#FFFFFFFF` | Align: `Top` | Wrap: `ON` | Overflow: `Overflow`
+        - **Btn_Start** | `Button 🔲` | `[PREFAB]`
+            * [Spatial] AnchoredPos: (540,0, -1047,5) | SizeDelta: (100,0, 100,0) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 0,50)
+            * [Graphic] Sprite: `White Play` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+            - **Text (TMP)** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, -75,3) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Typography] Font: `LiberationSans SDF` | Size: `24px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+    - **Database_Search_Panel** | `Panel/Image 🖼️` | `[SCENE]`
+        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+        * [Graphic] Sprite: `Background` | Type: `Sliced` | Color: `#000000C4` | Raycast: True
+        - **Filter_group** | `Container/Rect` | `[SCENE]`
+            * [Spatial] AnchoredPos: (0,0, 794,0) | SizeDelta: (0,0, 100,0) | Anchors: Min(0,00, 0,50) Max(1,00, 0,50) | Pivot: (0,50, 0,50)
+            * [Layout] `HorizontalLayoutGroup` | Padding: `L:30 R:30 T:30 B:0`
+            - **Filter_Category_Dropdown** | `TMP_Dropdown 🔘` | `[SCENE]`
+                * [Spatial] AnchoredPos: (130,0, -55,0) | SizeDelta: (200,0, 50,0) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Graphic] Sprite: `ButtonLargeRound` | Type: `Simple` | Color: `#323232C8` | Raycast: True
+                * [Dropdown] Template: `Template`
+                - **Label** | `TextMeshProUGUI 📝` | `[SCENE]`
+                    * [Spatial] AnchoredPos: (-7,5, -0,5) | SizeDelta: (-35,0, -13,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                    * [Typography] Font: `LiberationSans SDF` | Size: `33,1px` | Color: `#FFFFFFFF` | Align: `Left` | Wrap: `ON` | Overflow: `Overflow`
+                - **Arrow** | `Panel/Image 🖼️` | `[SCENE]`
+                    * [Spatial] AnchoredPos: (-15,0, 0,0) | SizeDelta: (20,0, 20,0) | Anchors: Min(1,00, 0,50) Max(1,00, 0,50) | Pivot: (0,50, 0,50)
+                    * [Graphic] Sprite: `DropdownArrow` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+                - **Template** | `ScrollView 📜` | `[SCENE]`
+                    * [Spatial] AnchoredPos: (0,0, 2,0) | SizeDelta: (0,0, 150,0) | Anchors: Min(0,00, 0,00) Max(1,00, 0,00) | Pivot: (0,50, 1,00)
+                    * [Graphic] Sprite: `UISprite` | Type: `Sliced` | Color: `#282828C8` | Raycast: True
+                    - **Viewport** | `Panel/Image 🖼️` | `[SCENE]`
+                        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (-5,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,00, 1,00)
+                        * [Graphic] Sprite: `UIMask` | Type: `Sliced` | Color: `#323232C8` | Raycast: True
+                                - **Item Background** | `Panel/Image 🖼️` | `[SCENE]`
+                                    * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                                    * [Graphic] Sprite: `None (White)` | Type: `Simple` | Color: `#F5F5F5FF` | Raycast: True
+                                - **Item Checkmark** | `Panel/Image 🖼️` | `[SCENE]`
+                                    * [Spatial] AnchoredPos: (10,0, 0,0) | SizeDelta: (20,0, 20,0) | Anchors: Min(0,00, 0,50) Max(0,00, 0,50) | Pivot: (0,50, 0,50)
+                                    * [Graphic] Sprite: `Checkmark` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+                                - **Item Label** | `TextMeshProUGUI 📝` | `[SCENE]`
+                                    * [Spatial] AnchoredPos: (5,0, -0,5) | SizeDelta: (-30,0, -3,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                                    * [Typography] Font: `LiberationSans SDF` | Size: `33,1px` | Color: `#FFFFFFFF` | Align: `Left` | Wrap: `ON` | Overflow: `Overflow`
+                    - **Scrollbar** | `Panel/Image 🖼️` | `[SCENE]`
+                        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (8,0, 0,0) | Anchors: Min(1,00, 0,00) Max(1,00, 1,00) | Pivot: (1,00, 1,00)
+                        * [Graphic] Sprite: `Background` | Type: `Sliced` | Color: `#323232C8` | Raycast: True
+                            - **Handle** | `Panel/Image 🖼️` | `[SCENE]`
+                                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (20,0, 20,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                                * [Graphic] Sprite: `UISprite` | Type: `Sliced` | Color: `#000000FF` | Raycast: True
+            - **DropdownForSymbols** | `TMP_Dropdown 🔘` | `[SCENE]`
+                * [Spatial] AnchoredPos: (603,3, -30,0) | SizeDelta: (700,0, 60,0) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 1,00)
+                * [Graphic] Sprite: `UISprite` | Type: `Sliced` | Color: `#323232C8` | Raycast: True
+                * [Dropdown] Template: `Template`
+                - **Label** | `TextMeshProUGUI 📝` | `[SCENE]`
+                    * [Spatial] AnchoredPos: (-7,5, -0,5) | SizeDelta: (-35,0, -13,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                    * [Typography] Font: `LiberationSans SDF` | Size: `14px` | Color: `#FFFFFFFF` | Align: `Left` | Wrap: `ON` | Overflow: `Overflow`
+                - **Arrow** | `Panel/Image 🖼️` | `[SCENE]`
+                    * [Spatial] AnchoredPos: (-15,0, 0,0) | SizeDelta: (20,0, 20,0) | Anchors: Min(1,00, 0,50) Max(1,00, 0,50) | Pivot: (0,50, 0,50)
+                    * [Graphic] Sprite: `DropdownArrow` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+                - **Template** | `ScrollView 📜` | `[SCENE]`
+                    * [Spatial] AnchoredPos: (0,0, 2,0) | SizeDelta: (0,0, 150,0) | Anchors: Min(0,00, 0,00) Max(1,00, 0,00) | Pivot: (0,50, 1,00)
+                    * [Graphic] Sprite: `UISprite` | Type: `Sliced` | Color: `#FFFFFFFF` | Raycast: True
+                    - **Viewport** | `Panel/Image 🖼️` | `[SCENE]`
+                        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (-18,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,00, 1,00)
+                        * [Graphic] Sprite: `UIMask` | Type: `Sliced` | Color: `#FFFFFFFF` | Raycast: True
+                                - **Item Background** | `Panel/Image 🖼️` | `[SCENE]`
+                                    * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                                    * [Graphic] Sprite: `None (White)` | Type: `Simple` | Color: `#F5F5F5FF` | Raycast: True
+                                - **Item Checkmark** | `Panel/Image 🖼️` | `[SCENE]`
+                                    * [Spatial] AnchoredPos: (10,0, 0,0) | SizeDelta: (20,0, 20,0) | Anchors: Min(0,00, 0,50) Max(0,00, 0,50) | Pivot: (0,50, 0,50)
+                                    * [Graphic] Sprite: `Checkmark` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+                                - **Item Label** | `TextMeshProUGUI 📝` | `[SCENE]`
+                                    * [Spatial] AnchoredPos: (5,0, -0,5) | SizeDelta: (-30,0, -3,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                                    * [Typography] Font: `LiberationSans SDF` | Size: `14px` | Color: `#323232FF` | Align: `Left` | Wrap: `ON` | Overflow: `Overflow`
+                    - **Scrollbar** | `Panel/Image 🖼️` | `[SCENE]`
+                        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (20,0, 0,0) | Anchors: Min(1,00, 0,00) Max(1,00, 1,00) | Pivot: (1,00, 1,00)
+                        * [Graphic] Sprite: `Background` | Type: `Sliced` | Color: `#FFFFFFFF` | Raycast: True
+                            - **Handle** | `Panel/Image 🖼️` | `[SCENE]`
+                                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (20,0, 20,0) | Anchors: Min(0,00, 0,00) Max(1,00, 0,20) | Pivot: (0,50, 0,50)
+                                * [Graphic] Sprite: `UISprite` | Type: `Sliced` | Color: `#FFFFFFFF` | Raycast: True
+            - **Search_Input_Field** | `TMP_InputField ⌨️` | `[SCENE]`
+                * [Spatial] AnchoredPos: (603,3, -30,0) | SizeDelta: (700,0, 60,0) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 1,00)
+                * [Graphic] Sprite: `InputFieldBackground` | Type: `Sliced` | Color: `#323232C8` | Raycast: True
+                    - **Placeholder** | `TextMeshProUGUI 📝` | `[SCENE]`
+                        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                        * [Typography] Font: `LiberationSans SDF` | Size: `42,05px` | Color: `#A8A8A880` | Align: `TopLeft` | Wrap: `OFF` | Overflow: `Overflow`
+                    - **Text** | `TextMeshProUGUI 📝` | `[SCENE]`
+                        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                        * [Typography] Font: `LiberationSans SDF` | Size: `42,05px` | Color: `#FFFFFFFF` | Align: `TopLeft` | Wrap: `OFF` | Overflow: `Overflow`
+            - **Btn_Filter** | `Button 🔲` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (1001,7, -55,0) | SizeDelta: (50,0, 50,0) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Graphic] Sprite: `White Add` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+                - **Text (TMP)** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                    * [Spatial] AnchoredPos: (0,0, -25,3) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                    * [Typography] Font: `LiberationSans SDF` | Size: `7,95px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+        - **Btn_Close** | `Button 🔲` | `[PREFAB]`
+            * [Spatial] AnchoredPos: (-105,0, -60,0) | SizeDelta: (50,0, 50,0) | Anchors: Min(1,00, 1,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+            * [Graphic] Sprite: `X` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+            - **Text (TMP)** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Typography] Font: `LiberationSans SDF` | Size: `24px` | Color: `#323232FF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+        - **Results_Count** | `TextMeshProUGUI 📝` | `[SCENE]`
+            * [Spatial] AnchoredPos: (-47,0, 620,0) | SizeDelta: (800,0, 100,0) | Anchors: Min(0,50, 0,50) Max(0,50, 0,50) | Pivot: (0,50, 0,50)
+            * [Typography] Font: `LiberationSans SDF` | Size: `36px` | Color: `#ACA0A0FF` | Align: `BottomLeft` | Wrap: `ON` | Overflow: `Overflow`
+        - **row** | `Container/Rect` | `[SCENE]`
+            * [Spatial] AnchoredPos: (0,0, 704,0) | SizeDelta: (1080,0, 50,0) | Anchors: Min(0,50, 0,50) Max(0,50, 0,50) | Pivot: (0,50, 0,50)
+            * [Layout] `HorizontalLayoutGroup` | Padding: `L:30 R:30 T:0 B:0`
+            - **Filters_Horizontal_Group** | `ScrollView 📜` | `[SCENE]`
+                * [Spatial] AnchoredPos: (485,0, -25,0) | SizeDelta: (910,0, 0,0) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Layout] `HorizontalLayoutGroup` | Padding: `L:30 R:20 T:0 B:0`
+                - **Badge_Filter** | `Panel/Image 🖼️` | `[PREFAB]`
+                    * [Spatial] AnchoredPos: (12,7, -22,5) | SizeDelta: (107,7, 45,0) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 0,50)
+                    * [Graphic] Sprite: `C` | Type: `Sliced` | Color: `#3A729CFF` | Raycast: True
+                    * [Layout] `HorizontalLayoutGroup` | Padding: `L:15 R:15 T:0 B:0`
+                    * [Fitter] Horiz: `PreferredSize` | Vert: `Unconstrained`
+                    - **Text_Label** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                        * [Spatial] AnchoredPos: (53,8, -22,5) | SizeDelta: (77,7, 15,7) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 0,50)
+                        * [Typography] Font: `LiberationSans SDF` | Size: `14px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+                - **Badge_Filter2** | `Panel/Image 🖼️` | `[SCENE]`
+                    * [Spatial] AnchoredPos: (184,8, -25,0) | SizeDelta: (124,3, 45,0) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 0,50)
+                    * [Graphic] Sprite: `C` | Type: `Sliced` | Color: `#884B4BFF` | Raycast: True
+                    * [Layout] `HorizontalLayoutGroup` | Padding: `L:15 R:15 T:0 B:0`
+                    * [Fitter] Horiz: `PreferredSize` | Vert: `Unconstrained`
+                    - **Text_Label** | `TextMeshProUGUI 📝` | `[SCENE]`
+                        * [Spatial] AnchoredPos: (62,2, -22,5) | SizeDelta: (94,3, 15,7) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 0,50)
+                        * [Typography] Font: `LiberationSans SDF` | Size: `14px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+            - **ClearAll_Btn** | `Button 🔲` | `[SCENE]`
+                * [Spatial] AnchoredPos: (995,0, -25,0) | SizeDelta: (110,0, 45,0) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Graphic] Sprite: `C` | Type: `Sliced` | Color: `#3A729CFF` | Raycast: True
+                * [Layout] `HorizontalLayoutGroup` | Padding: `L:15 R:15 T:0 B:0`
+                - **Text_Label** | `TextMeshProUGUI 📝` | `[SCENE]`
+                    * [Spatial] AnchoredPos: (55,0, -22,5) | SizeDelta: (80,0, 31,7) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 0,50)
+                    * [Typography] Font: `LiberationSans SDF` | Size: `14px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+        - **Search_Results_Scroll_View** | `ScrollView 📜` | `[SCENE]`
+            * [Spatial] AnchoredPos: (0,0, -80,0) | SizeDelta: (900,1, 1300,0) | Anchors: Min(0,50, 0,50) Max(0,50, 0,50) | Pivot: (0,50, 0,50)
+            * [Graphic] Sprite: `Background` | Type: `Sliced` | Color: `#000000BE` | Raycast: True
+            - **Viewport** | `Panel/Image 🖼️` | `[SCENE]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (-7,0, -7,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,00, 1,00)
+                * [Graphic] Sprite: `UIMask` | Type: `Sliced` | Color: `#FFFFFFFF` | Raycast: True
+                - **Content** | `Container/Rect` | `[SCENE]`
+                    * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 1,00) Max(1,00, 1,00) | Pivot: (0,00, 1,00)
+                    * [Layout] `VerticalLayoutGroup` | Padding: `L:0 R:0 T:0 B:0`
+                    * [Fitter] Horiz: `Unconstrained` | Vert: `PreferredSize`
+            - **Scrollbar Horizontal** | `Panel/Image 🖼️` | `[SCENE]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (-7,0, 10,0) | Anchors: Min(0,00, 0,00) Max(1,00, 0,00) | Pivot: (0,00, 0,00)
+                * [Graphic] Sprite: `Background` | Type: `Sliced` | Color: `#FFFFFFFF` | Raycast: True
+                    - **Handle** | `Panel/Image 🖼️` | `[SCENE]`
+                        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (20,0, 20,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                        * [Graphic] Sprite: `UISprite` | Type: `Sliced` | Color: `#000000E1` | Raycast: True
+            - **Scrollbar Vertical** | `Panel/Image 🖼️` | `[SCENE]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (10,0, -7,0) | Anchors: Min(1,00, 0,00) Max(1,00, 1,00) | Pivot: (1,00, 1,00)
+                * [Graphic] Sprite: `Background` | Type: `Sliced` | Color: `#FFFFFFFF` | Raycast: True
+                    - **Handle** | `Panel/Image 🖼️` | `[SCENE]`
+                        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (20,0, 20,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                        * [Graphic] Sprite: `UISprite` | Type: `Sliced` | Color: `#000000E1` | Raycast: True
+            - **searchResultButtonPrefab** | `Button 🔲` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (450,0, -30,0) | SizeDelta: (900,0, 60,0) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Graphic] Sprite: `UISprite` | Type: `Sliced` | Color: `#FFFFFFFF` | Raycast: True
+                - **Text (TMP)** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                    * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                    * [Typography] Font: `LiberationSans SDF` | Size: `24px` | Color: `#FFFFFFFF` | Align: `Left` | Wrap: `ON` | Overflow: `Overflow`
+    - **Map_2D_Panel** | `Panel/Image 🖼️` | `[SCENE]`
+        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (900,0, 1500,0) | Anchors: Min(0,50, 0,50) Max(0,50, 0,50) | Pivot: (0,50, 0,50)
+        * [Graphic] Sprite: `32` | Type: `Simple` | Color: `#000000C4` | Raycast: True
+        - **Btn_Close** | `Button 🔲` | `[PREFAB]`
+            * [Spatial] AnchoredPos: (-80,0, -80,0) | SizeDelta: (50,0, 50,0) | Anchors: Min(1,00, 1,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+            * [Graphic] Sprite: `X` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+            - **Text (TMP)** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Typography] Font: `LiberationSans SDF` | Size: `24px` | Color: `#323232FF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+            - **Map_Mini_Popup** | `Panel/Image 🖼️` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, -50,0) | SizeDelta: (100,0, 100,0) | Anchors: Min(0,50, 0,50) Max(0,50, 0,50) | Pivot: (0,50, 0,00)
+                * [Graphic] Sprite: `64` | Type: `Simple` | Color: `#000000B0` | Raycast: True
+                - **miniPopupIDText** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                    * [Spatial] AnchoredPos: (0,0, 5,9) | SizeDelta: (0,0, 50,0) | Anchors: Min(0,00, 0,50) Max(1,00, 0,50) | Pivot: (0,50, 0,50)
+                    * [Typography] Font: `LiberationSans SDF` | Size: `31px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+                - **miniPopupViewDetailsButton** | `Button 🔲` | `[PREFAB]`
+                    * [Spatial] AnchoredPos: (0,0, -32,2) | SizeDelta: (30,0, 30,0) | Anchors: Min(0,50, 0,50) Max(0,50, 0,50) | Pivot: (0,50, 0,50)
+                    * [Graphic] Sprite: `White Symbol 13` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+                    - **Text (TMP)** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                        * [Spatial] AnchoredPos: (9,4, -11,3) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                        * [Typography] Font: `LiberationSans SDF` | Size: `7,5px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+                - **miniPopupCloseButton** | `Button 🔲` | `[PREFAB]`
+                    * [Spatial] AnchoredPos: (32,6, 34,5) | SizeDelta: (20,0, 20,0) | Anchors: Min(0,50, 0,50) Max(0,50, 0,50) | Pivot: (0,50, 0,50)
+                    * [Graphic] Sprite: `X` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+                    - **Text (TMP)** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                        * [Typography] Font: `LiberationSans SDF` | Size: `24px` | Color: `#323232FF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+                - **point** | `Panel/Image 🖼️` | `[PREFAB]`
+                    * [Spatial] AnchoredPos: (0,0, -60,7) | SizeDelta: (30,0, 30,0) | Anchors: Min(0,50, 0,50) Max(0,50, 0,50) | Pivot: (0,50, 0,50)
+                    * [Graphic] Sprite: `White Down` | Type: `Simple` | Color: `#000000B0` | Raycast: True
+            - **UI_User_GPS** | `Panel/Image 🖼️` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (160,0, 0,0) | SizeDelta: (20,0, 20,0) | Anchors: Min(0,50, 0,50) Max(0,50, 0,50) | Pivot: (0,50, 0,50)
+                * [Graphic] Sprite: `Knob` | Type: `Simple` | Color: `#4D7EF4FF` | Raycast: True
+                - **UserGazeCone** | `Panel/Image 🖼️` | `[SCENE]`
+                    * [Spatial] AnchoredPos: (0,0, 1,0) | SizeDelta: (29,9, 20,0) | Anchors: Min(0,50, 0,50) Max(0,50, 0,50) | Pivot: (0,50, 1,00)
+                    * [Graphic] Sprite: `Coneb` | Type: `Simple` | Color: `#4D7EF4FF` | Raycast: True
+        - **Btn_Create_Route** | `Button 🔲` | `[SCENE]`
+            * [Spatial] AnchoredPos: (273,0, -506,0) | SizeDelta: (300,0, 60,0) | Anchors: Min(0,50, 0,50) Max(0,50, 0,50) | Pivot: (0,50, 0,50)
+            * [Graphic] Sprite: `UISprite` | Type: `Sliced` | Color: `#000000CA` | Raycast: True
+            - **Text (TMP)** | `TextMeshProUGUI 📝` | `[SCENE]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Typography] Font: `LiberationSans SDF` | Size: `36px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+        - **Btn_Guide_Me** | `Button 🔲` | `[SCENE]`
+            * [Spatial] AnchoredPos: (273,0, -589,0) | SizeDelta: (300,0, 60,0) | Anchors: Min(0,50, 0,50) Max(0,50, 0,50) | Pivot: (0,50, 0,50)
+            * [Graphic] Sprite: `UISprite` | Type: `Sliced` | Color: `#000000CA` | Raycast: True
+            - **Text (TMP)** | `TextMeshProUGUI 📝` | `[SCENE]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Typography] Font: `LiberationSans SDF` | Size: `36px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+        - **Route_info** | `TextMeshProUGUI 📝` | `[SCENE]`
+            * [Spatial] AnchoredPos: (-267,0, -511,0) | SizeDelta: (200,0, 50,0) | Anchors: Min(0,50, 0,50) Max(0,50, 0,50) | Pivot: (0,50, 0,50)
+            * [Typography] Font: `LiberationSans SDF` | Size: `36px` | Color: `#FFFFFFFF` | Align: `TopLeft` | Wrap: `ON` | Overflow: `Overflow`
+        - **Tour_Dropdown** | `TMP_Dropdown 🔘` | `[SCENE]`
+            * [Spatial] AnchoredPos: (-250,0, -334,0) | SizeDelta: (300,0, 70,0) | Anchors: Min(0,50, 0,50) Max(0,50, 0,50) | Pivot: (0,50, 0,50)
+            * [Graphic] Sprite: `UISprite` | Type: `Sliced` | Color: `#323232C8` | Raycast: True
+            * [Dropdown] Template: `Template`
+            - **Label** | `TextMeshProUGUI 📝` | `[SCENE]`
+                * [Spatial] AnchoredPos: (-7,5, -0,5) | SizeDelta: (-35,0, -13,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Typography] Font: `LiberationSans SDF` | Size: `36px` | Color: `#FFFFFFFF` | Align: `Left` | Wrap: `ON` | Overflow: `Overflow`
+            - **Arrow** | `Panel/Image 🖼️` | `[SCENE]`
+                * [Spatial] AnchoredPos: (-15,0, 0,0) | SizeDelta: (20,0, 20,0) | Anchors: Min(1,00, 0,50) Max(1,00, 0,50) | Pivot: (0,50, 0,50)
+                * [Graphic] Sprite: `DropdownArrow` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+            - **Template** | `ScrollView 📜` | `[SCENE]`
+                * [Spatial] AnchoredPos: (0,0, 2,0) | SizeDelta: (0,0, 150,0) | Anchors: Min(0,00, 0,00) Max(1,00, 0,00) | Pivot: (0,50, 1,00)
+                * [Graphic] Sprite: `UISprite` | Type: `Sliced` | Color: `#282828C8` | Raycast: True
+                - **Viewport** | `Panel/Image 🖼️` | `[SCENE]`
+                    * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (-5,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,00, 1,00)
+                    * [Graphic] Sprite: `UIMask` | Type: `Sliced` | Color: `#323232C8` | Raycast: True
+                            - **Item Background** | `Panel/Image 🖼️` | `[SCENE]`
+                                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                                * [Graphic] Sprite: `None (White)` | Type: `Simple` | Color: `#F5F5F5FF` | Raycast: True
+                            - **Item Checkmark** | `Panel/Image 🖼️` | `[SCENE]`
+                                * [Spatial] AnchoredPos: (10,0, 0,0) | SizeDelta: (20,0, 20,0) | Anchors: Min(0,00, 0,50) Max(0,00, 0,50) | Pivot: (0,50, 0,50)
+                                * [Graphic] Sprite: `Checkmark` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+                            - **Item Label** | `TextMeshProUGUI 📝` | `[SCENE]`
+                                * [Spatial] AnchoredPos: (5,0, -0,5) | SizeDelta: (-30,0, -3,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                                * [Typography] Font: `LiberationSans SDF` | Size: `30px` | Color: `#FFFFFFFF` | Align: `Left` | Wrap: `ON` | Overflow: `Overflow`
+                - **Scrollbar** | `Panel/Image 🖼️` | `[SCENE]`
+                    * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (8,0, 0,0) | Anchors: Min(1,00, 0,00) Max(1,00, 1,00) | Pivot: (1,00, 1,00)
+                    * [Graphic] Sprite: `Background` | Type: `Sliced` | Color: `#323232C8` | Raycast: True
+                        - **Handle** | `Panel/Image 🖼️` | `[SCENE]`
+                            * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (20,0, 20,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                            * [Graphic] Sprite: `UISprite` | Type: `Sliced` | Color: `#000000FF` | Raycast: True
+    - **Sidebar_Menu_Panel** | `Panel/Image 🖼️` | `[SCENE]`
+        * [Spatial] AnchoredPos: (-225,2, 0,0) | SizeDelta: (450,0, 0,0) | Anchors: Min(1,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+        * [Graphic] Sprite: `Background` | Type: `Sliced` | Color: `#000000DC` | Raycast: True
+        * [Layout] `VerticalLayoutGroup` | Padding: `L:0 R:0 T:150 B:0`
+        - **Btn_Close** | `Button 🔲` | `[PREFAB]`
+            * [Spatial] AnchoredPos: (-79,8, -80,0) | SizeDelta: (50,0, 50,0) | Anchors: Min(1,00, 1,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+            * [Graphic] Sprite: `X` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+            - **Text (TMP)** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Typography] Font: `LiberationSans SDF` | Size: `24px` | Color: `#323232FF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+        - **Btn_Nav_Database** | `Button 🔲` | `[PREFAB]`
+            * [Spatial] AnchoredPos: (225,0, -195,0) | SizeDelta: (450,0, 90,0) | Anchors: Min(0,00, 0,00) Max(0,00, 0,00) | Pivot: (0,50, 0,50)
+            * [Graphic] Sprite: `Button_Large_A` | Type: `Simple` | Color: `#211D1DB5` | Raycast: True
+            - **Text (TMP)** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Typography] Font: `LiberationSans SDF` | Size: `24px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+        - **Btn_Nav_Map** | `Button 🔲` | `[PREFAB]`
+            * [Spatial] AnchoredPos: (225,0, -325,0) | SizeDelta: (450,0, 90,0) | Anchors: Min(0,00, 0,00) Max(0,00, 0,00) | Pivot: (0,50, 0,50)
+            * [Graphic] Sprite: `Button_Large_A` | Type: `Simple` | Color: `#211D1DB5` | Raycast: True
+            - **Text (TMP)** | `TextMeshProUGUI 📝` | `[PREFAB]`
+                * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (0,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Typography] Font: `LiberationSans SDF` | Size: `24px` | Color: `#FFFFFFFF` | Align: `Center` | Wrap: `ON` | Overflow: `Overflow`
+            - **Background** | `Panel/Image 🖼️` | `[SCENE]`
+                * [Spatial] AnchoredPos: (50,0, -10,0) | SizeDelta: (80,0, 80,0) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Graphic] Sprite: `UISprite` | Type: `Sliced` | Color: `#433030FF` | Raycast: True
+                - **Checkmark** | `Panel/Image 🖼️` | `[SCENE]`
+                    * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (70,0, 70,0) | Anchors: Min(0,50, 0,50) Max(0,50, 0,50) | Pivot: (0,50, 0,50)
+                    * [Graphic] Sprite: `White Check` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+            - **Background** | `Panel/Image 🖼️` | `[SCENE]`
+                * [Spatial] AnchoredPos: (50,0, -10,0) | SizeDelta: (80,0, 80,0) | Anchors: Min(0,00, 1,00) Max(0,00, 1,00) | Pivot: (0,50, 0,50)
+                * [Graphic] Sprite: `UISprite` | Type: `Sliced` | Color: `#433030FF` | Raycast: True
+                - **Checkmark** | `Panel/Image 🖼️` | `[SCENE]`
+                    * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (70,0, 70,0) | Anchors: Min(0,50, 0,50) Max(0,50, 0,50) | Pivot: (0,50, 0,50)
+                    * [Graphic] Sprite: `White Check` | Type: `Simple` | Color: `#FFFFFFFF` | Raycast: True
+    - **Diagnostic_Panel** | `Panel/Image 🖼️` | `[SCENE]`
+        * [Spatial] AnchoredPos: (0,0, 0,0) | SizeDelta: (800,0, 205,5) | Anchors: Min(0,50, 0,00) Max(0,50, 0,00) | Pivot: (0,50, 0,00)
+        * [Graphic] Sprite: `Background` | Type: `Sliced` | Color: `#00000064` | Raycast: True
+        - **DiagnosticTextLeft** | `TextMeshProUGUI 📝` | `[SCENE]`
+            * [Spatial] AnchoredPos: (-200,0, 0,0) | SizeDelta: (-400,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+            * [Typography] Font: `LiberationSans SDF` | Size: `29,9px` | Color: `#FFFFFFFF` | Align: `TopLeft` | Wrap: `ON` | Overflow: `Overflow`
+        - **DiagnosticTextRight** | `TextMeshProUGUI 📝` | `[SCENE]`
+            * [Spatial] AnchoredPos: (200,0, 0,0) | SizeDelta: (-400,0, 0,0) | Anchors: Min(0,00, 0,00) Max(1,00, 1,00) | Pivot: (0,50, 0,50)
+            * [Typography] Font: `LiberationSans SDF` | Size: `35,9px` | Color: `#FFFFFFFF` | Align: `TopLeft` | Wrap: `ON` | Overflow: `Overflow`
+
+--------------------------------------------------
+

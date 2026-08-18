@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 628cd516a59532849b7a2da6e8e1065a, type: 3}
+  m_Name: BelgianGraves_EN
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  sequenceLabelId: BelgianGraves_EN
+  narrativeCategory: 2
+  dialogueLines:
+  - subtitleText: Here lay the individual graves of Xavier Delouvroy and Albert Platteau,
+      who died in May 1945. Historical aerial photos show that during the camp's
+      existence, potato and beet pits were located exactly in this area, which then
+      served as burial sites.
+    voiceClip: {fileID: 0}
+    animationTriggerKey: Point
+    duration: 0

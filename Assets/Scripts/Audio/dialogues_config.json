@@ -1,0 +1,1789 @@
+{
+  "dialogues": [
+    {
+      "id": "A3",
+      "text_ui": "Maria\nHauer\n* April 3, 1904\nDeceased April 1945\nMaria\nHauer\n'born' April 3, 1904\n'deceased' 'April' 1945.",
+      "text_spoken": "Maria Hauer. Born April 3rd, 1904. Deceased April 1945.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "A3",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "A4",
+      "text_ui": "Elka Weissfeld,\nDaughter of 'Mr.' Jizchak Zwi,\ndeceased in the year 705.\nIn memory of our dearly beloved,\nhonored sister\nKlárika.\nWe erected this plaque,\nher brothers and sisters.\nKlara Weissfeld,\n'born in' Szikszó.\n1922 - 1945\nWe will never forget.",
+      "text_spoken": "In memory of Elka Weissfeld, daughter of Mister Jizchak Zwi, who passed away in the year 5705, that is 1945. In memory of our dearly beloved, honored sister Klarika. We, her brothers and sisters, erected this plaque. Klara Weissfeld, born in Szikszo. 1922 to 1945. We will never forget.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "A4",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "A5",
+      "text_ui": "Renée Glück\nMay God remember\nthe soul of the woman\nRachel, daughter of Elka,\nRenée Glück,\nwho was killed in sanctification of the Name\nin the year 705 (1945) by the\nNazi murderers in the Belsen camp.\nHe who avenges blood has remembered her!\n'May her soul be bound in the bundle of life'\nBorn in Hlohovec CSR November 26, 1910.",
+      "text_spoken": "In memory of Renee Gluck. May God remember the soul of the woman Rachel, daughter of Elka, Renee Gluck, who was killed in sanctification of the Name in the year 5705, 1945, by the Nazi murderers in the Belsen camp. He who avenges blood has remembered her. May her soul be bound in the bundle of life. Born in Hlohovec, Czechoslovakia, November 26th, 1910.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "A5",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "WELCOME_EN",
+      "text_ui": "Welcome to the Bergen-Belsen Memorial AR Experience. My name is your virtual guide. Before we begin our journey, please decide how you would like to explore the camp using the options below.",
+      "text_spoken": "Welcome to the Bergen-Belsen Memorial AR Experience. My name is your virtual guide. Before we begin our journey, please decide how you would like to explore the camp using the options below.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Systemic_UI",
+      "target_id": "GlobalApplication",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "GOODBYE_EN",
+      "text_ui": "Thank you for visiting the Bergen-Belsen Memorial. I hope this interactive experience provided meaningful insight into the history preserved here. Travel safely.",
+      "text_spoken": "Thank you for visiting the Bergen-Belsen Memorial. I hope this interactive experience provided meaningful insight into the history preserved here. Travel safely.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Systemic_UI",
+      "target_id": "GlobalApplication",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "LOGISTICS_EN",
+      "text_ui": "Please remain fully aware of your physical surroundings while navigating the memorial grounds. Follow designated walking paths and use caution near structural remnants.",
+      "text_spoken": "Please remain fully aware of your physical surroundings while navigating the memorial grounds. Follow designated walking paths and use caution near structural remnants.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Systemic_UI",
+      "target_id": "GlobalApplication",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "WELCOME_DE",
+      "text_ui": "Willkommen in Bergen-Belsen. Diese Augmented-Reality-Erfahrung führt Sie durch die Gedenkstätte. Bevor wir beginnen, wählen Sie bitte, wie Sie das Lager erkunden möchten.",
+      "text_spoken": "Willkommen in Bergen-Belsen. Diese Augmented-Reality-Erfahrung führt Sie durch die Gedenkstätte. Bevor wir beginnen, wählen Sie bitte, wie Sie das Lager erkunden möchten.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Systemic_UI",
+      "target_id": "GlobalApplication",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "GOODBYE_DE",
+      "text_ui": "Vielen Dank für Ihren Besuch der Gedenkstätte Bergen-Belsen. Ich hoffe, diese interaktive Erfahrung hat Ihnen einen sinnvollen Einblick in die hier bewahrte Geschichte gegeben. Reisen Sie sicher.",
+      "text_spoken": "Vielen Dank für Ihren Besuch der Gedenkstätte Bergen-Belsen. Ich hoffe, diese interaktive Erfahrung hat Ihnen einen sinnvollen Einblick in die hier bewahrte Geschichte gegeben. Reisen Sie sicher.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Systemic_UI",
+      "target_id": "GlobalApplication",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "LOGISTICS_DE",
+      "text_ui": "Bitte bleiben Sie sich Ihrer physischen Umgebung auf dem Gelände der Gedenkstätte voll bewusst. Folgen Sie den ausgewiesenen Fußwegen und lassen Sie in der Nähe von baulichen Überresten Vorsicht walten.",
+      "text_spoken": "Bitte bleiben Sie sich Ihrer physischen Umgebung auf dem Gelände der Gedenkstätte voll bewusst. Folgen Sie den ausgewiesenen Fußwegen und lassen Sie in der Nähe von baulichen Überresten Vorsicht walten.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Systemic_UI",
+      "target_id": "GlobalApplication",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "TreeBroken_EN",
+      "text_ui": "Notice the broken tree trunk on this stone. The tree stands for strength and budding life, but the broken trunk stands for violent death. The bare branch means a life ended early, without descendants, a family branch broken forever.",
+      "text_spoken": "Notice the broken tree trunk on this stone. The tree stands for strength and budding life, but the broken trunk stands for violent death. The bare branch means a life ended early, without descendants, a family branch broken forever.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "TreeBroken",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "StarOfDavid_EN",
+      "text_ui": "This stone bears the Shield of David. The Nazis turned this positive sign into a symbol of shame and annihilation. But for the survivors in Bergen-Belsen, it became a symbol of hope for a self-determined life in the newly established State of Israel.",
+      "text_spoken": "This stone bears the Shield of David. The Nazis turned this positive sign into a symbol of shame and annihilation. But for the survivors in Bergen-Belsen, it became a symbol of hope for a self-determined life in the newly established State of Israel.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "StarOfDavid",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "C14_EN",
+      "text_ui": "Look closely at this weathered stone. You can see the blessing hands of a priest. The fingers remain open so that no dividing wall exists between God and Israel. It shows the family descends from Aaron's priestly lineage.",
+      "text_spoken": "Look closely at this weathered stone. You can see the blessing hands of a priest. The fingers remain open so that no dividing wall exists between God and Israel. It shows the family descends from Aaron's priestly lineage.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "C14",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "GlobalStoneFocus_EN",
+      "text_ui": "A Jewish memorial stone is an open book. It often starts with 'Here is buried' and ends with the biblical verse from Samuel: 'May his or her soul be bound up in the bundle of life'. This usually speaks of the hope for eternal life.",
+      "text_spoken": "A Jewish memorial stone is an open book. It often starts with Here is buried and ends with the biblical verse from Samuel: May his or her soul be bound up in the bundle of life. This usually speaks of the hope for eternal life.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "GlobalStoneFocus",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "F02_EN",
+      "text_ui": "This is the individual grave of Pawelek Przeworski. He arrived from Warsaw in 1944. He died on April 14, 1945, just one day before liberation. It was presumably his own father who buried his deceased son here.",
+      "text_spoken": "This is the individual grave of Pawelek Przeworski. He arrived from Warsaw in 1944. He died on April 14, 1945, just one day before liberation. It was presumably his own father who buried his deceased son here.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "F02",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "F04_EN",
+      "text_ui": "Here rests Tosia Grunberg. She died on April 23, 1945, shortly after liberation. Fellow survivors laid her to rest. As a book describes: 'The girls filled the grave and recited Kaddish for their friend'.",
+      "text_spoken": "Here rests Tosia Grunberg. She died on April 23, 1945, shortly after liberation. Fellow survivors laid her to rest. As a book describes: The girls filled the grave and recited Kaddish for their friend.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "F04",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "ExchangeCamp_EN",
+      "text_ui": "This area was the Exchange Camp, established in 1943. Jewish hostages were held here to be exchanged for interned Germans or foreign currency. But for over two thousand of them, it was just a brief reprieve before being murdered in Auschwitz.",
+      "text_spoken": "This area was the Exchange Camp, established in 1943. Jewish hostages were held here to be exchanged for interned Germans or foreign currency. But for over two thousand of them, it was just a brief reprieve before being murdered in Auschwitz.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Zone_SocioCultural",
+      "target_id": "ExchangeCamp",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 15.0,
+      "duration": 0.0
+    },
+    {
+      "id": "WomenCamp_EN",
+      "text_ui": "We are entering the former Women's Camp. In August 1944, thousands of women from the Warsaw uprising and Auschwitz were housed here in large tents. When a storm destroyed the tents in November, the SS moved them to barracks.",
+      "text_spoken": "We are entering the former Women's Camp. In August 1944, thousands of women from the Warsaw uprising and Auschwitz were housed here in large tents. When a storm destroyed the tents in November, the SS moved them to barracks.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Zone_SocioCultural",
+      "target_id": "WomenCamp",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 15.0,
+      "duration": 0.0
+    },
+    {
+      "id": "NewMassGraveL_EN",
+      "text_ui": "In 1964, a French survivor named Georges Bonnet insisted that ashes and bone fragments were still visible outside the memorial grounds. His persistence led to the discovery of new remains and the creation of this L-shaped symbolic mass grave.",
+      "text_spoken": "In 1964, a French survivor named Georges Bonnet insisted that ashes and bone fragments were still visible outside the memorial grounds. His persistence led to the discovery of new remains and the creation of this L-shaped symbolic mass grave.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Zone_SocioCultural",
+      "target_id": "NewMassGraveL",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 15.0,
+      "duration": 0.0
+    },
+    {
+      "id": "LiberationDrama_EN",
+      "text_ui": "When the British Army liberated this camp on April 15, 1945, they encountered about ten thousand unburied bodies. Despite immediate rescue measures, over ten thousand more liberated prisoners died in the following month.",
+      "text_spoken": "When the British Army liberated this camp on April 15, 1945, they encountered about ten thousand unburied bodies. Despite immediate rescue measures, over ten thousand more liberated prisoners died in the following month.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "LiberationDrama",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "RegistryDestruction_EN",
+      "text_ui": "The total number of dead here is estimated at fifty-two thousand. Only about eleven thousand are known by name today, because the SS destroyed the entire camp registry shortly before liberation.",
+      "text_spoken": "The total number of dead here is estimated at fifty-two thousand. Only about eleven thousand are known by name today, because the SS destroyed the entire camp registry shortly before liberation.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "RegistryDestruction",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "AnneFrankStone_EN",
+      "text_ui": "This symbolic memorial stone is dedicated to the sisters Anne and Margot Frank, who died here in March 1945. It was actually erected much later, in June 1999, on the initiative of their cousin Buddy Elias for Anne's seventieth birthday.",
+      "text_spoken": "This symbolic memorial stone is dedicated to the sisters Anne and Margot Frank, who died here in March 1945. It was actually erected much later, in June 1999, on the initiative of their cousin Buddy Elias for Anne's seventieth birthday.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "AnneFrankStone",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "BelgianGraves_EN",
+      "text_ui": "Here lay the individual graves of Xavier Delouvroy and Albert Platteau, who died in May 1945. Historical aerial photos show that during the camp's existence, potato and beet pits were located exactly in this area, which then served as burial sites.",
+      "text_spoken": "Here lay the individual graves of Xavier Delouvroy and Albert Platteau, who died in May 1945. Historical aerial photos show that during the camp's existence, potato and beet pits were located exactly in this area, which then served as burial sites.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "BelgianGraves",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "PolishCross_EN",
+      "text_ui": "Polish Catholic survivors erected a birch cross here shortly after liberation. On November 2, 1945, it was replaced by this high cross. The Latin inscription translates to: 'Here lie those who went through suffering'.",
+      "text_spoken": "Polish Catholic survivors erected a birch cross here shortly after liberation. On November 2, 1945, it was replaced by this high cross. The Latin inscription translates to: Here lie those who went through suffering.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "PolishCross",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "JewishMemorial_EN",
+      "text_ui": "This is the Jewish memorial. A provisional monument was unveiled in September 1945 by Jewish Displaced Persons to commemorate the thirty thousand Jewish victims of Bergen-Belsen. It was replaced by this stone memorial in April 1946.",
+      "text_spoken": "This is the Jewish memorial. A provisional monument was unveiled in September 1945 by Jewish Displaced Persons to commemorate the thirty thousand Jewish victims of Bergen-Belsen. It was replaced by this stone memorial in April 1946.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "JewishMemorial",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "Obelisk_EN",
+      "text_ui": "Look at this twenty-six-meter-high obelisk, dedicated in 1952. During the ceremony, President Theodor Heuss said that Germans had known about these things, and that this obelisk should 'be a thorn' to always remind society of the crimes.",
+      "text_spoken": "Look at this twenty-six-meter-high obelisk, dedicated in 1952. During the ceremony, President Theodor Heuss said that Germans had known about these things, and that this obelisk should be a thorn to always remind society of the crimes.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "Obelisk",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "Original14MassGraves_EN",
+      "text_ui": "You are walking near the fourteen original mass graves, which hold about twenty-three thousand people. Between 1959 and 1961, they were raised and surrounded by these sandstone retaining walls.",
+      "text_spoken": "You are walking near the fourteen original mass graves, which hold about twenty-three thousand people. Between 1959 and 1961, they were raised and surrounded by these sandstone retaining walls.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Zone_SocioCultural",
+      "target_id": "Original14MassGraves",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 15.0,
+      "duration": 0.0
+    },
+    {
+      "id": "MenCamp_EN",
+      "text_ui": "We are now in the former Men's Camp. In March 1944, a thousand sick prisoners arrived here from the Dora subcamp. They were supposed to recover their ability to work, but the SS did nothing to help them, and the death toll rose significantly.",
+      "text_spoken": "We are now in the former Men's Camp. In March 1944, a thousand sick prisoners arrived here from the Dora subcamp. They were supposed to recover their ability to work, but the SS did nothing to help them, and the death toll rose significantly.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Zone_SocioCultural",
+      "target_id": "MenCamp",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 15.0,
+      "duration": 0.0
+    },
+    {
+      "id": "DeathMarches_EN",
+      "text_ui": "As the Allies advanced, the SS evacuated front-line camps. Between December 1944 and April 1945, at least eighty-five thousand people were sent here on death marches. The overcrowding caused catastrophic epidemics.",
+      "text_spoken": "As the Allies advanced, the SS evacuated front-line camps. Between December 1944 and April 1945, at least eighty-five thousand people were sent here on death marches. The overcrowding caused catastrophic epidemics.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "DeathMarches",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "CampPyres_EN",
+      "text_ui": "In March 1945 alone, more than eighteen thousand prisoners died in Bergen-Belsen. Because the camp's crematorium was not designed for such a massive number of dead, the SS resorted to burning the bodies on open pyres.",
+      "text_spoken": "In March 1945 alone, more than eighteen thousand prisoners died in Bergen-Belsen. Because the camp's crematorium was not designed for such a massive number of dead, the SS resorted to burning the bodies on open pyres.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "CampPyres",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "BarracksBurning_EN",
+      "text_ui": "On May 21, 1945, the British Army burned down the last prisoner barracks. Burning the former camp was intended to prevent the spread of the deadly pathogens raging there, leaving only the newly laid out graves behind.",
+      "text_spoken": "On May 21, 1945, the British Army burned down the last prisoner barracks. Burning the former camp was intended to prevent the spread of the deadly pathogens raging there, leaving only the newly laid out graves behind.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "BarracksBurning",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "DisplacedPersons_EN",
+      "text_ui": "After the liberation, survivors were moved to nearby army barracks. More than ten thousand Polish Catholics and twelve thousand Jewish people remained there, forming Displaced Persons camps where they waited for emigration.",
+      "text_spoken": "After the liberation, survivors were moved to nearby army barracks. More than ten thousand Polish Catholics and twelve thousand Jewish people remained there, forming Displaced Persons camps where they waited for emigration.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "DisplacedPersons",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "Detour01_EN",
+      "text_ui": "Let's change our path for a moment. I see you want to take a closer look at this memorial.",
+      "text_spoken": "Let's change our path for a moment. I see you want to take a closer look at this memorial.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Detour_Transition",
+      "target_id": "Detour01",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "Detour02_EN",
+      "text_ui": "You've noticed something over here. Let's stop and uncover the history of this place.",
+      "text_spoken": "You've noticed something over here. Let's stop and uncover the history of this place.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Detour_Transition",
+      "target_id": "Detour02",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "CampOrigins_EN",
+      "text_ui": "In the spring of 1943, Heinrich Himmler and the Foreign Office decided to establish a concentration camp here, in the southern part of the existing prisoner-of-war camp.",
+      "text_spoken": "In the spring of 1943, Heinrich Himmler and the Foreign Office decided to establish a concentration camp here, in the southern part of the existing prisoner-of-war camp.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "CampOrigins",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "CrematoriumDiaries_EN",
+      "text_ui": "Some history was saved through prisoner diaries. In 1944, two inmates, Hans Horwitz and Arnold Koller, who were forced to work in the camp's crematorium, kept a secret diary.",
+      "text_spoken": "Some history was saved through prisoner diaries. In 1944, two inmates, Hans Horwitz and Arnold Koller, who were forced to work in the camp's crematorium, kept a secret diary.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "CrematoriumDiaries",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "PowCemetery_EN",
+      "text_ui": "In the immediate vicinity of this camp is another large burial site. It is the cemetery of the former prisoner-of-war camp, where thousands of Soviet, Polish, and Italian military internees were buried.",
+      "text_spoken": "In the immediate vicinity of this camp is another large burial site. It is the cemetery of the former prisoner-of-war camp, where thousands of Soviet, Polish, and Italian military internees were buried.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "PowCemetery",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "NeuHohneSettlement_EN",
+      "text_ui": "After the prisoner barracks were burned down, the buildings in the former SS forward camp remained. From 1946 to 1953, a settlement named 'Neu-Hohne' existed here to accommodate German expellees.",
+      "text_spoken": "After the prisoner barracks were burned down, the buildings in the former SS forward camp remained. From 1946 to 1953, a settlement named Neu-Hohne existed here to accommodate German expellees.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Zone_SocioCultural",
+      "target_id": "NeuHohneSettlement",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 15.0,
+      "duration": 0.0
+    },
+    {
+      "id": "C6_EN",
+      "text_ui": "You can see a Menorah here, the seven-branched candelabra. It is a famous symbol of Judaism, representing the light source of the Jerusalem Temple captured by the Romans.",
+      "text_spoken": "You can see a Menorah here, the seven-branched candelabra. It is a famous symbol of Judaism, representing the light source of the Jerusalem Temple captured by the Romans.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "C6",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "Detour03_EN",
+      "text_ui": "Take your time. This memorial stone is important.",
+      "text_spoken": "Take your time. This memorial stone is important.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Detour_Transition",
+      "target_id": "Detour03",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "TreeBroken_DE",
+      "text_ui": "Beachten Sie den abgebrochenen Baumstamm auf diesem Stein. Der Baum steht für Kraft und sprießendes Leben, aber der zerbrochene Stamm für den gewaltsamen Tod. Der kahle Zweig bedeutet ein früh beendetes Leben, ohne Nachkommen, ein für immer abgebrochener Familienzweig.",
+      "text_spoken": "Beachten Sie den abgebrochenen Baumstamm auf diesem Stein. Der Baum steht für Kraft und sprießendes Leben, aber der zerbrochene Stamm für den gewaltsamen Tod. Der kahle Zweig bedeutet ein früh beendetes Leben, ohne Nachkommen, ein für immer abgebrochener Familienzweig.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "TreeBroken",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "StarOfDavid_DE",
+      "text_ui": "Dieser Stein trägt den Davidsschild. Die Nationalsozialisten machten dieses positive Zeichen zu einem Symbol der Schmach und Vernichtung. Aber für die Überlebenden in Bergen-Belsen wurde er zu einem Symbol der Hoffnung auf ein selbstbestimmtes Leben im neu zu gründenden Staat Israel.",
+      "text_spoken": "Dieser Stein trägt den Davidsschild. Die Nationalsozialisten machten dieses positive Zeichen zu einem Symbol der Schmach und Vernichtung. Aber für die Überlebenden in Bergen-Belsen wurde er zu einem Symbol der Hoffnung auf ein selbstbestimmtes Leben im neu zu gründenden Staat Israel.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "StarOfDavid",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "C14_DE",
+      "text_ui": "Sehen Sie sich diesen verwitterten Stein genau an. Man erkennt die segnenden Hände eines Priesters. Die Finger bleiben geöffnet, damit keine Trennwand zwischen Gott und Israel besteht. Es zeigt, dass die Familie vom Priestergeschlecht Aarons abstammt.",
+      "text_spoken": "Sehen Sie sich diesen verwitterten Stein genau an. Man erkennt die segnenden Hände eines Priesters. Die Finger bleiben geöffnet, damit keine Trennwand zwischen Gott und Israel besteht. Es zeigt, dass die Familie vom Priestergeschlecht Aarons abstammt.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "C14",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "GlobalStoneFocus_DE",
+      "text_ui": "Ein jüdischer Gedenkstein ist ein aufgeschlagenes Buch. Er beginnt oft mit 'Hier ist begraben' und endet mit dem biblischen Vers aus Samuel: 'Seine oder ihre Seele sei eingebunden in das Bündel des Lebens'. Daraus spricht zumeist die Hoffnung auf das ewige Leben.",
+      "text_spoken": "Ein jüdischer Gedenkstein ist ein aufgeschlagenes Buch. Er beginnt oft mit Hier ist begraben und endet mit dem biblischen Vers aus Samuel: Seine oder ihre Seele sei eingebunden in das Bündel des Lebens. Daraus spricht zumeist die Hoffnung auf das ewige Leben.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "GlobalStoneFocus",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "F02_DE",
+      "text_ui": "Dies ist das Einzelgrab von Pawełek Przeworski. Er kam 1944 aus Warschau an. Er starb am 14. April 1945, nur einen Tag vor der Befreiung. Vermutlich war es sein eigener Vater, der seinen verstorbenen Sohn hier begrub.",
+      "text_spoken": "Dies ist das Einzelgrab von Pawełek Przeworski. Er kam 1944 aus Warschau an. Er starb am 14. April 1945, nur einen Tag vor der Befreiung. Vermutlich war es sein eigener Vater, der seinen verstorbenen Sohn hier begrub.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "F02",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "F04_DE",
+      "text_ui": "Hier ruht Tosia Grünberg. Sie starb am 23. April 1945, kurz nach der Befreiung. Mitüberlebende bestatteten sie. Wie ein Buch beschreibt: 'Die Mädchen füllten das Grab und sagten Kaddisch für ihre Freundin'.",
+      "text_spoken": "Hier ruht Tosia Grünberg. Sie starb am 23. April 1945, kurz nach der Befreiung. Mitüberlebende bestatteten sie. Wie ein Buch beschreibt: Die Mädchen füllten das Grab und sagten Kaddisch für ihre Freundin.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "F04",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "ExchangeCamp_DE",
+      "text_ui": "Dieser Bereich war das 1943 eingerichtete Austauschlager. Jüdische Geiseln wurden hier festgehalten, um gegen internierte Deutsche oder Devisen ausgetauscht zu werden. Aber für über zweitausend von ihnen bedeutete es nur eine kurze Verschonung vor ihrer Ermordung in Auschwitz.",
+      "text_spoken": "Dieser Bereich war das 1943 eingerichtete Austauschlager. Jüdische Geiseln wurden hier festgehalten, um gegen internierte Deutsche oder Devisen ausgetauscht zu werden. Aber für über zweitausend von ihnen bedeutete es nur eine kurze Verschonung vor ihrer Ermordung in Auschwitz.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Zone_SocioCultural",
+      "target_id": "ExchangeCamp",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 15.0,
+      "duration": 0.0
+    },
+    {
+      "id": "WomenCamp_DE",
+      "text_ui": "Wir betreten das ehemalige Frauenlager. Im August 1944 wurden hier Tausende Frauen aus dem Warschauer Aufstand und aus Auschwitz in großen Zelten untergebracht. Als im November ein Sturm die Zelte zerstörte, brachte die SS die Frauen in Baracken unter.",
+      "text_spoken": "Wir betreten das ehemalige Frauenlager. Im August 1944 wurden hier Tausende Frauen aus dem Warschauer Aufstand und aus Auschwitz in großen Zelten untergebracht. Als im November ein Sturm die Zelte zerstörte, brachte die SS die Frauen in Baracken unter.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Zone_SocioCultural",
+      "target_id": "WomenCamp",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 15.0,
+      "duration": 0.0
+    },
+    {
+      "id": "NewMassGraveL_DE",
+      "text_ui": "1964 bestand der französische Überlebende Georges Bonnet darauf, dass außerhalb des Gedenkstättengeländes noch Asche und Knochenreste sichtbar seien. Seine Hartnäckigkeit führte zur Entdeckung neuer Überreste und zur Anlage dieses L-förmigen symbolischen Massengrabes.",
+      "text_spoken": "1964 bestand der französische Überlebende Georges Bonnet darauf, dass außerhalb des Gedenkstättengeländes noch Asche und Knochenreste sichtbar seien. Seine Hartnäckigkeit führte zur Entdeckung neuer Überreste und zur Anlage dieses L-förmigen symbolischen Massengrabes.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Zone_SocioCultural",
+      "target_id": "NewMassGraveL",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 15.0,
+      "duration": 0.0
+    },
+    {
+      "id": "LiberationDrama_DE",
+      "text_ui": "Als die britische Armee dieses Lager am 15. April 1945 befreite, stießen sie auf etwa zehntausend unbestattete Leichen. Trotz sofortiger Rettungsmaßnahmen starben im darauffolgenden Monat über zehntausend weitere befreite Häftlinge.",
+      "text_spoken": "Als die britische Armee dieses Lager am 15. April 1945 befreite, stießen sie auf etwa zehntausend unbestattete Leichen. Trotz sofortiger Rettungsmaßnahmen starben im darauffolgenden Monat über zehntausend weitere befreite Häftlinge.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "LiberationDrama",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "RegistryDestruction_DE",
+      "text_ui": "Die Gesamtzahl der Toten hier wird auf zweiundfünfzigtausend geschätzt. Nur etwa elftausend sind heute namentlich bekannt, da die SS kurz vor der Befreiung die gesamte Lagerregistratur vernichtete.",
+      "text_spoken": "Die Gesamtzahl der Toten hier wird auf zweiundfünfzigtausend geschätzt. Nur etwa elftausend sind heute namentlich bekannt, da die SS kurz vor der Befreiung die gesamte Lagerregistratur vernichtete.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "RegistryDestruction",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "AnneFrankStone_DE",
+      "text_ui": "Dieser symbolische Gedenkstein ist den Schwestern Anne und Margot Frank gewidmet, die hier im März 1945 starben. Er wurde erst viel später, im Juni 1999, auf Initiative ihres Cousins Buddy Elias zu Annes siebzigstem Geburtstag errichtet.",
+      "text_spoken": "Dieser symbolische Gedenkstein ist den Schwestern Anne und Margot Frank gewidmet, die hier im März 1945 starben. Er wurde erst viel später, im Juni 1999, auf Initiative ihres Cousins Buddy Elias zu Annes siebzigstem Geburtstag errichtet.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "AnneFrankStone",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "BelgianGraves_DE",
+      "text_ui": "Hier befanden sich die Einzelgräber von Xavier Delouvroy und Albert Platteau, die im Mai 1945 starben. Historische Luftaufnahmen zeigen, dass sich während des Lagerbestehens genau in diesem Bereich Kartoffel- und Rübenmieten befanden, die dann als Bestattungsorte dienten.",
+      "text_spoken": "Hier befanden sich die Einzelgräber von Xavier Delouvroy und Albert Platteau, die im Mai 1945 starben. Historische Luftaufnahmen zeigen, dass sich während des Lagerbestehens genau in diesem Bereich Kartoffel- und Rübenmieten befanden, die dann als Bestattungsorte dienten.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "BelgianGraves",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "PolishCross_DE",
+      "text_ui": "Polnische katholische Überlebende errichteten hier kurz nach der Befreiung ein Birkenkreuz. Am 2. November 1945 wurde es durch dieses Hochkreuz ersetzt. Die lateinische Inschrift lautet: 'Hier liegen diejenigen, die durch Leid gegangen sind'.",
+      "text_spoken": "Polnische katholische Überlebende errichteten hier kurz nach der Befreiung ein Birkenkreuz. Am 2. November 1945 wurde es durch dieses Hochkreuz ersetzt. Die lateinische Inschrift lautet: Hier liegen diejenigen, die durch Leid gegangen sind.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "PolishCross",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "JewishMemorial_DE",
+      "text_ui": "Dies ist das jüdische Mahnmal. Ein provisorisches Denkmal wurde im September 1945 von jüdischen Displaced Persons enthüllt, um an die dreißigtausend jüdischen Opfer von Bergen-Belsen zu erinnern. Es wurde im April 1946 durch dieses steinerne Mahnmal ersetzt.",
+      "text_spoken": "Dies ist das jüdische Mahnmal. Ein provisorisches Denkmal wurde im September 1945 von jüdischen Displaced Persons enthüllt, um an die dreißigtausend jüdischen Opfer von Bergen-Belsen zu erinnern. Es wurde im April 1946 durch dieses steinerne Mahnmal ersetzt.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "JewishMemorial",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "Obelisk_DE",
+      "text_ui": "Sehen Sie sich diesen sechsundzwanzig Meter hohen Obelisken an, der 1952 eingeweiht wurde. Während der Zeremonie sagte Präsident Theodor Heuss, dass die Deutschen von den Dingen gewusst hätten und dass dieser Obelisk 'ein Stachel sein' solle, um die Gesellschaft immer an die Verbrechen zu erinnern.",
+      "text_spoken": "Sehen Sie sich diesen sechsundzwanzig Meter hohen Obelisken an, der 1952 eingeweiht wurde. Während der Zeremonie sagte Präsident Theodor Heuss, dass die Deutschen von den Dingen gewusst hätten und dass dieser Obelisk ein Stachel sein solle, um die Gesellschaft immer an die Verbrechen zu erinnern.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "Obelisk",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "Original14MassGraves_DE",
+      "text_ui": "Sie spazieren in der Nähe der vierzehn ursprünglichen Massengräber, die etwa dreiundzwanzigtausend Menschen bergen. Zwischen 1959 und 1961 wurden sie erhöht und mit diesen Einfassungsmauern aus Sandstein umgeben.",
+      "text_spoken": "Sie spazieren in der Nähe der vierzehn ursprünglichen Massengräber, die etwa dreiundzwanzigtausend Menschen bergen. Zwischen 1959 und 1961 wurden sie erhöht und mit diesen Einfassungsmauern aus Sandstein umgeben.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Zone_SocioCultural",
+      "target_id": "Original14MassGraves",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 15.0,
+      "duration": 0.0
+    },
+    {
+      "id": "MenCamp_DE",
+      "text_ui": "Wir befinden uns nun im ehemaligen Männerlager. Im März 1944 kamen hier tausend kranke Häftlinge aus dem Außenlager Dora an. Sie sollten ihre Arbeitsfähigkeit wiedererlangen, aber die SS tat nichts, um ihnen zu helfen, und die Todesrate stieg signifikant an.",
+      "text_spoken": "Wir befinden uns nun im ehemaligen Männerlager. Im März 1944 kamen hier tausend kranke Häftlinge aus dem Außenlager Dora an. Sie sollten ihre Arbeitsfähigkeit wiedererlangen, aber die SS tat nichts, um ihnen zu helfen, und die Todesrate stieg signifikant an.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Zone_SocioCultural",
+      "target_id": "MenCamp",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 15.0,
+      "duration": 0.0
+    },
+    {
+      "id": "DeathMarches_DE",
+      "text_ui": "Als die Alliierten vorrückten, evakuierte die SS frontnahe Lager. Zwischen Dezember 1944 und April 1945 wurden mindestens fünfundachtzigtausend Menschen auf Todesmärschen hierher geschickt. Die Überfüllung verursachte katastrophale Seuchen.",
+      "text_spoken": "Als die Alliierten vorrückten, evakuierte die SS frontnahe Lager. Zwischen Dezember 1944 und April 1945 wurden mindestens fünfundachtzigtausend Menschen auf Todesmärschen hierher geschickt. Die Überfüllung verursachte katastrophale Seuchen.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "DeathMarches",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "CampPyres_DE",
+      "text_ui": "Allein im März 1945 starben mehr als achtzehntausend Häftlinge in Bergen-Belsen. Da das Krematorium des Lagers nicht für eine so gewaltige Anzahl von Toten ausgelegt war, ging die SS dazu über, die Leichen auf Scheiterhaufen zu verbrennen.",
+      "text_spoken": "Allein im März 1945 starben mehr als achtzehntausend Häftlinge in Bergen-Belsen. Da das Krematorium des Lagers nicht für eine so gewaltige Anzahl von Toten ausgelegt war, ging die SS dazu über, die Leichen auf Scheiterhaufen zu verbrennen.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "CampPyres",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "BarracksBurning_DE",
+      "text_ui": "Am 21. Mai 1945 brannte die britische Armee die letzte Häftlingsbaracke nieder. Das Verbrennen des ehemaligen Lagers sollte die Ausbreitung der dort wütenden tödlichen Krankheitserreger verhindern und ließ nur die neu angelegten Gräber zurück.",
+      "text_spoken": "Am 21. Mai 1945 brannte die britische Armee die letzte Häftlingsbaracke nieder. Das Verbrennen des ehemaligen Lagers sollte die Ausbreitung der dort wütenden tödlichen Krankheitserreger verhindern und ließ nur die neu angelegten Gräber zurück.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "BarracksBurning",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "DisplacedPersons_DE",
+      "text_ui": "Nach der Befreiung wurden Überlebende in nahegelegene Kasernen verlegt. Mehr als zehntausend polnische Katholiken und zwölftausend jüdische Menschen blieben dort und bildeten Displaced-Persons-Camps, wo sie auf ihre Auswanderung warteten.",
+      "text_spoken": "Nach der Befreiung wurden Überlebende in nahegelegene Kasernen verlegt. Mehr als zehntausend polnische Katholiken und zwölftausend jüdische Menschen blieben dort und bildeten Displaced-Persons-Camps, wo sie auf ihre Auswanderung warteten.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "DisplacedPersons",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "Detour01_DE",
+      "text_ui": "Lassen Sie uns unseren Weg für einen Moment ändern. Ich sehe, Sie möchten sich dieses Denkmal genauer ansehen.",
+      "text_spoken": "Lassen Sie uns unseren Weg für einen Moment ändern. Ich sehe, Sie möchten sich dieses Denkmal genauer ansehen.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Detour_Transition",
+      "target_id": "Detour01",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "Detour02_DE",
+      "text_ui": "Sie haben hier drüben etwas bemerkt. Lassen Sie uns anhalten und die Geschichte dieses Ortes entdecken.",
+      "text_spoken": "Sie haben hier drüben etwas bemerkt. Lassen Sie uns anhalten und die Geschichte dieses Ortes entdecken.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Detour_Transition",
+      "target_id": "Detour02",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "CampOrigins_DE",
+      "text_ui": "Im Frühjahr 1943 beschlossen Heinrich Himmler und das Auswärtige Amt, hier im südlichen Teil des bestehenden Kriegsgefangenenlagers ein Konzentrationslager einzurichten.",
+      "text_spoken": "Im Frühjahr 1943 beschlossen Heinrich Himmler und das Auswärtige Amt, hier im südlichen Teil des bestehenden Kriegsgefangenenlagers ein Konzentrationslager einzurichten.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "CampOrigins",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "CrematoriumDiaries_DE",
+      "text_ui": "Ein Teil der Geschichte wurde durch Häftlingstagebücher gerettet. Im Jahr 1944 führten zwei Häftlinge, Hans Horwitz und Arnold Koller, die zur Arbeit im Krematorium gezwungen wurden, ein geheimes Tagebuch.",
+      "text_spoken": "Ein Teil der Geschichte wurde durch Häftlingstagebücher gerettet. Im Jahr 1944 führten zwei Häftlinge, Hans Horwitz und Arnold Koller, die zur Arbeit im Krematorium gezwungen wurden, ein geheimes Tagebuch.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "CrematoriumDiaries",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "PowCemetery_DE",
+      "text_ui": "In der unmittelbaren Nähe dieses Lagers befindet sich eine weitere große Gräberanlage. Es ist der Friedhof des ehemaligen Kriegsgefangenenlagers, auf dem Tausende sowjetischer, polnischer und italienischer Militärinternierter bestattet wurden.",
+      "text_spoken": "In der unmittelbaren Nähe dieses Lagers befindet sich eine weitere große Gräberanlage. Es ist der Friedhof des ehemaligen Kriegsgefangenenlagers, auf dem Tausende sowjetischer, polnischer und italienischer Militärinternierter bestattet wurden.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "PowCemetery",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "NeuHohneSettlement_DE",
+      "text_ui": "Nachdem die Häftlingsbaracken niedergebrannt waren, blieben die Gebäude im ehemaligen SS-Vorlager bestehen. Von 1946 bis 1953 bestand hier die Siedlung 'Neu-Hohne' zur Unterbringung deutscher Vertriebener.",
+      "text_spoken": "Nachdem die Häftlingsbaracken niedergebrannt waren, blieben die Gebäude im ehemaligen SS-Vorlager bestehen. Von 1946 bis 1953 bestand hier die Siedlung Neu-Hohne zur Unterbringung deutscher Vertriebener.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Zone_SocioCultural",
+      "target_id": "NeuHohneSettlement",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 15.0,
+      "duration": 0.0
+    },
+    {
+      "id": "C6_DE",
+      "text_ui": "Sie können hier eine Menora sehen, den siebenarmigen Leuchter. Sie ist ein berühmtes Symbol des Judentums und stellt den von den Römern erbeuteten Lichtspender des Jerusalemer Tempels dar.",
+      "text_spoken": "Sie können hier eine Menora sehen, den siebenarmigen Leuchter. Sie ist ein berühmtes Symbol des Judentums und stellt den von den Römern erbeuteten Lichtspender des Jerusalemer Tempels dar.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "C6",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "Detour03_DE",
+      "text_ui": "Nehmen Sie sich Zeit. Dieser Gedenkstein ist wichtig.",
+      "text_spoken": "Nehmen Sie sich Zeit. Dieser Gedenkstein ist wichtig.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Detour_Transition",
+      "target_id": "Detour03",
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0,
+      "duration": 0.0
+    },
+    {
+      "id": "ExchangeCampAnomaly_EN",
+      "text_ui": "Unlike extermination camps with gas chambers, Bergen-Belsen was originally established in 1943 as an 'exchange camp'. The SS intended to trade Jewish hostages for German prisoners of war or foreign currency. But as the war turned, it became a dumping ground for death marches, leading to unimaginable horrors.",
+      "text_spoken": "Unlike extermination camps with gas chambers, Bergen-Belsen was originally established in 1943 as an exchange camp. The SS intended to trade Jewish hostages for German prisoners of war or foreign currency. But as the war turned, it became a dumping ground for death marches, leading to unimaginable horrors.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "ExchangeCampAnomaly",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "ExchangeCampAnomaly_DE",
+      "text_ui": "Im Gegensatz zu Vernichtungslagern mit Gaskammern wurde Bergen-Belsen 1943 ursprünglich als 'Austauschlager' eingerichtet. Die SS wollte jüdische Geiseln gegen deutsche Kriegsgefangene oder Devisen austauschen. Als sich der Krieg jedoch wendete, wurde es zur Endstation für Todesmärsche, was zu unvorstellbaren Schrecken führte.",
+      "text_spoken": "Im Gegensatz zu Vernichtungslagern mit Gaskammern wurde Bergen-Belsen 1943 ursprünglich als Austauschlager eingerichtet. Die SS wollte jüdische Geiseln gegen deutsche Kriegsgefangene oder Devisen austauschen. Als sich der Krieg jedoch wendete, wurde es zur Endstation für Todesmärsche, was zu unvorstellbaren Schrecken führte.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "ExchangeCampAnomaly",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "JosefKramer_EN",
+      "text_ui": "In December 1944, Josef Kramer, later dubbed the 'Beast of Belsen', took command of the camp. Under his rule, tens of thousands of prisoners from evacuated camps were brought here. He did nothing to provide adequate food, water, or sanitation, causing catastrophic outbreaks of typhus and starvation.",
+      "text_spoken": "In December 1944, Josef Kramer, later dubbed the Beast of Belsen, took command of the camp. Under his rule, tens of thousands of prisoners from evacuated camps were brought here. He did nothing to provide adequate food, water, or sanitation, causing catastrophic outbreaks of typhus and starvation.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "JosefKramer",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "JosefKramer_DE",
+      "text_ui": "Im Dezember 1944 übernahm Josef Kramer, später die 'Bestie von Belsen' genannt, das Kommando über das Lager. Unter seiner Herrschaft wurden Zehntausende Häftlinge aus evakuierten Lagern hierher gebracht. Er tat nichts, um angemessene Nahrung, Wasser oder sanitäre Einrichtungen bereitzustellen, was zu katastrophalen Ausbrüchen von Typhus und Hunger führte.",
+      "text_spoken": "Im Dezember 1944 übernahm Josef Kramer, später die Bestie von Belsen genannt, das Kommando über das Lager. Unter seiner Herrschaft wurden Zehntausende Häftlinge aus evakuierten Lagern hierher gebracht. Er tat nichts, um angemessene Nahrung, Wasser oder sanitäre Einrichtungen bereitzustellen, was zu katastrophalen Ausbrüchen von Typhus und Hunger führte.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "JosefKramer",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "BelsenTrials_EN",
+      "text_ui": "After the liberation, the British military tribunal sought justice. In the autumn of 1945, the Belsen Trials were held in the nearby town of Lüneburg. Forty-five SS members and kapos, including Commandant Kramer, stood trial for their horrific war crimes and crimes against humanity.",
+      "text_spoken": "After the liberation, the British military tribunal sought justice. In the autumn of 1945, the Belsen Trials were held in the nearby town of Luneburg. Forty five SS members and kapos, including Commandant Kramer, stood trial for their horrific war crimes and crimes against humanity.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "BelsenTrials",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "BelsenTrials_DE",
+      "text_ui": "Nach der Befreiung suchte das britische Militärtribunal nach Gerechtigkeit. Im Herbst 1945 fanden die Belsen-Prozesse in der nahegelegenen Stadt Lüneburg statt. Fünfundvierzig SS-Mitglieder und Kapos, darunter Kommandant Kramer, standen wegen ihrer schrecklichen Kriegsverbrechen und Verbrechen gegen die Menschlichkeit vor Gericht.",
+      "text_spoken": "Nach der Befreiung suchte das britische Militärtribunal nach Gerechtigkeit. Im Herbst 1945 fanden die Belsen-Prozesse in der nahegelegenen Stadt Luneburg statt. Funfundvierzig SS-Mitglieder und Kapos, darunter Kommandant Kramer, standen wegen ihrer schrecklichen Kriegsverbrechen und Verbrechen gegen die Menschlichkeit vor Gericht.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Global_Walking",
+      "target_id": "BelsenTrials",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG1_EN",
+      "text_ui": "You are standing before Mass Grave number one. This mound was closed on April 22, 1945. Beneath this sandstone frame rest the remains of approximately 1,000 people.",
+      "text_spoken": "You are standing before Mass Grave number one. This mound was closed on April 22, 1945. Beneath this sandstone frame rest the remains of approximately 1,000 people.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG1",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG1_DE",
+      "text_ui": "Sie stehen vor dem Massengrab Nummer one. Dieser Hügel wurde am 22. April 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 1.000 Menschen.",
+      "text_spoken": "Sie stehen vor dem Massengrab Nummer one. Dieser Hügel wurde am 22. April 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 1.000 Menschen.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG1",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG2_EN",
+      "text_ui": "You are standing before Mass Grave number two. This mound was closed on April 23, 1945. Beneath this sandstone frame rest the remains of approximately 5,000 people.",
+      "text_spoken": "You are standing before Mass Grave number two. This mound was closed on April 23, 1945. Beneath this sandstone frame rest the remains of approximately 5,000 people.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG2",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG2_DE",
+      "text_ui": "Sie stehen vor dem Massengrab Nummer two. Dieser Hügel wurde am 23. April 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 5.000 Menschen.",
+      "text_spoken": "Sie stehen vor dem Massengrab Nummer two. Dieser Hügel wurde am 23. April 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 5.000 Menschen.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG2",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG3_EN",
+      "text_ui": "You are standing before Mass Grave number three. This mound was closed on April 24, 1945. Beneath this sandstone frame rest the remains of approximately 5,000 people.",
+      "text_spoken": "You are standing before Mass Grave number three. This mound was closed on April 24, 1945. Beneath this sandstone frame rest the remains of approximately 5,000 people.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG3",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG3_DE",
+      "text_ui": "Sie stehen vor dem Massengrab Nummer three. Dieser Hügel wurde am 24. April 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 5.000 Menschen.",
+      "text_spoken": "Sie stehen vor dem Massengrab Nummer three. Dieser Hügel wurde am 24. April 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 5.000 Menschen.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG3",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG4_EN",
+      "text_ui": "You are standing before Mass Grave number four. This mound was closed on April 27, 1945. Beneath this sandstone frame rest the remains of approximately 2,000 people.",
+      "text_spoken": "You are standing before Mass Grave number four. This mound was closed on April 27, 1945. Beneath this sandstone frame rest the remains of approximately 2,000 people.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG4",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG4_DE",
+      "text_ui": "Sie stehen vor dem Massengrab Nummer four. Dieser Hügel wurde am 27. April 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 2.000 Menschen.",
+      "text_spoken": "Sie stehen vor dem Massengrab Nummer four. Dieser Hügel wurde am 27. April 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 2.000 Menschen.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG4",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG5_EN",
+      "text_ui": "You are standing before Mass Grave number five. This mound was closed on April 23, 1945. Beneath this sandstone frame rest the remains of approximately 1,000 people.",
+      "text_spoken": "You are standing before Mass Grave number five. This mound was closed on April 23, 1945. Beneath this sandstone frame rest the remains of approximately 1,000 people.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG5",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG5_DE",
+      "text_ui": "Sie stehen vor dem Massengrab Nummer five. Dieser Hügel wurde am 23. April 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 1.000 Menschen.",
+      "text_spoken": "Sie stehen vor dem Massengrab Nummer five. Dieser Hügel wurde am 23. April 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 1.000 Menschen.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG5",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG6_EN",
+      "text_ui": "You are standing before Mass Grave number six. This mound was closed on April 26, 1945. Beneath this sandstone frame rest the remains of approximately 800 people.",
+      "text_spoken": "You are standing before Mass Grave number six. This mound was closed on April 26, 1945. Beneath this sandstone frame rest the remains of approximately 800 people.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG6",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG6_DE",
+      "text_ui": "Sie stehen vor dem Massengrab Nummer six. Dieser Hügel wurde am 26. April 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 800 Menschen.",
+      "text_spoken": "Sie stehen vor dem Massengrab Nummer six. Dieser Hügel wurde am 26. April 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 800 Menschen.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG6",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG7_EN",
+      "text_ui": "You are standing before Mass Grave number seven. This mound was closed on May 1945. Beneath this sandstone frame rest the remains of approximately 1,000 people.",
+      "text_spoken": "You are standing before Mass Grave number seven. This mound was closed on May 1945. Beneath this sandstone frame rest the remains of approximately 1,000 people.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG7",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG7_DE",
+      "text_ui": "Sie stehen vor dem Massengrab Nummer seven. Dieser Hügel wurde am Mai 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 1.000 Menschen.",
+      "text_spoken": "Sie stehen vor dem Massengrab Nummer seven. Dieser Hügel wurde am Mai 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 1.000 Menschen.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG7",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG8_EN",
+      "text_ui": "You are standing before Mass Grave number eight. This mound was closed on May 1945. Beneath this sandstone frame rest the remains of approximately 2,500 people.",
+      "text_spoken": "You are standing before Mass Grave number eight. This mound was closed on May 1945. Beneath this sandstone frame rest the remains of approximately 2,500 people.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG8",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG8_DE",
+      "text_ui": "Sie stehen vor dem Massengrab Nummer eight. Dieser Hügel wurde am Mai 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 2.500 Menschen.",
+      "text_spoken": "Sie stehen vor dem Massengrab Nummer eight. Dieser Hügel wurde am Mai 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 2.500 Menschen.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG8",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG9_EN",
+      "text_ui": "You are standing before Mass Grave number nine. This mound was closed on May 1945. Beneath this sandstone frame rest the remains of approximately 800 people.",
+      "text_spoken": "You are standing before Mass Grave number nine. This mound was closed on May 1945. Beneath this sandstone frame rest the remains of approximately 800 people.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG9",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG9_DE",
+      "text_ui": "Sie stehen vor dem Massengrab Nummer nine. Dieser Hügel wurde am Mai 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 800 Menschen.",
+      "text_spoken": "Sie stehen vor dem Massengrab Nummer nine. Dieser Hügel wurde am Mai 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 800 Menschen.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG9",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG10_EN",
+      "text_ui": "You are standing before Mass Grave number ten. This mound was closed on May 1945. Beneath this sandstone frame rest the remains of approximately 800 people.",
+      "text_spoken": "You are standing before Mass Grave number ten. This mound was closed on May 1945. Beneath this sandstone frame rest the remains of approximately 800 people.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG10",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG10_DE",
+      "text_ui": "Sie stehen vor dem Massengrab Nummer ten. Dieser Hügel wurde am Mai 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 800 Menschen.",
+      "text_spoken": "Sie stehen vor dem Massengrab Nummer ten. Dieser Hügel wurde am Mai 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 800 Menschen.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG10",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG11a_EN",
+      "text_ui": "You are standing before Mass Grave number eleven a. This mound was closed on May 1945. Beneath this sandstone frame rest the remains of approximately 2,500 people.",
+      "text_spoken": "You are standing before Mass Grave number eleven a. This mound was closed on May 1945. Beneath this sandstone frame rest the remains of approximately 2,500 people.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG11a",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG11a_DE",
+      "text_ui": "Sie stehen vor dem Massengrab Nummer eleven a. Dieser Hügel wurde am Mai 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 2.500 Menschen.",
+      "text_spoken": "Sie stehen vor dem Massengrab Nummer eleven a. Dieser Hügel wurde am Mai 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 2.500 Menschen.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG11a",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG11b_EN",
+      "text_ui": "You are standing before Mass Grave number eleven b. This mound was closed on May 1945. Beneath this sandstone frame rest the remains of approximately 800 people.",
+      "text_spoken": "You are standing before Mass Grave number eleven b. This mound was closed on May 1945. Beneath this sandstone frame rest the remains of approximately 800 people.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG11b",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG11b_DE",
+      "text_ui": "Sie stehen vor dem Massengrab Nummer eleven b. Dieser Hügel wurde am Mai 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 800 Menschen.",
+      "text_spoken": "Sie stehen vor dem Massengrab Nummer eleven b. Dieser Hügel wurde am Mai 1945 geschlossen. Unter dieser Sandsteineinfassung ruhen die sterblichen Überreste von etwa 800 Menschen.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG11b",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG12_EN",
+      "text_ui": "This mass grave, designated as MG12, holds unknown victims of the camp. The exact number of individuals interred here remains unrecorded in historical archives.",
+      "text_spoken": "This mass grave, designated as MG12, holds unknown victims of the camp. The exact number of individuals interred here remains unrecorded in historical archives.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG12",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG12_DE",
+      "text_ui": "Dieses Massengrab, bezeichnet als MG12, birgt unbekannte Opfer des Lagers. Die genaue Anzahl der hier Ruhenden ist in den historischen Archiven nicht verzeichnet.",
+      "text_spoken": "Dieses Massengrab, bezeichnet als MG12, birgt unbekannte Opfer des Lagers. Die genaue Anzahl der hier Ruhenden ist in den historischen Archiven nicht verzeichnet.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG12",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG13_EN",
+      "text_ui": "This is a symbolic, L-shaped mass grave, designed in the mid-1960s. It exists only because a French survivor, Georges Bonnet, insisted that ashes and bone fragments were still visible here, outside the original memorial boundaries. His persistence forced the authorities to enclose this new burial site.",
+      "text_spoken": "This is a symbolic, L shaped mass grave, designed in the mid nineteen sixties. It exists only because a French survivor, Georges Bonnet, insisted that ashes and bone fragments were still visible here, outside the original memorial boundaries. His persistence forced the authorities to enclose this new burial site.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG13",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "MG13_DE",
+      "text_ui": "Dies ist ein symbolisches, L-förmiges Massengrab, das Mitte der 1960er Jahre entworfen wurde. Es existiert nur, weil der französische Überlebende Georges Bonnet darauf bestand, dass hier, außerhalb der ursprünglichen Gedenkstättengrenzen, noch Asche und Knochenfragmente sichtbar waren. Seine Beharrlichkeit zwang die Behörden, diese neue Grabstätte einzufrieden.",
+      "text_spoken": "Dies ist ein symbolisches, L-förmiges Massengrab, das Mitte der 1960er Jahre entworfen wurde. Es existiert nur, weil der französische Überlebende Georges Bonnet darauf bestand, dass hier, außerhalb der ursprünglichen Gedenkstättengrenzen, noch Asche und Knochenfragmente sichtbar waren. Seine Beharrlichkeit zwang die Behörden, diese neue Grabstätte einzufrieden.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Micro_StoneFocus",
+      "target_id": "MG13",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "Symbol_Cross_EN",
+      "text_ui": "This cross marks the grave of a Christian victim. Bergen-Belsen held not only Jewish prisoners, but also Polish, Belgian, and other political prisoners and prisoners of war of various faiths.",
+      "text_spoken": "This cross marks the grave of a Christian victim. Bergen-Belsen held not only Jewish prisoners, but also Polish, Belgian, and other political prisoners and prisoners of war of various faiths.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Symbol_Info",
+      "target_id": "Symbol_Cross",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "Symbol_Cross_DE",
+      "text_ui": "Dieses Kreuz kennzeichnet das Grab eines christlichen Opfers. In Bergen-Belsen waren nicht nur jüdische Häftlinge inhaftiert, sondern auch polnische, belgische und andere politische Gefangene und Kriegsgefangene unterschiedlichen Glaubens.",
+      "text_spoken": "Dieses Kreuz kennzeichnet das Grab eines christlichen Opfers. In Bergen-Belsen waren nicht nur jüdische Häftlinge inhaftiert, sondern auch polnische, belgische und andere politische Gefangene und Kriegsgefangene unterschiedlichen Glaubens.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Symbol_Info",
+      "target_id": "Symbol_Cross",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "Symbol_StarOfDavid_EN",
+      "text_ui": "The Star of David, or Magen David, is the most widely recognized symbol of Judaism. Its presence here marks the grave of a Jewish victim, and it is the most common symbol found throughout this memorial.",
+      "text_spoken": "The Star of David, or Magen David, is the most widely recognized symbol of Judaism. Its presence here marks the grave of a Jewish victim, and it is the most common symbol found throughout this memorial.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Symbol_Info",
+      "target_id": "Symbol_StarOfDavid",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "Symbol_StarOfDavid_DE",
+      "text_ui": "Der Davidstern, oder Magen David, ist das bekannteste Symbol des Judentums. Seine Anwesenheit hier kennzeichnet das Grab eines jüdischen Opfers und ist das häufigste Symbol in dieser Gedenkstätte.",
+      "text_spoken": "Der Davidstern, oder Magen David, ist das bekannteste Symbol des Judentums. Seine Anwesenheit hier kennzeichnet das Grab eines jüdischen Opfers und ist das häufigste Symbol in dieser Gedenkstätte.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Symbol_Info",
+      "target_id": "Symbol_StarOfDavid",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "Symbol_BrokenTreeTrunk_EN",
+      "text_ui": "A tree trunk carved as if broken or cut short is a traditional funerary symbol, used across many cultures and faiths, representing a life interrupted before its time, often that of someone young.",
+      "text_spoken": "A tree trunk carved as if broken or cut short is a traditional funerary symbol, used across many cultures and faiths, representing a life interrupted before its time, often that of someone young.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Symbol_Info",
+      "target_id": "Symbol_BrokenTreeTrunk",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "Symbol_BrokenTreeTrunk_DE",
+      "text_ui": "Ein wie abgebrochen dargestellter Baumstamm ist ein traditionelles Grabsymbol, das in vielen Kulturen und Glaubensrichtungen verwendet wird. Es steht für ein Leben, das vorzeitig unterbrochen wurde, oft das eines jungen Menschen.",
+      "text_spoken": "Ein wie abgebrochen dargestellter Baumstamm ist ein traditionelles Grabsymbol, das in vielen Kulturen und Glaubensrichtungen verwendet wird. Es steht für ein Leben, das vorzeitig unterbrochen wurde, oft das eines jungen Menschen.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Symbol_Info",
+      "target_id": "Symbol_BrokenTreeTrunk",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "Symbol_Menorah_EN",
+      "text_ui": "The Menorah, a seven-branched candelabrum, is one of the oldest symbols of Judaism, tracing back to the ancient Temple in Jerusalem. On a headstone, it affirms the Jewish faith and heritage of the person buried here.",
+      "text_spoken": "The Menorah, a seven-branched candelabrum, is one of the oldest symbols of Judaism, tracing back to the ancient Temple in Jerusalem. On a headstone, it affirms the Jewish faith and heritage of the person buried here.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Symbol_Info",
+      "target_id": "Symbol_Menorah",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "Symbol_Menorah_DE",
+      "text_ui": "Die Menora, ein siebenarmiger Leuchter, ist eines der ältesten Symbole des Judentums und geht auf den antiken Tempel in Jerusalem zurück. Auf einem Grabstein bekräftigt sie den jüdischen Glauben und das Erbe der hier bestatteten Person.",
+      "text_spoken": "Die Menora, ein siebenarmiger Leuchter, ist eines der ältesten Symbole des Judentums und geht auf den antiken Tempel in Jerusalem zurück. Auf einem Grabstein bekräftigt sie den jüdischen Glauben und das Erbe der hier bestatteten Person.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Symbol_Info",
+      "target_id": "Symbol_Menorah",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "Symbol_BlessingHandsKohen_EN",
+      "text_ui": "These carved hands, positioned in a traditional gesture of blessing, identify the deceased as a Kohen, a descendant of the ancient priestly line of Aaron. This symbol is reserved specifically for that lineage within Jewish tradition.",
+      "text_spoken": "These carved hands, positioned in a traditional gesture of blessing, identify the deceased as a Kohen, a descendant of the ancient priestly line of Aaron. This symbol is reserved specifically for that lineage within Jewish tradition.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Symbol_Info",
+      "target_id": "Symbol_BlessingHandsKohen",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "Symbol_BlessingHandsKohen_DE",
+      "text_ui": "Diese in einer traditionellen Segensgeste dargestellten Hände kennzeichnen den Verstorbenen als Kohen, einen Nachkommen der alten Priesterlinie Aarons. Dieses Symbol ist in der jüdischen Tradition ausschließlich dieser Abstammung vorbehalten.",
+      "text_spoken": "Diese in einer traditionellen Segensgeste dargestellten Hände kennzeichnen den Verstorbenen als Kohen, einen Nachkommen der alten Priesterlinie Aarons. Dieses Symbol ist in der jüdischen Tradition ausschließlich dieser Abstammung vorbehalten.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Symbol_Info",
+      "target_id": "Symbol_BlessingHandsKohen",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "Symbol_InsetPhotograph_EN",
+      "text_ui": "A small photographic portrait set into the stone was a common practice in several European funerary traditions, giving visitors a literal, lasting image of the person being remembered.",
+      "text_spoken": "A small photographic portrait set into the stone was a common practice in several European funerary traditions, giving visitors a literal, lasting image of the person being remembered.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Symbol_Info",
+      "target_id": "Symbol_InsetPhotograph",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "Symbol_InsetPhotograph_DE",
+      "text_ui": "Ein kleines, in den Stein eingelassenes Foto war in mehreren europäischen Grabtraditionen üblich und gibt den Besuchern ein bleibendes, tatsächliches Bild der Person, an die hier erinnert wird.",
+      "text_spoken": "Ein kleines, in den Stein eingelassenes Foto war in mehreren europäischen Grabtraditionen üblich und gibt den Besuchern ein bleibendes, tatsächliches Bild der Person, an die hier erinnert wird.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Symbol_Info",
+      "target_id": "Symbol_InsetPhotograph",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "Symbol_BelgianFlag_EN",
+      "text_ui": "This emblem marks the victim as a Belgian national. Bergen-Belsen was originally established in 1940 to hold French and Belgian prisoners of war, before its later, far darker purpose.",
+      "text_spoken": "This emblem marks the victim as a Belgian national. Bergen-Belsen was originally established in 1940 to hold French and Belgian prisoners of war, before its later, far darker purpose.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Symbol_Info",
+      "target_id": "Symbol_BelgianFlag",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "Symbol_BelgianFlag_DE",
+      "text_ui": "Dieses Emblem kennzeichnet das Opfer als belgischen Staatsangehörigen. Bergen-Belsen wurde 1940 ursprünglich errichtet, um französische und belgische Kriegsgefangene zu inhaftieren, bevor es später seinem weit dunkleren Zweck diente.",
+      "text_spoken": "Dieses Emblem kennzeichnet das Opfer als belgischen Staatsangehörigen. Bergen-Belsen wurde 1940 ursprünglich errichtet, um französische und belgische Kriegsgefangene zu inhaftieren, bevor es später seinem weit dunkleren Zweck diente.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Symbol_Info",
+      "target_id": "Symbol_BelgianFlag",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "Symbol_PolishCoatOfArms_EN",
+      "text_ui": "This coat of arms identifies the victim as a Polish national. Polish citizens, both Jewish and non-Jewish, were among the many nationalities held and killed at Bergen-Belsen.",
+      "text_spoken": "This coat of arms identifies the victim as a Polish national. Polish citizens, both Jewish and non-Jewish, were among the many nationalities held and killed at Bergen-Belsen.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Symbol_Info",
+      "target_id": "Symbol_PolishCoatOfArms",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    },
+    {
+      "id": "Symbol_PolishCoatOfArms_DE",
+      "text_ui": "Dieses Wappen kennzeichnet das Opfer als polnischen Staatsangehörigen. Polnische Bürgerinnen und Bürger, sowohl jüdische als auch nichtjüdische, gehörten zu den vielen Nationalitäten, die in Bergen-Belsen inhaftiert und getötet wurden.",
+      "text_spoken": "Dieses Wappen kennzeichnet das Opfer als polnischen Staatsangehörigen. Polnische Bürgerinnen und Bürger, sowohl jüdische als auch nichtjüdische, gehörten zu den vielen Nationalitäten, die in Bergen-Belsen inhaftiert und getötet wurden.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "type": "Symbol_Info",
+      "target_id": "Symbol_PolishCoatOfArms",
+      "duration": 0.0,
+      "area_center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "area_radius": 0.0
+    }
+  ]
+}

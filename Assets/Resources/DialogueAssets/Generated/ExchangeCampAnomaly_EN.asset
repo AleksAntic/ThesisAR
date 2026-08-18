@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 628cd516a59532849b7a2da6e8e1065a, type: 3}
+  m_Name: ExchangeCampAnomaly_EN
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  sequenceLabelId: ExchangeCampAnomaly_EN
+  narrativeCategory: 0
+  dialogueLines:
+  - subtitleText: Unlike extermination camps with gas chambers, Bergen-Belsen was
+      originally established in 1943 as an 'exchange camp'. The SS intended to trade
+      Jewish hostages for German prisoners of war or foreign currency. But as the
+      war turned, it became a dumping ground for death marches, leading to unimaginable
+      horrors.
+    voiceClip: {fileID: 0}
+    animationTriggerKey: Talk
+    duration: 0

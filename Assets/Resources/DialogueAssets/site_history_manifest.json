@@ -1,0 +1,16 @@
+{
+  "entries": [
+    { "id": "CampOrigins", "titleEN": "How the Camp Began", "titleDE": "Die Anfänge des Lagers" },
+    { "id": "ExchangeCampAnomaly", "titleEN": "An Unusual Camp", "titleDE": "Ein ungewöhnliches Lager" },
+    { "id": "JosefKramer", "titleEN": "Josef Kramer, the Beast of Belsen", "titleDE": "Josef Kramer, die Bestie von Belsen" },
+    { "id": "CampPyres", "titleEN": "March 1945: The Peak of Death", "titleDE": "März 1945: Der Höhepunkt des Sterbens" },
+    { "id": "DeathMarches", "titleEN": "The Death Marches", "titleDE": "Die Todesmärsche" },
+    { "id": "RegistryDestruction", "titleEN": "Counting the Dead", "titleDE": "Die Zahl der Toten" },
+    { "id": "PowCemetery", "titleEN": "The Prisoner-of-War Cemetery", "titleDE": "Der Kriegsgefangenenfriedhof" },
+    { "id": "CrematoriumDiaries", "titleEN": "Voices from the Diaries", "titleDE": "Stimmen aus den Tagebüchern" },
+    { "id": "LiberationDrama", "titleEN": "The Liberation", "titleDE": "Die Befreiung" },
+    { "id": "BarracksBurning", "titleEN": "Burning the Barracks", "titleDE": "Die Verbrennung der Baracken" },
+    { "id": "DisplacedPersons", "titleEN": "Life After Liberation", "titleDE": "Leben nach der Befreiung" },
+    { "id": "BelsenTrials", "titleEN": "The Belsen Trials", "titleDE": "Die Belsen-Prozesse" }
+  ]
+}

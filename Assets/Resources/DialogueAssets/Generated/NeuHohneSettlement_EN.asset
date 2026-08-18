@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 628cd516a59532849b7a2da6e8e1065a, type: 3}
+  m_Name: NeuHohneSettlement_EN
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  sequenceLabelId: NeuHohneSettlement_EN
+  narrativeCategory: 1
+  dialogueLines:
+  - subtitleText: After the prisoner barracks were burned down, the buildings in
+      the former SS forward camp remained. From 1946 to 1953, a settlement named
+      'Neu-Hohne' existed here to accommodate German expellees.
+    voiceClip: {fileID: 0}
+    animationTriggerKey: Talk
+    duration: 0

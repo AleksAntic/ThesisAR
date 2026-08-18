@@ -1,0 +1,30 @@
+# ThesisAR — Complete System Architecture, UI/UX & Hierarchy Snapshot
+
+## 1. Project Overview & Thesis Objective
+- **Project**: ThesisAR (Unity 6.4 + URP + Cesium Georeferencing).
+- **Domain**: Bergen-Belsen Memorial Site Augmented Reality Guided Tour.
+- **Thesis Experiment**: Evaluating 3 distinct guidance conditions on visitor cognitive load, spatial orientation, and narrative engagement:
+  1. **Personal Mode (Condition C)**: A 3D companion leads the user step-by-step on NavMesh paths, utilizing front-leading tethering and Inverse Kinematics (IK). Uses realistic `Universal Render Pipeline/Lit` human rendering.
+  2. **Intermediate Mode (Condition B)**: A 3D hologram avatar appears next to selected headstones on-demand to narrate victim biographies and explain symbols (e.g. Star of David, Broken Tree Trunk, Cross). Uses sci-fi `ThesisAR/HologramURP` Fresnel rim glow shader with smooth 1.2s dissolve fade-outs. Includes contextual "Ask More" fan-out chips.
+  3. **Impersonal Mode (Condition A)**: Autonomous exploration guided by 2D map views, search filtering, audio chapters, and data streams.
+
+## 2. Scene Hierarchy & Core Architecture
+- `[ThesisManager]`: Central orchestrator managing active `GuidanceMode` (`Personal`, `Intermediate`, `Impersonal`) and logging analytics events (`memorial_selected`, `mode_changed`, etc.).
+- `[UIManager]`: Central UI controller managing Onboarding, Search Panel, Detail Popup, 2D Map Mini Popup, Site History, 3D Model Inspector, and Subtitle Overlay.
+- `[CoachmarkTutorialController]`: Guided onboarding tutorial with 9 step-by-step highlights (Language support: English & German).
+- `[NarrationManager]`: Audio playback controller reading `.mp3` assets from `Assets/Resources/GuidanceAudio/` and syncing subtitles.
+- `[ModelInspectorUI]`: 3D stone model viewer with orthographic/perspective dolly zoom, local container scaling (`modelContainer.localScale`), close button, and victim title text.
+- `[AskMoreButtonController]`: Screen-fixed contextual fan-out chips ("Repeat", "Symbol") appearing near subtitles when the hologram is active.
+- `[InteractionHandler]`: Raycasts memorial objects in world space. Ignores empty ground taps to prevent avatar vanishing.
+
+## 3. Audio & Text Asset Standards
+- **Audio Engine**: `edge-tts` (Microsoft Neural Voices).
+- **Male English Voice**: `en-US-AndrewNeural` (Warm, Natural, Professional Male).
+- **Male German Voice**: `de-DE-ConradNeural`.
+- **Target Folder**: `Assets/Resources/GuidanceAudio/`
+- **Asset Naming Convention**: `WELCOME_EN.mp3`, `A3.mp3`, `K1.mp3`, `AUDIO_01_EN.mp3`, `Symbol_StarOfDavid_EN.mp3`.
+
+## 4. Key UX Principles
+- **No Sudden Disappearances**: Hologram uses 1.2s alpha dissolve fade-out.
+- **Ground Tap Safety**: Tapping empty space allows camera panning without closing panels or stopping audio.
+- **Micro vs Macro Narrative**: "Ask More" is tied to current stone (Micro); "Site History Panel" is for global camp history (Macro).

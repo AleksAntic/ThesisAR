@@ -1,0 +1,134 @@
+{
+  "entries": [
+    {
+      "key": "SETTINGS_TITLE",
+      "en": "Settings & Mode Configuration",
+      "de": "Einstellungen & Moduskonfiguration"
+    },
+    {
+      "key": "MODE_PERSONAL",
+      "en": "Personal Mode (3D Avatar Companion)",
+      "de": "Personal Modus (3D-Begleiter Avatar)"
+    },
+    {
+      "key": "MODE_INTERMEDIATE",
+      "en": "Intermediate Mode (Hologram at Stones)",
+      "de": "Intermediate Modus (Hologramm an den Steinen)"
+    },
+    {
+      "key": "MODE_IMPERSONAL",
+      "en": "Impersonal Mode (2D Map & Audio)",
+      "de": "Impersonal Modus (2D-Karte & Audio)"
+    },
+    {
+      "key": "LANGUAGE_LABEL",
+      "en": "Language",
+      "de": "Sprache"
+    },
+    {
+      "key": "SEARCH_PANEL_TITLE",
+      "en": "Database Search & Filtering",
+      "de": "Datenbanksuche & Filterung"
+    },
+    {
+      "key": "SEARCH_HINT",
+      "en": "Type name, surname or number to filter records...",
+      "de": "Namen, Nachnamen oder Nummer eingeben um zu filtern..."
+    },
+    {
+      "key": "SEARCH_CLEAR_FILTERS",
+      "en": "Clear All Filters",
+      "de": "Alle Filter löschen"
+    },
+    {
+      "key": "SEARCH_ALL_FIELDS",
+      "en": "All Fields",
+      "de": "Alle Felder"
+    },
+    {
+      "key": "SEARCH_FIRST_NAME",
+      "en": "First Name",
+      "de": "Vorname"
+    },
+    {
+      "key": "SEARCH_SURNAME",
+      "en": "Surname",
+      "de": "Nachname"
+    },
+    {
+      "key": "SEARCH_INMATE_NUM",
+      "en": "Inmate Number",
+      "de": "Häftlingsnummer"
+    },
+    {
+      "key": "SEARCH_BIRTH_PLACE",
+      "en": "Birth Place",
+      "de": "Geburtsort"
+    },
+    {
+      "key": "SEARCH_DEATH_PLACE",
+      "en": "Death Place",
+      "de": "Sterbeort"
+    },
+    {
+      "key": "SEARCH_BIRTH_DATE",
+      "en": "Birth Date",
+      "de": "Geburtsdatum"
+    },
+    {
+      "key": "SEARCH_DEATH_DATE",
+      "en": "Death Date",
+      "de": "Sterbedatum"
+    },
+    {
+      "key": "POPUP_VIEW_DETAILS",
+      "en": "View Full Profile",
+      "de": "Vollständiges Profil anzeigen"
+    },
+    {
+      "key": "POPUP_CLOSE",
+      "en": "Close",
+      "de": "Schließen"
+    },
+    {
+      "key": "POPUP_PLAY_AUDIO",
+      "en": "Play Narration",
+      "de": "Narration abspielen"
+    },
+    {
+      "key": "POPUP_STOP_AUDIO",
+      "en": "Stop Audio",
+      "de": "Audio stoppen"
+    },
+    {
+      "key": "POPUP_INSPECT_3D",
+      "en": "Inspect 3D Model",
+      "de": "3D-Modell inspizieren"
+    },
+    {
+      "key": "BTN_SUMMON_GUIDE",
+      "en": "Summon Guide",
+      "de": "Führer rufen"
+    },
+    {
+      "key": "HUD_DISTANCE_LABEL",
+      "en": "Distance to target",
+      "de": "Entfernung zum Ziel"
+    },
+    {
+      "key": "HUD_NEXT_WAYPOINT",
+      "en": "Next Stop",
+      "de": "Nächste Station"
+    },
+    {
+      "key": "ROUTE_ADD_STOP",
+      "en": "Add to current Route",
+      "de": "Zur aktuellen Route hinzufügen"
+    },
+    {
+      "key": "ROUTE_ADDED_STOP",
+      "en": "added already to route",
+      "de": "bereits zur Route hinzugefügt"
+    }
+  ]
+}

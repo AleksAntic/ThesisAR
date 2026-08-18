@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 628cd516a59532849b7a2da6e8e1065a, type: 3}
+  m_Name: StarOfDavid_DE
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  sequenceLabelId: StarOfDavid_DE
+  narrativeCategory: 2
+  dialogueLines:
+  - subtitleText: "Dieser Stein tr\xE4gt den Davidsschild. Die Nationalsozialisten
+      machten dieses positive Zeichen zu einem Symbol der Schmach und Vernichtung.
+      Aber f\xFCr die \xDCberlebenden in Bergen-Belsen wurde er zu einem Symbol der
+      Hoffnung auf ein selbstbestimmtes Leben im neu zu gr\xFCndenden Staat Israel."
+    voiceClip: {fileID: 0}
+    animationTriggerKey: Point
+    duration: 0

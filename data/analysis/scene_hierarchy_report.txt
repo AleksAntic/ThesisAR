@@ -1,0 +1,3115 @@
+﻿================================================================================
+📄 SCENE HIERARCHY & COMPONENT REF AUDIT REPORT
+Generated: 14/07/2026 16:37:55
+Active Scene: emptyy
+================================================================================
+
+🔹 _Managers [Active] - Pos: (718.24, 1558.85, 4.24), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+   🔸 Component: UIManager
+      🔗 m_Script -> UIManager (MonoScript)
+      🔗 uiCanvas -> Canvas (Canvas)
+      🔗 memorialDetailPanel -> Stone_Popup_Panel (GameObject)
+      🔗 memorialDetailCanvasGroup -> Stone_Popup_Panel (CanvasGroup)
+      🔗 memorialDetailRect -> Stone_Popup_Panel (RectTransform)
+      🔗 titleText -> Text_Stone_ID (TextMeshProUGUI)
+      🔗 descriptionText -> Text_Coordinates (TextMeshProUGUI)
+      🔗 personsListText -> Text_Dynamic_Inscription (TextMeshProUGUI)
+      🔗 closeButton -> Btn_Close (Button)
+      🔗 nextPersonButton -> Btn_Person_Right (Button)
+      🔗 prevPersonButton -> Btn_Person_Left (Button)
+      🔗 navigateHereButton -> Btn_GoToMap (Button)
+      🔗 fullNameText -> Text_Fullname (TextMeshProUGUI)
+      🔗 datesText -> Text_Dates (TextMeshProUGUI)
+      🔗 inmateNumberText -> Text_Inmate (TextMeshProUGUI)
+      🔗 symbolBadge1 -> Badge_Symbol (GameObject)
+      🔗 symbolBadge1Text -> Text_Label (TextMeshProUGUI)
+      🔗 symbolBadge2 -> Badge_Camp (GameObject)
+      🔗 symbolBadge2Text -> Text_Label (TextMeshProUGUI)
+      🔗 onboardingPanel -> Onboarding_Panel (GameObject)
+      🔗 arExplorationHub -> AR_Exploration_Hub (GameObject)
+      🔗 sidebarMenuPanel -> Sidebar_Menu_Panel (GameObject)
+      🔗 databaseSearchPanel -> Database_Search_Panel (GameObject)
+      🔗 map2DPanel -> Map_2D_Panel (GameObject)
+      🔗 startExperienceButton -> Btn_Start (Button)
+      🔗 hamburgerButton -> Btn_Hamburger (Button)
+      🔗 closeSidebarButton -> Btn_Close (Button)
+      🔗 navDatabaseButton -> Btn_Nav_Database (Button)
+      🔗 navMapButton -> Btn_Nav_Map (Button)
+      🔗 closeDatabaseButton -> Btn_Close (Button)
+      🔗 closeMapButton -> Btn_Close (Button)
+      🔗 guideMeButton -> Btn_Guide_Me (Button)
+      🔗 audioPlaybackButton -> Btn_Play_Audio (Button)
+      🔗 audioController -> Stone_Popup_Panel (PopupAudioController)
+      🔍 [UNASSIGNED] guideSubtitleText
+      🔗 addIconSprite -> White Add (Sprite)
+      🔗 addedIconSprite -> White Check (Sprite)
+      🔗 buttonEnglish -> Btn_English (Button)
+      🔗 buttonGerman -> Btn_German (Button)
+      🔗 buttonHebrew -> Btn_Hebrew (Button)
+      🔗 testLeftButton -> Btn_Left (Button)
+      🔗 testRightButton -> Btn_Right (Button)
+      🔗 searchInputField -> Search_Input_Field (TMP_InputField)
+      🔗 searchCategoryDropdown -> Filter_Category_Dropdown (TMP_Dropdown)
+      🔗 searchSymbolsDropdown -> DropdownForSymbols (TMP_Dropdown)
+      🔗 addFilterButton -> Btn_Filter (Button)
+      🔗 clearAllFiltersButton -> ClearAll_Btn (Button)
+      🔗 filterBadgesContainer -> Filters_Horizontal_Group (RectTransform)
+      🔗 filterBadgePrefab -> Badge_Filter (GameObject)
+      🔗 searchResultsContainer -> Content (RectTransform)
+      🔗 searchResultButtonPrefab -> searchResultButtonPrefab (GameObject)
+      🔗 searchCounterText -> Results_Count (TextMeshProUGUI)
+      🔗 locationSetupDropdown -> Dropdown_Checkpoints (TMP_Dropdown)
+      🔗 mapMiniPopupPanel -> Map_Mini_Popup (GameObject)
+      🔗 miniPopupIDText -> miniPopupIDText (TextMeshProUGUI)
+      🔗 miniPopupViewDetailsButton -> miniPopupViewDetailsButton (Button)
+      🔗 miniPopupCloseButton -> miniPopupCloseButton (Button)
+      🔗 mapCamera -> Map_Camera (Camera)
+      🔗 mapDisplayRect -> Belsen_Map_Graphic (RectTransform)
+      🔗 btnModePersonal -> Btn_Mode_Personal (Button)
+      🔗 btnModeIntermediate -> Btn_Mode_Intermediate (Button)
+      🔗 btnModeImpersonal -> Btn_Mode_Impersonal (Button)
+   🔸 Component: RouteManager
+      🔗 m_Script -> RouteManager (MonoScript)
+      🔗 lineRenderer -> _Managers (LineRenderer)
+      🔗 routeInfoText -> Route_info (TextMeshProUGUI)
+      🔗 simulatedGpsPlayer -> Simulated_GPS_Player (Transform)
+   🔸 Component: LineRenderer
+   🔸 Component: MemorialFilterManager
+   🔸 Component: PersistenceManager
+   🔸 Component: DialogueManager
+      🔗 m_Script -> DialogueManager (MonoScript)
+      🔗 companionAudioSource -> MaleCharacter (AudioSource)
+      🔗 companionAnimator -> MaleCharacter (Animator)
+
+🔹 AR_Core_Controller [Active] - Pos: (0.00, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+   🔸 Component: GeospatialManager
+      🔗 m_Script -> GeospatialManager (MonoScript)
+      🔗 arSession -> AR Session (ARSession)
+      🔗 earthManager -> AR_Core_Controller (AREarthManager)
+      🔗 anchorManager -> XR Origin (ARAnchorManager)
+      🔍 [UNASSIGNED] cesiumGeoreference
+      🔍 [UNASSIGNED] userCameraTransform
+   🔸 Component: ArDiagnostic
+   🔸 Component: MemorialSpawner
+      🔗 m_Script -> MemorialSpawner (MonoScript)
+      🔗 dataManager -> AR_Core_Controller (MemorialDataManager)
+      🔗 glbRootObject -> B-B Mem stone geolocation plan update20-05-2026 (Transform)
+      🔍 [UNASSIGNED] interactionPrefabOverlay
+   🔸 Component: MemorialDataManager
+   🔸 Component: AREarthManager
+   🔸 Component: InteractionHandler
+   🔸 Component: TourManager
+   🔸 Component: ARWayfindingManager
+      🔗 m_Script -> ARWayfindingManager (MonoScript)
+      🔗 memorialSpawner -> AR_Core_Controller (MemorialSpawner)
+      🔗 pathLineRenderer -> AR_Core_Controller (LineRenderer)
+      🔗 userCameraTransform -> Simulated_GPS_Player (Transform)
+      🔗 directionalArrowPrefab -> AR_DirectionalArrow_Prefab (GameObject)
+   🔸 Component: LineRenderer
+   🔸 Component: ThesisManager
+      🔗 m_Script -> ThesisManager (MonoScript)
+      🔍 [UNASSIGNED] impersonalGuidancePrefab
+      🔍 [UNASSIGNED] intermediateGuidancePrefab
+      🔍 [UNASSIGNED] personalGuidancePrefab
+      🔗 guideAvatarPrefab -> MaleCharacter (GameObject)
+      🔗 uiManager -> _Managers (UIManager)
+      🔗 wayfindingManager -> AR_Core_Controller (ARWayfindingManager)
+      🔗 memorialSpawner -> AR_Core_Controller (MemorialSpawner)
+
+🔹 --- STONE BAKER --- [Active] - Pos: (-42.45, 22.59, 5.04), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+   🔸 Component: StoneEditorBaker
+   🔸 Component: QuickTextureOptimizer
+
+🔹 NavMesh Surface [Active] - Pos: (-393.18, 111.40, -14.49), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+   🔸 Component: NavMeshSurface
+
+   🔹 Procedural_Roads_Container [Active] - Pos: (0.00, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+      🔸 Component: MeshFilter
+      🔸 Component: MeshRenderer
+      🔸 Component: MeshCollider
+      🔸 Component: NavMeshModifier
+
+🔹 Directional Light [Active] - Pos: (0.00, 3.00, 0.00), Rot: (50.00, 330.00, 0.00), Scale: (1.00, 1.00, 1.00)
+   🔸 Component: Light
+   🔸 Component: UniversalAdditionalLightData
+
+🔹 XR Origin [Active] - Pos: (0.00, 1.80, -5.91), Rot: (0.00, 258.14, 0.00), Scale: (1.00, 1.00, 1.00)
+   🔸 Component: XROrigin
+   🔸 Component: ARAnchorManager
+
+   🔹 Camera Offset [Active] - Pos: (0.00, 1.80, -5.91), Rot: (0.00, 258.14, 0.00), Scale: (1.00, 1.00, 1.00)
+
+      🔹 Main Camera [Active] - Pos: (0.00, 1.80, -5.91), Rot: (0.00, 258.14, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: Camera
+         🔸 Component: AudioListener
+         🔸 Component: ARCameraManager
+         🔸 Component: ARCameraBackground
+         🔸 Component: TrackedPoseDriver
+         🔸 Component: UniversalAdditionalCameraData
+
+🔹 ARCore Extensions [Active] - Pos: (0.00, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+   🔸 Component: ARCoreExtensions
+
+🔹 AR Session [Active] - Pos: (0.00, 0.06, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+   🔸 Component: ARSession
+   🔸 Component: ARInputManager
+
+🔹 Canvas [Active] - Pos: (540.00, 960.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+   🔸 Component: Canvas
+   🔸 Component: CanvasScaler
+   🔸 Component: GraphicRaycaster
+
+   🔹 Stone_Popup_Panel [Inactive] - Pos: (540.00, 960.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+      🔸 Component: CanvasRenderer
+      🔸 Component: Image
+      🔸 Component: VerticalLayoutGroup
+      🔸 Component: AudioSource
+      🔸 Component: CanvasGroup
+      🔸 Component: PopupAudioController
+
+      🔹 Header_Bar [Active] - Pos: (90.00, 210.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: VerticalLayoutGroup
+
+         🔹 Text_Stone_ID [Active] - Pos: (90.00, 160.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+         🔹 Text_Coordinates [Active] - Pos: (90.00, 160.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+      🔹 Person_Info_Area [Active] - Pos: (90.00, 210.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: VerticalLayoutGroup
+
+         🔹 Text_Fullname [Active] - Pos: (90.00, 97.10, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+            🔹 Btn_Person_Left [Active] - Pos: (130.00, 97.10, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+               🔸 Component: Button
+               🔸 Component: LayoutElement
+               🔸 Component: UIHoverFeedback
+
+               🔹 Text (TMP) [Active] - Pos: (130.00, 21.80, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: TextMeshProUGUI
+
+            🔹 Btn_Person_Right [Active] - Pos: (50.00, 97.10, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+               🔸 Component: Button
+               🔸 Component: LayoutElement
+               🔸 Component: UIHoverFeedback
+
+               🔹 Text (TMP) [Active] - Pos: (50.00, 21.80, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: TextMeshProUGUI
+
+         🔹 Text_Dates [Active] - Pos: (90.00, 97.10, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+         🔹 Text_Inmate [Active] - Pos: (90.00, 97.10, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+         🔹 Badges_Horizontal_Group [Active] - Pos: (500.00, 134.74, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: HorizontalLayoutGroup
+            🔸 Component: ContentSizeFitter
+
+            🔹 Badge_Symbol [Active] - Pos: (561.17, 134.74, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+               🔸 Component: LayoutElement
+               🔸 Component: ContentSizeFitter
+               🔸 Component: HorizontalLayoutGroup
+
+               🔹 Text_Label [Active] - Pos: (561.17, 112.24, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: TextMeshProUGUI
+
+            🔹 Badge_Camp [Active] - Pos: (722.86, 134.74, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+               🔸 Component: LayoutElement
+               🔸 Component: ContentSizeFitter
+               🔸 Component: HorizontalLayoutGroup
+
+               🔹 Text_Label [Active] - Pos: (722.86, 112.24, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: TextMeshProUGUI
+
+      🔹 Language_Tabs_Group [Active] - Pos: (90.00, 210.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: HorizontalLayoutGroup
+
+         🔹 Btn_English [Active] - Pos: (90.00, 165.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: Button
+            🔸 Component: UIHoverFeedback
+
+            🔹 Text (TMP) [Active] - Pos: (90.00, 165.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: TextMeshProUGUI
+
+         🔹 Btn_German [Active] - Pos: (90.00, 165.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: Button
+            🔸 Component: UIHoverFeedback
+
+            🔹 Text (TMP) [Active] - Pos: (90.00, 165.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: TextMeshProUGUI
+
+         🔹 Btn_Hebrew [Active] - Pos: (90.00, 165.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: Button
+            🔸 Component: UIHoverFeedback
+
+            🔹 Text (TMP) [Active] - Pos: (90.00, 165.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: TextMeshProUGUI
+
+      🔹 Inscription_Scroll_View [Active] - Pos: (90.00, 210.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+         🔸 Component: ScrollRect
+
+         🔹 Viewport [Active] - Pos: (90.00, -140.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: Mask
+
+            🔹 Content [Active] - Pos: (90.00, -140.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: ContentSizeFitter
+               🔸 Component: VerticalLayoutGroup
+
+               🔹 Text_Dynamic_Inscription [Active] - Pos: (120.00, -240.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: TextMeshProUGUI
+
+         🔹 Scrollbar Horizontal [Active] - Pos: (90.00, -140.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: Scrollbar
+
+            🔹 Sliding Area [Active] - Pos: (90.00, -130.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+               🔹 Handle [Active] - Pos: (100.00, -130.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: Image
+
+         🔹 Scrollbar Vertical [Active] - Pos: (90.00, -140.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: Scrollbar
+
+            🔹 Sliding Area [Active] - Pos: (86.00, -140.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+               🔹 Handle [Active] - Pos: (92.00, -130.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: Image
+
+      🔹 Bottom_Action_Bar [Active] - Pos: (90.00, 210.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+         🔹 Btn_Left [Active] - Pos: (235.00, 210.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: Button
+            🔸 Component: UIHoverFeedback
+
+            🔹 Text (TMP) [Active] - Pos: (235.00, 134.70, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: TextMeshProUGUI
+
+         🔹 Btn_Play_Audio [Active] - Pos: (90.00, 210.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: Button
+            🔸 Component: UIHoverFeedback
+
+            🔹 Text (TMP) [Active] - Pos: (90.00, 134.70, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: TextMeshProUGUI
+
+         🔹 Btn_Right [Active] - Pos: (-55.00, 210.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: Button
+            🔸 Component: UIHoverFeedback
+
+            🔹 Text (TMP) [Active] - Pos: (-55.00, 134.70, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: TextMeshProUGUI
+
+      🔹 Btn_GoToMap [Active] - Pos: (806.00, 338.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+         🔸 Component: Button
+         🔸 Component: LayoutElement
+         🔸 Component: UIHoverFeedback
+
+         🔹 Text (TMP) [Active] - Pos: (806.00, 269.40, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+      🔹 Btn_Close [Active] - Pos: (910.00, 1630.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+         🔸 Component: Button
+         🔸 Component: LayoutElement
+         🔸 Component: UIHoverFeedback
+
+         🔹 Text (TMP) [Active] - Pos: (910.00, 1630.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+   🔹 AR_Exploration_Hub [Inactive] - Pos: (690.00, 1880.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+      🔹 Origin_Selector_Panel [Active] - Pos: (25.00, 1860.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+
+         🔹 Dropdown_Checkpoints [Active] - Pos: (185.00, 1827.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: TMP_Dropdown
+
+            🔹 Label [Active] - Pos: (177.50, 1827.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: TextMeshProUGUI
+
+            🔹 Arrow [Active] - Pos: (316.00, 1827.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+
+            🔹 Template [Inactive] - Pos: (185.00, 1797.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+               🔸 Component: ScrollRect
+
+               🔹 Viewport [Active] - Pos: (25.00, 1797.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: Mask
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: Image
+
+                  🔹 Content [Active] - Pos: (182.50, 1797.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Item [Active] - Pos: (182.50, 1783.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: Toggle
+
+                        🔹 Item Background [Active] - Pos: (182.50, 1783.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                           🔸 Component: CanvasRenderer
+                           🔸 Component: Image
+
+                        🔹 Item Checkmark [Active] - Pos: (35.00, 1783.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                           🔸 Component: CanvasRenderer
+                           🔸 Component: Image
+
+                        🔹 Item Label [Active] - Pos: (187.50, 1782.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                           🔸 Component: CanvasRenderer
+                           🔸 Component: TextMeshProUGUI
+
+               🔹 Scrollbar [Active] - Pos: (345.00, 1797.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: Image
+                  🔸 Component: Scrollbar
+
+                  🔹 Sliding Area [Active] - Pos: (341.00, 1622.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Handle [Active] - Pos: (341.00, 1622.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: CanvasRenderer
+                        🔸 Component: Image
+
+         🔹 Dropdown_zones [Active] - Pos: (185.00, 1737.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: TMP_Dropdown
+
+            🔹 Label [Active] - Pos: (177.50, 1737.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: TextMeshProUGUI
+
+            🔹 Arrow [Active] - Pos: (316.00, 1737.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+
+            🔹 Template [Inactive] - Pos: (185.00, 1707.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+               🔸 Component: ScrollRect
+
+               🔹 Viewport [Active] - Pos: (25.00, 1707.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: Mask
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: Image
+
+                  🔹 Content [Active] - Pos: (182.50, 1707.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Item [Active] - Pos: (182.50, 1693.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: Toggle
+
+                        🔹 Item Background [Active] - Pos: (182.50, 1693.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                           🔸 Component: CanvasRenderer
+                           🔸 Component: Image
+
+                        🔹 Item Checkmark [Active] - Pos: (35.00, 1693.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                           🔸 Component: CanvasRenderer
+                           🔸 Component: Image
+
+                        🔹 Item Label [Active] - Pos: (187.50, 1692.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                           🔸 Component: CanvasRenderer
+                           🔸 Component: TextMeshProUGUI
+
+               🔹 Scrollbar [Active] - Pos: (345.00, 1707.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: Image
+                  🔸 Component: Scrollbar
+
+                  🔹 Sliding Area [Active] - Pos: (341.00, 1532.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Handle [Active] - Pos: (341.00, 1532.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: CanvasRenderer
+                        🔸 Component: Image
+
+      🔹 Navigation_HUD_Panel [Active] - Pos: (651.00, 1880.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+         🔸 Component: VerticalLayoutGroup
+
+         🔹 Text_Target_Stone [Active] - Pos: (651.00, 1850.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+         🔹 Text_Distance_Indicator [Active] - Pos: (651.00, 1800.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+      🔹 Btn_Hamburger [Active] - Pos: (1043.00, 1863.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+         🔸 Component: Button
+         🔸 Component: UIHoverFeedback
+
+         🔹 Text (TMP) [Active] - Pos: (1008.00, 1752.70, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+   🔹 Onboarding_Panel [Active] - Pos: (540.00, 960.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+      🔸 Component: CanvasRenderer
+      🔸 Component: Image
+
+      🔹 Text_Title [Active] - Pos: (507.00, 1214.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: TextMeshProUGUI
+         🔸 Component: LayoutElement
+
+      🔹 Text_Instructions [Active] - Pos: (0.00, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: TextMeshProUGUI
+         🔸 Component: LayoutElement
+
+      🔹 Mode_Buttons_Row [Active] - Pos: (0.00, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: HorizontalLayoutGroup
+         🔸 Component: LayoutElement
+
+         🔹 Btn_Mode_Personal [Active] - Pos: (110.75, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: Button
+            🔸 Component: UIHoverFeedback
+
+            🔹 Text (TMP) [Active] - Pos: (110.75, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: TextMeshProUGUI
+
+         🔹 Btn_Mode_Intermediate [Active] - Pos: (344.75, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: Button
+            🔸 Component: UIHoverFeedback
+
+            🔹 Text (TMP) [Active] - Pos: (344.75, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: TextMeshProUGUI
+
+         🔹 Btn_Mode_Impersonal [Active] - Pos: (578.75, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: Button
+            🔸 Component: UIHoverFeedback
+
+            🔹 Text (TMP) [Active] - Pos: (578.75, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: TextMeshProUGUI
+
+      🔹 Btn_Start [Active] - Pos: (0.00, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+         🔸 Component: Button
+         🔸 Component: UIHoverFeedback
+         🔸 Component: LayoutElement
+
+         🔹 Text (TMP) [Active] - Pos: (0.00, 24.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+   🔹 Database_Search_Panel [Inactive] - Pos: (540.00, 960.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+      🔸 Component: CanvasRenderer
+      🔸 Component: Image
+
+      🔹 Filter_group [Active] - Pos: (540.00, 1754.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: HorizontalLayoutGroup
+
+         🔹 Filter_Category_Dropdown [Active] - Pos: (130.00, 1749.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: TMP_Dropdown
+
+            🔹 Label [Active] - Pos: (122.50, 1748.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: TextMeshProUGUI
+
+            🔹 Arrow [Active] - Pos: (215.00, 1749.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+
+            🔹 Template [Inactive] - Pos: (130.00, 1726.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+               🔸 Component: ScrollRect
+
+               🔹 Viewport [Active] - Pos: (30.00, 1726.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: Mask
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: Image
+
+                  🔹 Content [Active] - Pos: (127.50, 1726.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Item [Active] - Pos: (127.50, 1712.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: Toggle
+
+                        🔹 Item Background [Active] - Pos: (127.50, 1712.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                           🔸 Component: CanvasRenderer
+                           🔸 Component: Image
+
+                        🔹 Item Checkmark [Active] - Pos: (40.00, 1712.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                           🔸 Component: CanvasRenderer
+                           🔸 Component: Image
+
+                        🔹 Item Label [Active] - Pos: (132.50, 1711.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                           🔸 Component: CanvasRenderer
+                           🔸 Component: TextMeshProUGUI
+
+               🔹 Scrollbar [Active] - Pos: (230.00, 1726.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: Image
+                  🔸 Component: Scrollbar
+
+                  🔹 Sliding Area [Active] - Pos: (226.00, 1551.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Handle [Active] - Pos: (226.00, 1551.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: CanvasRenderer
+                        🔸 Component: Image
+
+         🔹 DropdownForSymbols [Inactive] - Pos: (580.00, 1774.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: TMP_Dropdown
+            🔸 Component: LayoutElement
+
+            🔹 Label [Active] - Pos: (572.50, 1743.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: TextMeshProUGUI
+
+            🔹 Arrow [Active] - Pos: (915.00, 1744.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+
+            🔹 Template [Inactive] - Pos: (580.00, 1716.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+               🔸 Component: ScrollRect
+
+               🔹 Viewport [Active] - Pos: (230.00, 1716.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: Mask
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: Image
+
+                  🔹 Content [Active] - Pos: (571.00, 1716.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Item [Active] - Pos: (571.00, 1702.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: Toggle
+
+                        🔹 Item Background [Active] - Pos: (571.00, 1702.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                           🔸 Component: CanvasRenderer
+                           🔸 Component: Image
+
+                        🔹 Item Checkmark [Active] - Pos: (240.00, 1702.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                           🔸 Component: CanvasRenderer
+                           🔸 Component: Image
+
+                        🔹 Item Label [Active] - Pos: (576.00, 1701.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                           🔸 Component: CanvasRenderer
+                           🔸 Component: TextMeshProUGUI
+
+               🔹 Scrollbar [Active] - Pos: (930.00, 1716.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: Image
+                  🔸 Component: Scrollbar
+
+                  🔹 Sliding Area [Active] - Pos: (920.00, 1541.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Handle [Active] - Pos: (920.00, 1409.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: CanvasRenderer
+                        🔸 Component: Image
+
+         🔹 Search_Input_Field [Active] - Pos: (603.33, 1774.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: TMP_InputField
+
+            🔹 Text Area [Active] - Pos: (603.33, 1743.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: RectMask2D
+
+               🔹 Placeholder [Active] - Pos: (603.33, 1743.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: TextMeshProUGUI
+                  🔸 Component: LayoutElement
+
+               🔹 Text [Active] - Pos: (603.33, 1743.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: TextMeshProUGUI
+
+         🔹 Btn_Filter [Active] - Pos: (1001.67, 1649.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: Button
+            🔸 Component: LayoutElement
+            🔸 Component: UIHoverFeedback
+
+            🔹 Text (TMP) [Active] - Pos: (1001.67, 1623.70, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: TextMeshProUGUI
+
+      🔹 Btn_Close [Active] - Pos: (975.00, 1860.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+         🔸 Component: Button
+         🔸 Component: LayoutElement
+         🔸 Component: UIHoverFeedback
+
+         🔹 Text (TMP) [Active] - Pos: (975.00, 1860.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+      🔹 Results_Count [Active] - Pos: (493.00, 1580.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: TextMeshProUGUI
+
+      🔹 row [Active] - Pos: (540.00, 1664.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: HorizontalLayoutGroup
+
+         🔹 Filters_Horizontal_Group [Active] - Pos: (485.00, 1664.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: HorizontalLayoutGroup
+            🔸 Component: ScrollRect
+            🔸 Component: LayoutElement
+
+            🔹 Badge_Filter [Inactive] - Pos: (42.65, 1641.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+               🔸 Component: LayoutElement
+               🔸 Component: ContentSizeFitter
+               🔸 Component: HorizontalLayoutGroup
+
+               🔹 Text_Label [Active] - Pos: (42.65, 1641.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: TextMeshProUGUI
+
+            🔹 Badge_Filter2 [Inactive] - Pos: (214.84, 1639.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+               🔸 Component: LayoutElement
+               🔸 Component: ContentSizeFitter
+               🔸 Component: HorizontalLayoutGroup
+
+               🔹 Text_Label [Active] - Pos: (214.84, 1639.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: TextMeshProUGUI
+
+         🔹 ClearAll_Btn [Active] - Pos: (995.00, 1664.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: LayoutElement
+            🔸 Component: HorizontalLayoutGroup
+            🔸 Component: Button
+            🔸 Component: UIHoverFeedback
+
+            🔹 Text_Label [Active] - Pos: (995.00, 1664.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: TextMeshProUGUI
+
+      🔹 Search_Results_Scroll_View [Active] - Pos: (540.00, 880.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+         🔸 Component: ScrollRect
+
+         🔹 Viewport [Active] - Pos: (89.95, 1530.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: Mask
+
+            🔹 Content [Active] - Pos: (89.95, 1530.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: ContentSizeFitter
+               🔸 Component: VerticalLayoutGroup
+
+         🔹 Scrollbar Horizontal [Active] - Pos: (89.95, 230.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: Scrollbar
+
+            🔹 Sliding Area [Active] - Pos: (536.50, 235.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+               🔹 Handle [Active] - Pos: (536.50, 235.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: Image
+
+         🔹 Scrollbar Vertical [Active] - Pos: (990.05, 1530.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: Scrollbar
+
+            🔹 Sliding Area [Active] - Pos: (985.05, 883.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+               🔹 Handle [Active] - Pos: (985.05, 883.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: Image
+
+         🔹 searchResultButtonPrefab [Active] - Pos: (539.95, 1500.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: Button
+            🔸 Component: LayoutElement
+            🔸 Component: UIHoverFeedback
+
+            🔹 Text (TMP) [Active] - Pos: (539.95, 1500.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: TextMeshProUGUI
+
+            🔹 RouteActionButton [Active] - Pos: (918.95, 1506.20, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+               🔸 Component: Button
+               🔸 Component: UIHoverFeedback
+
+               🔹 Text (TMP) [Active] - Pos: (918.15, 1480.70, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: TextMeshProUGUI
+
+   🔹 Map_2D_Panel [Inactive] - Pos: (540.00, 960.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+      🔸 Component: CanvasRenderer
+      🔸 Component: Image
+
+      🔹 Btn_Close [Active] - Pos: (910.00, 1630.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+         🔸 Component: Button
+         🔸 Component: LayoutElement
+         🔸 Component: UIHoverFeedback
+
+         🔹 Text (TMP) [Active] - Pos: (910.00, 1630.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+      🔹 Belsen_Map_Graphic [Active] - Pos: (540.00, 1124.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: RawImage
+         🔸 Component: Map2DController
+            🔗 m_Script -> Map2DController (MonoScript)
+            🔗 mapCamera -> Map_Camera (Camera)
+            🔗 mapMiniPopupPanel -> Map_Mini_Popup (RectTransform)
+            🔗 uiMarkerPrefab -> UI_Marker_Prefab (GameObject)
+            🔗 uiUserGpsMarker -> UI_User_GPS (RectTransform)
+            🔗 uiUserGazeCone -> UserGazeCone (RectTransform)
+            🔗 simulatedUserTransform -> Simulated_GPS_Player (Transform)
+         🔸 Component: RectMask2D
+
+         🔹 Map_Mini_Popup [Active] - Pos: (540.00, 1074.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+
+            🔹 miniPopupIDText [Active] - Pos: (540.00, 1169.90, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: TextMeshProUGUI
+
+            🔹 miniPopupViewDetailsButton [Active] - Pos: (540.00, 1124.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+               🔸 Component: Button
+               🔸 Component: UIHoverFeedback
+
+               🔹 Text (TMP) [Inactive] - Pos: (549.40, 1112.70, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: TextMeshProUGUI
+
+            🔹 miniPopupCloseButton [Active] - Pos: (572.60, 1198.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+               🔸 Component: Button
+               🔸 Component: UIHoverFeedback
+
+               🔹 Text (TMP) [Active] - Pos: (572.60, 1198.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: TextMeshProUGUI
+
+            🔹 point [Active] - Pos: (540.00, 1103.30, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+
+         🔹 UI_User_GPS [Active] - Pos: (700.00, 1124.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+
+            🔹 UserGazeCone [Active] - Pos: (700.00, 1125.00, 0.00), Rot: (0.00, 0.00, 320.05), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+
+      🔹 Btn_Create_Route [Active] - Pos: (813.00, 454.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+         🔸 Component: Button
+         🔸 Component: UIHoverFeedback
+
+         🔹 Text (TMP) [Active] - Pos: (813.00, 454.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+      🔹 Btn_Guide_Me [Active] - Pos: (813.00, 371.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+         🔸 Component: Button
+         🔸 Component: UIHoverFeedback
+
+         🔹 Text (TMP) [Active] - Pos: (813.00, 371.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+      🔹 Route_info [Active] - Pos: (273.00, 449.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: TextMeshProUGUI
+
+      🔹 Tour_Dropdown [Active] - Pos: (290.00, 626.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+         🔸 Component: TMP_Dropdown
+
+         🔹 Label [Active] - Pos: (282.50, 625.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+         🔹 Arrow [Active] - Pos: (425.00, 626.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+
+         🔹 Template [Inactive] - Pos: (290.00, 593.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: ScrollRect
+
+            🔹 Viewport [Active] - Pos: (140.00, 593.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: Mask
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+
+               🔹 Content [Active] - Pos: (287.50, 593.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Item [Active] - Pos: (287.50, 568.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                     🔸 Component: Toggle
+
+                     🔹 Item Background [Active] - Pos: (287.50, 568.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: CanvasRenderer
+                        🔸 Component: Image
+
+                     🔹 Item Checkmark [Active] - Pos: (150.00, 568.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: CanvasRenderer
+                        🔸 Component: Image
+
+                     🔹 Item Label [Active] - Pos: (292.50, 567.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: CanvasRenderer
+                        🔸 Component: TextMeshProUGUI
+
+            🔹 Scrollbar [Active] - Pos: (440.00, 593.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+               🔸 Component: Scrollbar
+
+               🔹 Sliding Area [Active] - Pos: (436.00, 418.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Handle [Active] - Pos: (436.00, 418.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                     🔸 Component: CanvasRenderer
+                     🔸 Component: Image
+
+   🔹 Sidebar_Menu_Panel [Inactive] - Pos: (854.77, 960.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+      🔸 Component: CanvasRenderer
+      🔸 Component: Image
+      🔸 Component: VerticalLayoutGroup
+      🔸 Component: SettingsUIController
+
+      🔹 Btn_Close [Active] - Pos: (1000.00, 1840.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+         🔸 Component: Button
+         🔸 Component: LayoutElement
+         🔸 Component: UIHoverFeedback
+
+         🔹 Text (TMP) [Active] - Pos: (1000.00, 1840.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+      🔹 Btn_Nav_Database [Active] - Pos: (854.77, -195.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+         🔸 Component: Button
+         🔸 Component: UIHoverFeedback
+
+         🔹 Text (TMP) [Active] - Pos: (854.77, -195.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+      🔹 Btn_Nav_Map [Active] - Pos: (854.77, -325.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+         🔸 Component: Button
+         🔸 Component: UIHoverFeedback
+
+         🔹 Text (TMP) [Active] - Pos: (854.77, -325.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+      🔹 row [Active] - Pos: (854.77, 1477.60, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+         🔹 Label (1) [Active] - Pos: (706.07, 1478.90, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Text
+
+         🔹 textPreview [Active] - Pos: (854.77, 1426.10, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+         🔹 Subtiltle_Slider [Active] - Pos: (926.87, 1477.60, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: Slider
+
+            🔹 Background [Active] - Pos: (926.87, 1477.60, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+
+            🔹 Fill Area [Active] - Pos: (921.87, 1477.60, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+               🔹 Fill [Active] - Pos: (790.12, 1477.60, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: Image
+
+            🔹 Handle Slide Area [Active] - Pos: (926.87, 1477.60, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+               🔹 Handle [Active] - Pos: (795.12, 1477.60, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: CanvasRenderer
+                  🔸 Component: Image
+
+      🔹 ThesisMode_Dropdown [Active] - Pos: (604.77, 626.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+         🔸 Component: TMP_Dropdown
+
+         🔹 Label [Active] - Pos: (597.27, 625.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+         🔹 Arrow [Active] - Pos: (739.77, 626.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+
+         🔹 Template [Inactive] - Pos: (604.77, 593.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: ScrollRect
+
+            🔹 Viewport [Active] - Pos: (454.77, 593.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: Mask
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+
+               🔹 Content [Active] - Pos: (602.27, 593.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Item [Active] - Pos: (602.27, 568.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                     🔸 Component: Toggle
+
+                     🔹 Item Background [Active] - Pos: (602.27, 568.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: CanvasRenderer
+                        🔸 Component: Image
+
+                     🔹 Item Checkmark [Active] - Pos: (464.77, 568.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: CanvasRenderer
+                        🔸 Component: Image
+
+                     🔹 Item Label [Active] - Pos: (607.27, 567.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: CanvasRenderer
+                        🔸 Component: TextMeshProUGUI
+
+            🔹 Scrollbar [Active] - Pos: (754.77, 593.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+               🔸 Component: Scrollbar
+
+               🔹 Sliding Area [Active] - Pos: (750.77, 418.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Handle [Active] - Pos: (750.77, 418.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                     🔸 Component: CanvasRenderer
+                     🔸 Component: Image
+
+      🔹 VirtualGuide_Toggle [Active] - Pos: (854.77, 1360.20, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: Toggle
+
+         🔹 Background [Active] - Pos: (679.77, 1360.20, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+
+            🔹 Checkmark [Active] - Pos: (679.77, 1360.20, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+
+         🔹 Label [Active] - Pos: (863.77, 1359.70, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Text
+
+      🔹 WorldSpace_Toggle [Active] - Pos: (854.77, 1230.20, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: Toggle
+
+         🔹 Background [Active] - Pos: (679.77, 1230.20, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+
+            🔹 Checkmark [Active] - Pos: (679.77, 1230.20, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+
+         🔹 Label [Active] - Pos: (863.77, 1229.70, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Text
+
+      🔹 DevMode_Toggle [Active] - Pos: (854.77, 1100.20, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: Toggle
+
+         🔹 Background [Active] - Pos: (679.77, 1100.20, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+
+            🔹 Checkmark [Active] - Pos: (679.77, 1100.20, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: Image
+
+         🔹 Label [Active] - Pos: (863.77, 1099.70, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Text
+
+   🔹 Diagnostic_Panel [Inactive] - Pos: (540.00, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+      🔸 Component: CanvasRenderer
+      🔸 Component: Image
+
+      🔹 DiagnosticTextLeft [Active] - Pos: (340.00, 102.75, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: TextMeshProUGUI
+
+      🔹 DiagnosticTextRight [Active] - Pos: (740.00, 102.75, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: TextMeshProUGUI
+
+   🔹 TutorialOverlay [Inactive] - Pos: (540.00, 960.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+      🔹 FrameTop [Active] - Pos: (540.00, 960.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+
+      🔹 FrameBottom [Active] - Pos: (540.00, 960.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+
+      🔹 FrameLeft [Active] - Pos: (540.00, 960.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+
+      🔹 FrameRight [Active] - Pos: (540.00, 960.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+
+      🔹 Bubble [Active] - Pos: (540.00, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+
+         🔹 BubbleText [Active] - Pos: (540.00, 13.50, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+         🔹 StepCounterText [Active] - Pos: (429.50, -63.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+         🔹 ArrowGlyph [Active] - Pos: (540.00, 87.30, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+            🔹 TMP SubMeshUI [LiberationSans SDF Material + LiberationSans SDF Atlas] [Active] - Pos: (540.00, 87.30, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: LayoutElement
+               🔸 Component: CanvasRenderer
+               🔸 Component: TMP_SubMeshUI
+
+         🔹 SkipButton [Active] - Pos: (633.50, -63.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: Button
+
+            🔹 Label [Active] - Pos: (633.50, -63.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: TextMeshProUGUI
+
+      🔹 Toast [Inactive] - Pos: (540.00, 96.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+
+         🔹 ToastText [Active] - Pos: (540.00, 96.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+   🔹 AskMoreWidget [Inactive] - Pos: (1040.00, 200.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+      🔸 Component: AskMoreButtonController
+      🔸 Component: AudioSource
+
+      🔹 MainButton [Active] - Pos: (980.00, 230.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+         🔸 Component: Button
+
+         🔹 Text [Active] - Pos: (980.00, 230.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+      🔹 ChipContainer [Inactive] - Pos: (980.00, 305.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: VerticalLayoutGroup
+
+         🔹 RepeatChip [Active] - Pos: (980.00, 305.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: Button
+
+            🔹 Label [Active] - Pos: (980.00, 305.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: TextMeshProUGUI
+
+         🔹 SymbolChip [Active] - Pos: (980.00, 305.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: Image
+            🔸 Component: Button
+
+            🔹 Label [Active] - Pos: (980.00, 305.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: CanvasRenderer
+               🔸 Component: TextMeshProUGUI
+
+   🔹 SiteHistoryPanel [Inactive] - Pos: (540.00, 960.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+      🔹 CloseButton [Active] - Pos: (684.00, 1152.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+         🔸 Component: Button
+
+         🔹 Label [Active] - Pos: (684.00, 1152.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+      🔹 ChapterListContainer [Active] - Pos: (540.00, 976.80, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: VerticalLayoutGroup
+
+      🔹 ChapterButtonPrefab [Inactive] - Pos: (540.00, 960.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+         🔸 Component: Button
+
+         🔹 Label [Active] - Pos: (540.00, 960.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+      🔹 NowPlayingText [Active] - Pos: (540.00, 811.20, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: TextMeshProUGUI
+
+      🔹 SubtitleText [Active] - Pos: (540.00, 756.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: TextMeshProUGUI
+
+   🔹 Btn_SiteHistory [Inactive] - Pos: (20.00, 1800.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+      🔸 Component: CanvasRenderer
+      🔸 Component: Image
+      🔸 Component: Button
+
+      🔹 Label [Active] - Pos: (50.00, 1770.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: TextMeshProUGUI
+
+   🔹 SiteHistoryPanel [Inactive] - Pos: (540.00, 960.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+      🔹 CloseButton [Active] - Pos: (684.00, 1152.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+         🔸 Component: Button
+
+         🔹 Label [Active] - Pos: (684.00, 1152.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+      🔹 ChapterListContainer [Active] - Pos: (540.00, 976.80, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: VerticalLayoutGroup
+
+      🔹 ChapterButtonPrefab [Inactive] - Pos: (540.00, 960.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: Image
+         🔸 Component: Button
+
+         🔹 Label [Active] - Pos: (540.00, 960.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+            🔸 Component: CanvasRenderer
+            🔸 Component: TextMeshProUGUI
+
+      🔹 NowPlayingText [Active] - Pos: (540.00, 811.20, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: TextMeshProUGUI
+
+      🔹 SubtitleText [Active] - Pos: (540.00, 756.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: CanvasRenderer
+         🔸 Component: TextMeshProUGUI
+
+🔹 EventSystem [Active] - Pos: (0.00, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+   🔸 Component: EventSystem
+   🔸 Component: InputSystemUIInputModule
+
+🔹 AR Geospatial Creator Origin [Active] - Pos: (0.00, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+   🔸 Component: ARGeospatialCreatorOrigin
+   🔸 Component: CesiumGeoreference
+      🔗 m_Script -> CesiumGeoreference (MonoScript)
+      🔍 [UNASSIGNED] _ellipsoidOverride
+   🔸 Component: CesiumCameraManager
+   🔸 Component: CesiumOriginSwitcher
+
+   🔹 Cesium3DTileset [Inactive] - Pos: (0.00, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+      🔸 Component: Cesium3DTileset
+
+   🔹 Cesium World Terrain [Inactive] - Pos: (0.00, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+      🔸 Component: Cesium3DTileset
+      🔸 Component: CesiumIonRasterOverlay
+
+🔹 Simulated_GPS_Player [Active] - Pos: (-9.60, -0.63, -21.70), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+   🔸 Component: SimulationAutopilot
+   🔸 Component: EditorCharacterController
+
+🔹 FieldTestManager [Active] - Pos: (-319.59, 0.00, 16.36), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+   🔸 Component: FieldTestManager
+
+   🔹 Zone_MassGraves [Active] - Pos: (-462.29, 0.00, 28.06), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+      🔸 Component: SoccerFieldZone
+      🔸 Component: LineRenderer
+
+   🔹 Zone_MemorialWall [Active] - Pos: (-269.59, 0.00, 32.26), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+      🔸 Component: SoccerFieldZone
+      🔸 Component: LineRenderer
+
+   🔹 Zone_I  [Active] - Pos: (-295.89, 0.00, -40.94), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+      🔸 Component: SoccerFieldZone
+      🔸 Component: LineRenderer
+
+   🔹 SDU_Field_Calibrator [Active] - Pos: (430.00, 4.20, 245.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+      🔸 Component: SoccerFieldZone
+      🔸 Component: LineRenderer
+
+🔹 GuidanceSystem_Personal [Active] - Pos: (614.96, 1497.81, 202.63), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+   🔸 Component: PersonalGuidance
+
+🔹 GeoRoot [Active] - Pos: (0.00, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+   🔸 Component: CesiumGlobeAnchor
+
+   🔹 B-B Mem stone geolocation plan update20-05-2026 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+      🔸 Component: CesiumGlobeAnchor
+      🔸 Component: AlignMarkerToParentOrigin
+      🔸 Component: SetupEmbeddedMarkers
+
+      🔹 [Autogenerated_Vector_Road] [Inactive] - Pos: (0.00, 1.35, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: MeshFilter
+         🔸 Component: MeshRenderer
+         🔸 Component: MeshCollider
+         🔸 Component: NavMeshModifier
+
+      🔹 [NavMesh_Automator] [Active] - Pos: (0.00, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+         🔸 Component: BergenBelsenNavMeshAutomator
+
+      🔹 Assembly-410 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (0.00, 0.00, 0.00)
+
+         🔹 Active View [Active] - Pos: (-99.65, 559.25, -1525.33), Rot: (339.61, 172.17, 0.00), Scale: (1000.00, 1000.00, 1000.00)
+
+         🔹 Group-185 [Active] - Pos: (-245.15, 0.00, 419.09), Rot: (270.00, 180.30, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Group-184 [Active] - Pos: (-608.35, 0.00, 420.99), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+               🔹 Group-183 [Active] - Pos: (-608.35, 0.00, 420.99), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-3 [Active] - Pos: (-84.21, 0.00, 487.38), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-4 [Active] - Pos: (-1165.98, 0.00, 619.56), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-6 [Active] - Pos: (-9.68, 0.00, 446.28), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-7 [Active] - Pos: (-428.14, 0.00, 169.65), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-8 [Active] - Pos: (-342.50, 0.00, 249.66), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-9 [Active] - Pos: (-366.39, 0.00, 235.88), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-10 [Active] - Pos: (-389.83, 0.00, 221.66), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-11 [Active] - Pos: (-363.00, 0.00, 179.78), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-12 [Active] - Pos: (-339.88, 0.00, 193.95), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-13 [Active] - Pos: (-316.33, 0.00, 208.19), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-14 [Active] - Pos: (-417.51, 0.00, 214.25), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-15 [Active] - Pos: (-326.65, 0.00, 268.37), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-16 [Active] - Pos: (-284.22, 0.00, 260.81), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-17 [Active] - Pos: (-221.85, 0.00, 306.97), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-18 [Active] - Pos: (-254.71, 0.00, 324.18), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-19 [Active] - Pos: (-224.32, 0.00, 275.23), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-20 [Active] - Pos: (-187.78, 0.00, 328.33), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-21 [Active] - Pos: (-153.76, 0.00, 347.88), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-22 [Active] - Pos: (-184.83, 0.00, 360.81), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-23 [Active] - Pos: (-158.22, 0.00, 316.92), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-24 [Active] - Pos: (-216.96, 0.00, 339.83), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-25 [Active] - Pos: (-190.99, 0.00, 295.65), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-26 [Active] - Pos: (-171.41, 0.00, 208.44), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-27 [Active] - Pos: (-137.74, 0.00, 228.63), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-28 [Active] - Pos: (-104.95, 0.00, 249.64), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-29 [Active] - Pos: (-63.58, 0.00, 275.77), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-30 [Active] - Pos: (-8.72, 0.00, 303.04), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-31 [Active] - Pos: (61.11, 0.00, 354.28), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-32 [Active] - Pos: (72.40, 0.00, 361.98), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-33 [Active] - Pos: (139.21, 0.00, 471.60), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-34 [Active] - Pos: (-133.44, 0.00, 392.17), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-35 [Active] - Pos: (-118.54, 0.00, 403.35), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-36 [Active] - Pos: (-96.31, 0.00, 408.47), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-37 [Active] - Pos: (-106.71, 0.00, 347.60), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-38 [Active] - Pos: (-89.39, 0.00, 357.59), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-39 [Active] - Pos: (76.11, 0.00, 496.83), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-40 [Active] - Pos: (93.45, 0.00, 507.98), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-41 [Active] - Pos: (107.92, 0.00, 517.26), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-42 [Active] - Pos: (122.91, 0.00, 526.80), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-43 [Active] - Pos: (136.95, 0.00, 560.14), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-44 [Active] - Pos: (160.47, 0.00, 576.13), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-45 [Active] - Pos: (183.17, 0.00, 595.33), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-46 [Active] - Pos: (240.67, 0.00, 629.49), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-47 [Active] - Pos: (230.12, 0.00, 608.41), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-48 [Active] - Pos: (254.01, 0.00, 657.17), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-49 [Active] - Pos: (267.14, 0.00, 682.33), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-50 [Active] - Pos: (292.52, 0.00, 720.61), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-51 [Active] - Pos: (342.96, 0.00, 759.28), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-52 [Active] - Pos: (322.46, 0.00, 745.47), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-53 [Active] - Pos: (367.75, 0.00, 774.68), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-54 [Active] - Pos: (394.75, 0.00, 792.38), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-55 [Active] - Pos: (346.23, 0.00, 804.02), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-56 [Active] - Pos: (330.92, 0.00, 794.72), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-57 [Active] - Pos: (409.69, 0.00, 823.35), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-58 [Active] - Pos: (408.44, 0.00, 862.81), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-59 [Active] - Pos: (428.40, 0.00, 896.34), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-60 [Active] - Pos: (439.07, 0.00, 916.56), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-61 [Active] - Pos: (450.59, 0.00, 932.59), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-62 [Active] - Pos: (378.31, 0.00, 892.45), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-63 [Active] - Pos: (395.05, 0.00, 907.12), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-64 [Active] - Pos: (370.61, 0.00, 935.57), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-65 [Active] - Pos: (384.73, 0.00, 940.11), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-66 [Active] - Pos: (398.06, 0.00, 947.04), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-67 [Active] - Pos: (409.11, 0.00, 960.19), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-68 [Active] - Pos: (423.41, 0.00, 969.06), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-69 [Active] - Pos: (437.09, 0.00, 980.72), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-70 [Active] - Pos: (452.58, 0.00, 986.94), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-71 [Active] - Pos: (467.00, 0.00, 996.13), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-72 [Active] - Pos: (482.65, 0.00, 1022.73), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-73 [Active] - Pos: (357.18, 0.00, 856.60), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-74 [Active] - Pos: (344.24, 0.00, 834.54), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-75 [Active] - Pos: (305.95, 0.00, 837.65), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-76 [Active] - Pos: (311.16, 0.00, 806.28), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-77 [Active] - Pos: (229.95, 0.00, 817.69), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-78 [Active] - Pos: (252.35, 0.00, 833.95), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-79 [Active] - Pos: (225.25, 0.00, 789.10), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-80 [Active] - Pos: (208.37, 0.00, 778.45), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-81 [Active] - Pos: (185.95, 0.00, 764.76), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-82 [Active] - Pos: (151.75, 0.00, 796.27), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-83 [Active] - Pos: (191.94, 0.00, 811.89), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-84 [Active] - Pos: (227.34, 0.00, 751.73), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-85 [Active] - Pos: (180.10, 0.00, 834.51), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-86 [Active] - Pos: (106.53, 0.00, 791.36), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-87 [Active] - Pos: (44.36, 0.00, 735.73), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-88 [Active] - Pos: (-9.95, 0.00, 703.58), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-89 [Active] - Pos: (-62.06, 0.00, 671.70), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-90 [Active] - Pos: (-48.62, 0.00, 634.34), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-91 [Active] - Pos: (-23.06, 0.00, 649.34), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-92 [Active] - Pos: (5.12, 0.00, 666.23), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-93 [Active] - Pos: (32.75, 0.00, 682.52), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-94 [Active] - Pos: (61.30, 0.00, 699.18), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-95 [Active] - Pos: (91.27, 0.00, 718.12), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-96 [Active] - Pos: (-129.37, 0.00, 605.96), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-97 [Active] - Pos: (-103.71, 0.00, 646.37), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-98 [Active] - Pos: (-153.07, 0.00, 528.58), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-99 [Active] - Pos: (-180.29, 0.00, 571.36), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-100 [Active] - Pos: (-230.74, 0.00, 640.59), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-101 [Active] - Pos: (-281.51, 0.00, 621.36), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-102 [Active] - Pos: (-348.97, 0.00, 601.25), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-103 [Active] - Pos: (-370.82, 0.00, 543.25), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-104 [Active] - Pos: (-297.84, 0.00, 542.10), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-105 [Active] - Pos: (-419.92, 0.00, 481.58), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-106 [Active] - Pos: (-380.77, 0.00, 504.48), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-107 [Active] - Pos: (-416.33, 0.00, 407.08), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-108 [Active] - Pos: (-386.33, 0.00, 368.94), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-109 [Active] - Pos: (-448.13, 0.00, 354.55), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-110 [Active] - Pos: (-362.10, 0.00, 309.36), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-111 [Active] - Pos: (-247.69, 0.00, 446.56), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-112 [Active] - Pos: (-273.71, 0.00, 480.65), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-113 [Active] - Pos: (-11.62, 0.00, 547.76), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-114 [Active] - Pos: (124.38, 0.00, 616.33), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-115 [Active] - Pos: (181.92, 0.00, 658.65), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-116 [Active] - Pos: (148.53, 0.00, 652.89), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-117 [Active] - Pos: (211.25, 0.00, 692.99), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-118 [Active] - Pos: (-559.25, 0.00, 205.36), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-119 [Active] - Pos: (-197.11, 0.00, 584.05), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-120 [Active] - Pos: (-331.21, 0.00, 405.72), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-121 [Active] - Pos: (-439.59, 0.00, 409.80), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-122 [Active] - Pos: (-225.24, 0.00, 496.04), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-123 [Active] - Pos: (-206.73, 0.00, 494.53), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-124 [Active] - Pos: (-338.44, 0.00, 422.00), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-125 [Active] - Pos: (-348.63, 0.00, 440.30), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-126 [Active] - Pos: (-278.17, 0.00, 97.68), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-127 [Active] - Pos: (-303.75, 0.00, 78.66), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-128 [Active] - Pos: (-326.09, 0.00, 64.76), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-129 [Active] - Pos: (-346.71, 0.00, 52.63), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-130 [Active] - Pos: (-365.79, 0.00, 39.15), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-131 [Active] - Pos: (-277.72, 0.00, 58.48), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-132 [Active] - Pos: (-259.36, 0.00, 73.50), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-133 [Active] - Pos: (-237.70, 0.00, 84.00), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-134 [Active] - Pos: (-216.65, 0.00, 95.68), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-135 [Active] - Pos: (-193.28, 0.00, 108.30), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-136 [Active] - Pos: (-305.36, 0.00, 5.24), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-137 [Active] - Pos: (-286.88, 0.00, 16.54), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-138 [Active] - Pos: (-244.50, 0.00, 43.44), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-139 [Active] - Pos: (-264.19, 0.00, 32.16), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-140 [Active] - Pos: (-339.21, 0.00, 21.50), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-141 [Active] - Pos: (-362.08, 0.00, 13.62), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-142 [Active] - Pos: (-318.73, 0.00, 35.00), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-143 [Active] - Pos: (-300.42, 0.00, 48.10), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-144 [Active] - Pos: (-250.90, 0.00, 116.94), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-145 [Active] - Pos: (-362.68, 0.00, 90.85), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-146 [Active] - Pos: (-287.62, 0.00, 136.98), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-147 [Active] - Pos: (-229.67, 0.00, 172.26), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-148 [Active] - Pos: (-246.92, 0.00, 162.30), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-149 [Active] - Pos: (-44.07, 0.00, 758.26), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-150 [Active] - Pos: (9.62, 0.00, 790.87), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-151 [Active] - Pos: (-92.89, 0.00, 726.13), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-152 [Active] - Pos: (-47.16, 0.00, 811.51), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-153 [Active] - Pos: (-298.08, 0.00, 649.00), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-154 [Active] - Pos: (75.57, 0.00, 763.41), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-155 [Active] - Pos: (-167.30, 0.00, 642.09), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-156 [Active] - Pos: (-164.82, 0.00, 451.17), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-157 [Active] - Pos: (-342.75, 0.00, 341.31), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-158 [Active] - Pos: (-201.65, 0.00, 427.31), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-159 [Active] - Pos: (-78.84, 0.00, 615.45), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-160 [Active] - Pos: (-70.62, 0.00, 563.42), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-161 [Active] - Pos: (-64.77, 0.00, 242.13), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-162 [Active] - Pos: (-152.00, 0.00, 120.66), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-163 [Active] - Pos: (-234.04, 0.00, -46.42), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-164 [Active] - Pos: (-392.71, 0.00, -59.92), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-165 [Active] - Pos: (-601.92, 0.00, -71.77), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-166 [Active] - Pos: (-573.85, 0.00, 228.23), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-167 [Active] - Pos: (-522.46, 0.00, 518.62), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-168 [Active] - Pos: (-254.75, 0.00, 692.04), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-169 [Active] - Pos: (23.25, 0.00, 868.32), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-170 [Active] - Pos: (65.57, 0.00, 797.86), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-171 [Active] - Pos: (234.05, 0.00, 883.90), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-172 [Active] - Pos: (401.07, 0.00, 987.16), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-173 [Active] - Pos: (363.67, 0.00, 811.82), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-174 [Active] - Pos: (97.06, 0.00, 635.87), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-175 [Active] - Pos: (-76.58, 0.00, 527.61), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-176 [Active] - Pos: (-245.57, 0.00, 420.87), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-177 [Active] - Pos: (-281.18, 0.00, 337.75), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-178 [Active] - Pos: (80.45, 0.00, 330.16), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-179 [Active] - Pos: (153.13, 0.00, 474.14), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Group-180 [Active] - Pos: (-691.04, 0.00, 80.03), Rot: (270.00, 180.30, 0.00), Scale: (1.00, 1.00, 1.00)
+
+         🔹 Memstone area I [Active] - Pos: (-296.06, 1.50, -48.09), Rot: (270.00, 125.10, 0.00), Scale: (18.80, 18.80, 18.80)
+
+            🔹 Geom3D_Memstone area I [Active] - Pos: (-296.06, 1.50, -48.09), Rot: (270.00, 125.10, 0.00), Scale: (1.00, 1.00, 1.00)
+
+         🔹 Memstone area I_1 [Active] - Pos: (-296.24, 1.50, -44.05), Rot: (270.00, 125.10, 0.00), Scale: (18.80, 18.80, 18.80)
+
+            🔹 Geom3D_Memstone area I [Active] - Pos: (-296.24, 1.50, -44.05), Rot: (270.00, 125.10, 0.00), Scale: (1.00, 1.00, 1.00)
+
+         🔹 Memstone area I_1_0 [Active] - Pos: (-295.56, 1.50, -47.00), Rot: (270.00, 125.10, 0.00), Scale: (18.80, 18.80, 18.80)
+
+            🔹 Geom3D_Memstone area I [Active] - Pos: (-295.56, 1.50, -47.00), Rot: (270.00, 125.10, 0.00), Scale: (1.00, 1.00, 1.00)
+
+         🔹 Memstone area I_1_1 [Active] - Pos: (-297.84, 1.50, -45.92), Rot: (270.00, 125.10, 0.00), Scale: (18.80, 18.80, 18.80)
+
+            🔹 Geom3D_Memstone area I [Active] - Pos: (-297.84, 1.50, -45.92), Rot: (270.00, 125.10, 0.00), Scale: (1.00, 1.00, 1.00)
+
+         🔹 Memstone area I_1_2 [Active] - Pos: (-297.37, 1.50, -47.75), Rot: (270.00, 125.10, 0.00), Scale: (18.80, 18.80, 18.80)
+
+            🔹 Geom3D_Memstone area I [Active] - Pos: (-297.37, 1.50, -47.75), Rot: (270.00, 125.10, 0.00), Scale: (1.00, 1.00, 1.00)
+
+         🔹 Memstone area I_1_3 [Active] - Pos: (-299.04, 1.50, -48.20), Rot: (270.00, 125.10, 0.00), Scale: (18.80, 18.80, 18.80)
+
+            🔹 Geom3D_Memstone area I [Active] - Pos: (-299.04, 1.50, -48.20), Rot: (270.00, 125.10, 0.00), Scale: (1.00, 1.00, 1.00)
+
+         🔹 Memstone area I_1_4 [Active] - Pos: (-298.40, 1.50, -48.97), Rot: (270.00, 125.10, 0.00), Scale: (18.80, 18.80, 18.80)
+
+            🔹 Geom3D_Memstone area I [Active] - Pos: (-298.40, 1.50, -48.97), Rot: (270.00, 125.10, 0.00), Scale: (1.00, 1.00, 1.00)
+
+         🔹 Memstone area I_1_5 [Active] - Pos: (-294.10, 1.50, -43.90), Rot: (270.00, 125.10, 0.00), Scale: (18.80, 18.80, 18.80)
+
+            🔹 Geom3D_Memstone area I [Active] - Pos: (-294.10, 1.50, -43.90), Rot: (270.00, 125.10, 0.00), Scale: (1.00, 1.00, 1.00)
+
+         🔹 Memstone area I_1_6 [Active] - Pos: (-293.57, 1.50, -47.15), Rot: (270.00, 125.10, 0.00), Scale: (18.80, 18.80, 18.80)
+
+            🔹 Geom3D_Memstone area I [Active] - Pos: (-293.57, 1.50, -47.15), Rot: (270.00, 125.10, 0.00), Scale: (1.00, 1.00, 1.00)
+
+         🔹 Memstone area I_1_7 [Active] - Pos: (-298.45, 1.50, -47.10), Rot: (270.00, 125.10, 0.00), Scale: (18.80, 18.80, 18.80)
+
+            🔹 Geom3D_Memstone area I [Active] - Pos: (-298.45, 1.50, -47.10), Rot: (270.00, 125.10, 0.00), Scale: (1.00, 1.00, 1.00)
+
+         🔹 Memstone area I_1_8 [Active] - Pos: (-296.44, 1.50, -46.51), Rot: (270.00, 125.10, 0.00), Scale: (18.80, 18.80, 18.80)
+
+            🔹 Geom3D_Memstone area I [Active] - Pos: (-296.44, 1.50, -46.51), Rot: (270.00, 125.10, 0.00), Scale: (1.00, 1.00, 1.00)
+
+         🔹 Memstone area I_1_9 [Active] - Pos: (-297.01, 1.50, -44.86), Rot: (270.00, 125.10, 0.00), Scale: (18.80, 18.80, 18.80)
+
+            🔹 Geom3D_Memstone area I [Active] - Pos: (-297.01, 1.50, -44.86), Rot: (270.00, 125.10, 0.00), Scale: (1.00, 1.00, 1.00)
+
+         🔹 Memstone area I_1_10 [Active] - Pos: (-294.87, 1.50, -48.33), Rot: (270.00, 125.10, 0.00), Scale: (18.80, 18.80, 18.80)
+
+            🔹 Geom3D_Memstone area I [Active] - Pos: (-294.87, 1.50, -48.33), Rot: (270.00, 125.10, 0.00), Scale: (1.00, 1.00, 1.00)
+
+         🔹 point_BM2 [Active] - Pos: (-545.32, 0.00, -15.60), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-545.32, 0.00, -15.60), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_BM3 [Active] - Pos: (-544.78, 0.00, -11.30), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-544.78, 0.00, -11.30), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_BM4 [Active] - Pos: (-545.63, 0.00, -8.45), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-545.63, 0.00, -8.45), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C9 [Active] - Pos: (-376.91, 0.00, 17.95), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-376.91, 0.00, 17.95), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C7 [Active] - Pos: (-369.44, 0.00, 20.98), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-369.44, 0.00, 20.98), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_0 Memorial info stone [Active] - Pos: (-285.83, 0.00, 64.59), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-285.83, 0.00, 64.59), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_BM1 [Active] - Pos: (-545.75, 0.00, -18.14), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-545.75, 0.00, -18.14), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C13 [Active] - Pos: (-405.44, 0.00, 23.84), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-405.44, 0.00, 23.84), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_MG6 [Active] - Pos: (-513.38, 0.00, -56.14), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-513.38, 0.00, -56.14), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C19 [Active] - Pos: (-379.02, 0.00, -6.51), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-379.02, 0.00, -6.51), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C4 [Active] - Pos: (-376.24, 0.00, -7.88), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-376.24, 0.00, -7.88), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C26 [Active] - Pos: (-374.06, 0.00, -9.79), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-374.06, 0.00, -9.79), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_B2 [Active] - Pos: (-304.90, 0.00, 44.94), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-304.90, 0.00, 44.94), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_B1 [Active] - Pos: (-300.44, 0.00, 51.09), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-300.44, 0.00, 51.09), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_A21 [Active] - Pos: (-331.48, 0.00, 4.57), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-331.48, 0.00, 4.57), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_B9 [Active] - Pos: (-327.39, 0.00, 44.72), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-327.39, 0.00, 44.72), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_B19 [Active] - Pos: (-344.01, 0.00, 8.45), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-344.01, 0.00, 8.45), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_B15 [Active] - Pos: (-341.67, 0.00, 10.99), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-341.67, 0.00, 10.99), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_B6 [Active] - Pos: (-328.63, 0.00, 34.33), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-328.63, 0.00, 34.33), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_B7 [Active] - Pos: (-350.15, 0.00, 40.58), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-350.15, 0.00, 40.58), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_B17 [Active] - Pos: (-352.34, 0.00, 4.57), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-352.34, 0.00, 4.57), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_A12 [Active] - Pos: (-323.52, 0.00, -7.36), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-323.52, 0.00, -7.36), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_B18 [Active] - Pos: (-344.82, 0.00, 5.12), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-344.82, 0.00, 5.12), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_A14 [Active] - Pos: (-329.39, 0.00, 0.16), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-329.39, 0.00, 0.16), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_A13 [Active] - Pos: (-327.99, 0.00, -6.20), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-327.99, 0.00, -6.20), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_B8 [Active] - Pos: (-349.31, 0.00, 9.53), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-349.31, 0.00, 9.53), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_B21 [Active] - Pos: (-339.24, 0.00, 10.28), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-339.24, 0.00, 10.28), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_B3 [Active] - Pos: (-332.18, 0.00, 15.02), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-332.18, 0.00, 15.02), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_A5 [Active] - Pos: (-329.67, 0.00, -2.32), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-329.67, 0.00, -2.32), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_A15 [Active] - Pos: (-329.35, 0.00, 2.40), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-329.35, 0.00, 2.40), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_B20 [Active] - Pos: (-344.20, 0.00, 10.36), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-344.20, 0.00, 10.36), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_A9 [Active] - Pos: (-328.96, 0.00, 9.40), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-328.96, 0.00, 9.40), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_A6 [Active] - Pos: (-325.64, 0.00, -6.02), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-325.64, 0.00, -6.02), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_A4 [Active] - Pos: (-329.15, 0.00, -21.22), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-329.15, 0.00, -21.22), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_G3 [Active] - Pos: (-510.25, -0.01, 378.48), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-510.25, -0.01, 378.48), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_B-B Geolocation origin 52.757620, 9.912300 [Active] - Pos: (-0.65, 0.00, -0.65), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-0.65, 0.00, -0.65), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C22 [Active] - Pos: (-377.69, 0.00, -5.99), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-377.69, 0.00, -5.99), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I55 [Active] - Pos: (-293.15, 0.01, -43.26), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-293.15, 0.01, -43.26), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I50 [Active] - Pos: (-293.76, 0.01, -46.04), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-293.76, 0.01, -46.04), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I23 [Active] - Pos: (-300.61, 0.01, -42.82), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-300.61, 0.01, -42.82), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_A3 [Active] - Pos: (-338.30, 0.00, -18.58), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-338.30, 0.00, -18.58), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C21 [Active] - Pos: (-378.97, 0.00, -4.46), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-378.97, 0.00, -4.46), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_A10 [Active] - Pos: (-309.44, 0.00, 20.63), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-309.44, 0.00, 20.63), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C18 [Active] - Pos: (-382.17, 0.00, -16.11), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-382.17, 0.00, -16.11), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I45 [Active] - Pos: (-297.73, 0.01, -45.40), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-297.73, 0.01, -45.40), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C1 [Active] - Pos: (-367.44, 0.00, -7.96), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-367.44, 0.00, -7.96), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I4 [Active] - Pos: (-293.55, 0.01, -44.55), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-293.55, 0.01, -44.55), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I46 [Active] - Pos: (-296.96, 0.01, -44.61), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-296.96, 0.01, -44.61), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_A16 [Active] - Pos: (-340.85, 0.00, -20.04), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-340.85, 0.00, -20.04), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I29 [Active] - Pos: (-292.94, 0.01, -39.86), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-292.94, 0.01, -39.86), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I9 [Active] - Pos: (-296.62, 0.01, -45.91), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-296.62, 0.01, -45.91), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I59 [Active] - Pos: (-304.27, 0.01, -42.90), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-304.27, 0.01, -42.90), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I18 [Active] - Pos: (-299.91, 0.01, -44.75), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-299.91, 0.01, -44.75), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C11 [Active] - Pos: (-383.90, 0.00, 31.06), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-383.90, 0.00, 31.06), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C10 [Active] - Pos: (-381.64, 0.00, 20.41), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-381.64, 0.00, 20.41), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_A11 [Active] - Pos: (-289.29, 0.00, 12.32), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-289.29, 0.00, 12.32), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C24 [Active] - Pos: (-378.91, 0.00, -9.03), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-378.91, 0.00, -9.03), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C15 [Active] - Pos: (-375.93, 0.00, -4.08), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-375.93, 0.00, -4.08), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C5 [Active] - Pos: (-377.50, 0.00, -0.67), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-377.50, 0.00, -0.67), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I62 [Active] - Pos: (-299.07, 0.01, -45.90), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-299.07, 0.01, -45.90), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C27 [Active] - Pos: (-368.25, 0.00, 9.86), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-368.25, 0.00, 9.86), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I56 [Active] - Pos: (-292.41, 0.01, -40.88), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-292.41, 0.01, -40.88), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C8 [Active] - Pos: (-373.64, 0.00, 26.93), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-373.64, 0.00, 26.93), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C25 [Active] - Pos: (-378.91, 0.00, -11.32), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-378.91, 0.00, -11.32), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C20 [Active] - Pos: (-374.71, 0.00, -2.58), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-374.71, 0.00, -2.58), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I47 [Active] - Pos: (-297.36, 0.01, -43.34), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-297.36, 0.01, -43.34), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point [Active] - Pos: (-424.42, 0.00, -5.41), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-424.42, 0.00, -5.41), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_A2 [Active] - Pos: (-342.91, 0.00, -17.32), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-342.91, 0.00, -17.32), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_MG3 [Active] - Pos: (-439.27, 0.00, 16.71), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-439.27, 0.00, 16.71), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_A7 [Active] - Pos: (-316.42, 0.00, -12.50), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-316.42, 0.00, -12.50), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_B13 [Active] - Pos: (-353.73, 0.00, -4.50), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-353.73, 0.00, -4.50), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_Jewish memorial [Active] - Pos: (-360.93, 0.00, -16.82), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-360.93, 0.00, -16.82), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C6 [Active] - Pos: (-370.63, 0.00, 4.18), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-370.63, 0.00, 4.18), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I57 [Active] - Pos: (-293.46, 0.01, -38.59), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-293.46, 0.01, -38.59), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I48 [Active] - Pos: (-297.65, 0.01, -41.17), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-297.65, 0.01, -41.17), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I13 [Active] - Pos: (-296.20, 0.01, -43.72), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-296.20, 0.01, -43.72), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I16 [Active] - Pos: (-295.08, 0.01, -41.28), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-295.08, 0.01, -41.28), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I52 [Active] - Pos: (-294.81, 0.01, -44.42), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-294.81, 0.01, -44.42), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I14 [Active] - Pos: (-300.17, 0.01, -46.82), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-300.17, 0.01, -46.82), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I6 [Active] - Pos: (-295.28, 0.01, -45.62), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-295.28, 0.01, -45.62), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I53 [Active] - Pos: (-295.23, 0.01, -40.08), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-295.23, 0.01, -40.08), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_MG4 [Active] - Pos: (-482.29, 0.00, -19.26), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-482.29, 0.00, -19.26), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_0 [Active] - Pos: (-448.18, 0.00, -35.44), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-448.18, 0.00, -35.44), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_MG5 [Active] - Pos: (-473.77, 0.00, -53.33), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-473.77, 0.00, -53.33), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_MG10 [Active] - Pos: (-327.50, 0.00, -31.00), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-327.50, 0.00, -31.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_A1 [Active] - Pos: (-341.02, 0.00, -0.20), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-341.02, 0.00, -0.20), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_A8 [Active] - Pos: (-302.88, 0.00, -9.90), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-302.88, 0.00, -9.90), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_B4 [Active] - Pos: (-332.15, 0.00, 16.46), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-332.15, 0.00, 16.46), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_B5 [Active] - Pos: (-332.50, 0.00, 17.66), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-332.50, 0.00, 17.66), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I24 [Active] - Pos: (-302.43, 0.01, -43.13), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-302.43, 0.01, -43.13), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I27 [Active] - Pos: (-292.53, 0.01, -45.89), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-292.53, 0.01, -45.89), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I60 [Active] - Pos: (-302.76, 0.01, -45.56), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-302.76, 0.01, -45.56), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I22 [Active] - Pos: (-301.93, 0.01, -44.71), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-301.93, 0.01, -44.71), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I2 [Active] - Pos: (-294.32, 0.01, -47.70), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-294.32, 0.01, -47.70), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I51 [Active] - Pos: (-294.50, 0.01, -45.32), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-294.50, 0.01, -45.32), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I54 [Active] - Pos: (-293.73, 0.01, -40.88), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-293.73, 0.01, -40.88), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C2 [Active] - Pos: (-383.70, 0.00, -21.30), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-383.70, 0.00, -21.30), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C3 [Active] - Pos: (-383.67, 0.00, -11.34), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-383.67, 0.00, -11.34), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I20 [Active] - Pos: (-296.72, 0.01, -40.61), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-296.72, 0.01, -40.61), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_H6 [Active] - Pos: (-393.40, 0.00, 492.73), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-393.40, 0.00, 492.73), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_MG8 [Active] - Pos: (-411.60, 0.00, 484.55), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-411.60, 0.00, 484.55), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_H4 [Active] - Pos: (-395.08, 0.00, 493.41), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-395.08, 0.00, 493.41), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_H3 [Active] - Pos: (-395.81, 0.00, 493.76), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-395.81, 0.00, 493.76), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_H2 [Active] - Pos: (-396.63, 0.00, 494.28), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-396.63, 0.00, 494.28), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_H1 [Active] - Pos: (-397.34, 0.00, 494.71), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-397.34, 0.00, 494.71), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_G1 [Active] - Pos: (-548.24, 1.36, 301.80), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-548.24, 1.36, 301.80), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_MG12 [Active] - Pos: (-546.47, -0.01, 298.36), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-546.47, -0.01, 298.36), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_G2 [Active] - Pos: (-550.96, 1.36, 299.40), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-550.96, 1.36, 299.40), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_MG7 [Active] - Pos: (-46.20, 0.00, 396.86), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-46.20, 0.00, 396.86), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_MG1 [Active] - Pos: (-238.00, 0.00, 99.30), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-238.00, 0.00, 99.30), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_MG11a [Active] - Pos: (-212.19, 0.00, 95.48), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-212.19, 0.00, 95.48), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_MG11b [Active] - Pos: (-241.01, 0.00, 39.20), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-241.01, 0.00, 39.20), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_MG9 [Active] - Pos: (-368.78, 0.00, -35.18), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-368.78, 0.00, -35.18), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I30 [Active] - Pos: (-291.33, 0.01, -41.62), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-291.33, 0.01, -41.62), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_F9 [Active] - Pos: (-419.03, 0.00, 292.37), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-419.03, 0.00, 292.37), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_F11 [Active] - Pos: (-422.47, 0.00, 305.59), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-422.47, 0.00, 305.59), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I1 [Active] - Pos: (-292.44, 0.01, -47.71), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-292.44, 0.01, -47.71), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_1 [Active] - Pos: (-402.00, 0.00, -10.85), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-402.00, 0.00, -10.85), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I17 [Active] - Pos: (-301.60, 0.01, -46.29), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-301.60, 0.01, -46.29), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_F5 [Active] - Pos: (-436.25, 0.00, 281.12), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-436.25, 0.00, 281.12), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_F12 [Active] - Pos: (-421.18, 0.00, 306.24), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-421.18, 0.00, 306.24), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_MG13 [Active] - Pos: (-608.08, 0.00, 163.82), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-608.08, 0.00, 163.82), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_H5 [Active] - Pos: (-394.15, 0.00, 493.00), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-394.15, 0.00, 493.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_F1a [Active] - Pos: (-430.69, 0.00, 284.18), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-430.69, 0.00, 284.18), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_F6 [Active] - Pos: (-437.54, 0.00, 280.48), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-437.54, 0.00, 280.48), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_E1 [Active] - Pos: (-549.21, 0.00, 204.01), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-549.21, 0.00, 204.01), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_K1 [Active] - Pos: (-172.10, 0.00, 97.04), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-172.10, 0.00, 97.04), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_F3 [Active] - Pos: (-433.67, 0.00, 282.41), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-433.67, 0.00, 282.41), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_F7 [Active] - Pos: (-438.51, 0.00, 279.64), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-438.51, 0.00, 279.64), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I26 [Active] - Pos: (-291.88, 0.01, -43.58), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-291.88, 0.01, -43.58), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_F2 [Active] - Pos: (-432.37, 0.00, 283.06), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-432.37, 0.00, 283.06), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_F13 [Active] - Pos: (-418.70, 0.00, 307.27), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-418.70, 0.00, 307.27), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_J1 [Active] - Pos: (-262.31, 0.00, 335.11), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-262.31, 0.00, 335.11), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_F10 [Active] - Pos: (-416.77, 0.00, 293.53), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-416.77, 0.00, 293.53), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_F4 [Active] - Pos: (-434.96, 0.00, 281.77), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-434.96, 0.00, 281.77), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_F1 [Active] - Pos: (-431.34, 0.00, 283.54), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-431.34, 0.00, 283.54), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_F8 [Active] - Pos: (-439.72, 0.00, 278.81), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-439.72, 0.00, 278.81), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_C23 [Active] - Pos: (-386.45, 0.00, -18.68), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-386.45, 0.00, -18.68), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_G4 [Active] - Pos: (-510.22, -0.01, 379.90), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-510.22, -0.01, 379.90), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I39 [Active] - Pos: (-300.98, 0.01, -47.78), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-300.98, 0.01, -47.78), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I61 [Active] - Pos: (-301.17, 0.01, -49.85), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-301.17, 0.01, -49.85), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I11 [Active] - Pos: (-299.80, 0.01, -48.69), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-299.80, 0.01, -48.69), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I40 [Active] - Pos: (-299.10, 0.01, -49.51), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-299.10, 0.01, -49.51), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I8 [Active] - Pos: (-298.08, 0.01, -48.29), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-298.08, 0.01, -48.29), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I41 [Active] - Pos: (-299.16, 0.01, -47.61), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-299.16, 0.01, -47.61), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I12 [Active] - Pos: (-298.50, 0.01, -46.47), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-298.50, 0.01, -46.47), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I44 [Active] - Pos: (-297.16, 0.01, -47.02), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-297.16, 0.01, -47.02), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I5 [Active] - Pos: (-296.27, 0.01, -47.56), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-296.27, 0.01, -47.56), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I64 [Active] - Pos: (-296.79, 0.01, -48.63), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-296.79, 0.01, -48.63), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I3 [Active] - Pos: (-295.58, 0.01, -48.96), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-295.58, 0.01, -48.96), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I15 [Active] - Pos: (-298.22, 0.01, -44.40), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-298.22, 0.01, -44.40), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I21 [Active] - Pos: (-299.03, 0.01, -42.92), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-299.03, 0.01, -42.92), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I42 [Active] - Pos: (-299.66, 0.01, -42.22), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-299.66, 0.01, -42.22), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I43 [Active] - Pos: (-298.52, 0.01, -41.47), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-298.52, 0.01, -41.47), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I19 [Active] - Pos: (-297.36, 0.01, -42.12), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-297.36, 0.01, -42.12), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I49 [Active] - Pos: (-296.14, 0.01, -42.39), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-296.14, 0.01, -42.39), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I10 [Active] - Pos: (-294.89, 0.01, -42.94), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-294.89, 0.01, -42.94), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I25 [Active] - Pos: (-294.71, 0.01, -39.39), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-294.71, 0.01, -39.39), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I7 [Active] - Pos: (-293.04, 0.01, -42.13), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-293.04, 0.01, -42.13), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I65 [Active] - Pos: (-301.33, 0.01, -34.26), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-301.33, 0.01, -34.26), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I37 [Active] - Pos: (-288.49, 0.01, -37.65), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-288.49, 0.01, -37.65), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I58 [Active] - Pos: (-291.88, 0.01, -39.18), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-291.88, 0.01, -39.18), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I36 [Active] - Pos: (-290.01, 0.01, -37.62), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-290.01, 0.01, -37.62), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I33 [Active] - Pos: (-289.74, 0.01, -40.77), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-289.74, 0.01, -40.77), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I31 [Active] - Pos: (-291.12, 0.01, -39.18), Rot: (270.00, 218.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-291.12, 0.01, -39.18), Rot: (270.00, 218.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I32 [Active] - Pos: (-292.10, 0.01, -38.10), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-292.10, 0.01, -38.10), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I35 [Active] - Pos: (-288.60, 0.01, -38.81), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-288.60, 0.01, -38.81), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I34 [Active] - Pos: (-287.97, 0.01, -40.43), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-287.97, 0.01, -40.43), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I28 [Active] - Pos: (-289.57, 0.01, -38.73), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-289.57, 0.01, -38.73), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_I38 [Active] - Pos: (-289.27, 0.01, -35.84), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-289.27, 0.01, -35.84), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_OM2 [Active] - Pos: (-539.02, 0.00, -59.50), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-539.02, 0.00, -59.50), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 point_OM1 [Active] - Pos: (-535.82, 0.20, -0.47), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-535.82, 0.20, -0.47), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 Node-553 [Active] - Pos: (-554.76, -0.01, -5.78), Rot: (270.00, 180.00, 0.00), Scale: (26.17, 24.65, 25.65)
+
+            🔹 Geom3D_ [Active] - Pos: (-554.76, -0.01, -5.78), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+         🔹 Obelisk [Active] - Pos: (-684.63, -0.20, -159.73), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D [Active] - Pos: (-684.63, -0.20, -159.73), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+               🔸 Component: MeshCollider
+               🔸 Component: NavMeshModifier
+
+            🔹 Geom3D_0 [Active] - Pos: (-684.63, -0.20, -159.73), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+               🔸 Component: MeshCollider
+               🔸 Component: NavMeshModifier
+
+            🔹 Geom3D_1 [Active] - Pos: (-684.63, -0.20, -159.73), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+               🔸 Component: MeshCollider
+               🔸 Component: NavMeshModifier
+
+            🔹 Geom3D_Obelisk [Active] - Pos: (-684.63, -0.20, -159.73), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+               🔸 Component: MeshCollider
+               🔸 Component: NavMeshModifier
+
+            🔹 Geom3D_Obelisk_0 [Active] - Pos: (-684.63, -0.20, -159.73), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+               🔸 Component: MeshCollider
+               🔸 Component: NavMeshModifier
+
+            🔹 Geom3D_2 [Active] - Pos: (-684.63, -0.20, -159.73), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+               🔸 Component: MeshCollider
+               🔸 Component: NavMeshModifier
+
+            🔹 Geom3D_3 [Active] - Pos: (-684.63, -0.20, -159.73), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+               🔸 Component: MeshCollider
+               🔸 Component: NavMeshModifier
+
+            🔹 Geom3D_4 [Active] - Pos: (-684.63, -0.20, -159.73), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+               🔸 Component: MeshCollider
+               🔸 Component: NavMeshModifier
+
+            🔹 Geom3D_5 [Active] - Pos: (-684.63, -0.20, -159.73), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+               🔸 Component: MeshCollider
+               🔸 Component: NavMeshModifier
+
+            🔹 Geom3D_6 [Active] - Pos: (-684.63, -0.20, -159.73), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+               🔸 Component: MeshCollider
+               🔸 Component: NavMeshModifier
+
+            🔹 Geom3D_7 [Active] - Pos: (-684.63, -0.20, -159.73), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+               🔸 Component: MeshCollider
+               🔸 Component: NavMeshModifier
+
+            🔹 Geom3D_Obelisk_1 [Active] - Pos: (-684.63, -0.20, -159.73), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+               🔸 Component: MeshCollider
+               🔸 Component: NavMeshModifier
+
+            🔹 Geom3D_Obelisk_2 [Active] - Pos: (-684.63, -0.20, -159.73), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+               🔸 Component: MeshCollider
+               🔸 Component: NavMeshModifier
+
+            🔹 Geom3D_Obelisk_3 [Active] - Pos: (-684.63, -0.20, -159.73), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+               🔸 Component: MeshCollider
+               🔸 Component: NavMeshModifier
+
+            🔹 Geom3D_8 [Active] - Pos: (-684.63, -0.20, -159.73), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+               🔸 Component: MeshCollider
+               🔸 Component: NavMeshModifier
+
+            🔹 Node-571 [Active] - Pos: (-521.65, 0.00, -55.80), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+               🔹 Geom3D [Active] - Pos: (-521.65, 0.00, -55.80), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                  🔸 Component: MeshFilter
+                  🔸 Component: MeshRenderer
+                  🔸 Component: MeshCollider
+                  🔸 Component: NavMeshModifier
+
+         🔹 Node-573 [Active] - Pos: (-101.11, 0.00, -28.17), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+         🔹 Node-574 [Active] - Pos: (-59.37, 0.00, 66.05), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+         🔹 Node-575 [Active] - Pos: (-549.70, 0.00, -28.73), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+         🔹 Node-576 [Active] - Pos: (-538.86, 0.00, -4.00), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Node-577 [Active] - Pos: (-538.86, 0.00, -4.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+            🔹 Node-578 [Active] - Pos: (-536.49, 0.00, -1.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+         🔹 Node-579 [Active] - Pos: (-548.84, 0.00, -31.97), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+         🔹 Node-580 [Active] - Pos: (-545.81, 0.00, -17.81), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+         🔹 Node-581 [Active] - Pos: (-545.34, 0.00, -15.28), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+         🔹 Node-582 [Active] - Pos: (-545.70, 0.00, -8.12), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+         🔹 Node-583 [Active] - Pos: (-545.04, 0.00, -11.08), Rot: (270.00, 180.00, 0.00), Scale: (33.53, 33.53, 33.53)
+
+         🔹 Node-584 [Active] - Pos: (-364.42, 0.00, -15.93), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+         🔹 Node-585 [Active] - Pos: (-489.27, 0.00, -18.31), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 Geom3D_ [Active] - Pos: (-489.27, 0.00, -18.31), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+               🔸 Component: MeshFilter
+               🔸 Component: MeshRenderer
+
+         🔹 Geolocation Content [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (25.40, 25.40, 25.40)
+
+            🔹 2D Plane [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+               🔹 2D Import 1 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                  🔹 Node-590 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-592 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-594 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-596 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-598 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-600 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-602 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-604 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-606 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-608 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-610 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-612 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-614 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-616 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-618 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-620 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-622 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-624 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-626 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-628 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-630 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-632 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-634 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-636 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+                  🔹 Node-638 [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+                     🔹 Geom3D [Active] - Pos: (0.00, 0.00, 0.00), Rot: (270.00, 180.00, 0.00), Scale: (1.00, 1.00, 1.00)
+                        🔸 Component: MeshFilter
+                        🔸 Component: MeshRenderer
+
+   🔹 Map_Camera [Active] - Pos: (-331.70, 1000.00, 273.00), Rot: (90.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+      🔸 Component: Camera
+      🔸 Component: UniversalAdditionalCameraData
+      🔸 Component: PhysicsRaycaster
+      🔸 Component: MapCameraLightingController
+
+🔹 Procedural_NavMesh_Modifiers_Root [Active] - Pos: (0.00, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+
+   🔹 Walkable_Grass_Surface [Active] - Pos: (0.00, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+      🔸 Component: MeshFilter
+      🔸 Component: MeshRenderer
+      🔸 Component: NavMeshModifier
+
+   🔹 Not_Walkable_Forest_Surface [Active] - Pos: (0.00, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+      🔸 Component: MeshFilter
+      🔸 Component: MeshRenderer
+      🔸 Component: NavMeshModifier
+
+🔹 TutorialManager [Active] - Pos: (0.00, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+   🔸 Component: CoachmarkTutorialController
+
+🔹 SiteHistoryManager [Active] - Pos: (0.00, 0.00, 0.00), Rot: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+   🔸 Component: SiteHistoryDropdownController
+   🔸 Component: AudioSource
+

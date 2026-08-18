@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 628cd516a59532849b7a2da6e8e1065a, type: 3}
+  m_Name: BarracksBurning_EN
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  sequenceLabelId: BarracksBurning_EN
+  narrativeCategory: 0
+  dialogueLines:
+  - subtitleText: On May 21, 1945, the British Army burned down the last prisoner
+      barracks. Burning the former camp was intended to prevent the spread of the
+      deadly pathogens raging there, leaving only the newly laid out graves behind.
+    voiceClip: {fileID: 0}
+    animationTriggerKey: Talk
+    duration: 0
