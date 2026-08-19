@@ -1,6 +1,6 @@
 # Bergen-Belsen AR Guide (ThesisAR)
 
-An augmented reality (AR) memorial navigation and historical learning application developed for the **Bergen-Belsen Memorial Site** (*Gedenkstätte Bergen-Belsen*) as a Master's Thesis project at the **University of Southern Denmark (SDU)** in collaboration with the **University of Udine**.
+An augmented reality (AR) memorial navigation and historical learning application developed for the **Bergen-Belsen Memorial Site** (*Gedenkstätte Bergen-Belsen*) as a Master's Thesis project at the **University of Udine (UniUD, Italy)**, developed during an Erasmus+ research internship at the **University of Southern Denmark (SDU, Denmark)**.
 
 The application evaluates three distinct levels of virtual embodiment in cultural heritage AR navigation:
 1. **Personal Guidance (Condition C)**: A 3D companion avatar walks along paths ahead of the user with real-time tethering, procedural footstep audio, and inverse kinematics (IK) head-gaze tracking.
@@ -54,32 +54,26 @@ In the Unity Project window, open:
 ```text
 ThesisAR/
 ├── Assets/
-│   ├── Audio/               # Sound effects, UI chimes, and ambient audio
-│   ├── Prefabs/             # Avatars, UI prefabs, directional arrows, markers
-│   ├── Resources/
-│   │   ├── GuidanceAudio/   # Spoken narration clips (EN/DE/HE)
-│   │   ├── audio_runtime_catalog.json # Authoritative subtitle & audio transcript catalog
-│   │   ├── dialogues_config.json      # Dialogue configuration tree
-│   │   └── ui_localization.json       # Trilingual UI labels and button texts
+│   ├── CesiumSettings/      # Cesium ion token & runtime server settings
+│   ├── Dark UI/             # UI styling assets, frames, buttons, and iconography
+│   ├── ExtensionsAssets/    # Google ARCore Extensions runtime configs
+│   ├── Map/                 # 2D Overview Map render texture
+│   ├── Materials/           # URP Materials (markers, route line, terrain shaders)
+│   ├── Navigation_Mesh/     # Source terrain walkable geometry (.fbx)
+│   ├── Plugins/             # Android build templates & ProGuard rules
+│   ├── Prefabs/             # 3D Avatar companion, animations, UI prefabs, AR arrows
+│   ├── Resources/           # Dynamic runtime assets, NarrationAudio, UI icons, JSON catalogs
 │   ├── Scenes/
-│   │   └── emptyy.unity     # Main operational AR exploration scene
-│   ├── Scripts/
-│   │   ├── AR/              # Geospatial manager, wayfinding line/arrows, stone spawning
-│   │   ├── Core/            # ThesisManager, NarrationManager, AppLanguage, Data, Downloader
-│   │   ├── Dialogue/        # CompanionIKController, Hologram shaders & effects, sequences
-│   │   ├── Guidance/        # Personal, Intermediate, Impersonal guidance systems & registry
-│   │   ├── Interaction/     # Geospatial viewport detection, touch & input raycasting
-│   │   ├── Map/             # 2D Interactive map controller, pin clustering, GPS tracking
-│   │   └── UI/              # UIManager, popups, instant faceted search, audio controllers
-│   ├── Settings/            # URP Graphics assets and quality presets
-│   └── StreamingAssets/
-│       └── Bergen_Belsen_Database.json # Master historical database (Inscriptions, Mass Graves)
-├── Packages/
-│   ├── manifest.json        # Project package dependencies and version locks
-│   ├── packages-lock.json   # Resolved package lockfile
-│   ├── com.cesium.unity/    # Embedded Cesium for Unity package
-│   └── com.google.ar.core.arfoundation.extensions/ # Embedded ARCore Extensions
-├── scripts/                 # Python tools for Neural TTS audio generation & catalog baking
+│   │   └── emptyy.unity     # Master operational AR exploration scene
+│   ├── Scripts/             # C# source code (AR, Core, Guidance, Map, UI, Dialogue)
+│   ├── Settings/            # URP Graphics assets, Input System configs, ARCore configs
+│   ├── Shaders/             # Custom URP Shaders (HologramURP.shader)
+│   ├── StreamingAssets/     # Bergen_Belsen_Database.json (Master historical dataset)
+│   ├── TextMesh Pro/        # Font assets & materials
+│   ├── UI Toolkit/          # Runtime UI themes
+│   └── XR/                  # XR loader & simulation settings
+├── Audio_TTS_Pipeline/      # Offline Python toolchain for ElevenLabs TTS & dialogue baking
+├── Packages/                # Unity package manifests & embedded plugins
 └── ProjectSettings/         # Unity engine, tags, layers, graphics, and Android player settings
 ```
 
@@ -134,5 +128,5 @@ ThesisAR/
 
 ## 📄 License & Attribution
 
-- Developed by Aleks Antic for Master's Thesis research at SDU / UniUD.
+- Developed by Aleks Antic for his Master's Thesis at the University of Udine (UniUD), conducted during a research internship at the University of Southern Denmark (SDU).
 - Memorial site data and historical references courtesy of the Bergen-Belsen Memorial archive.

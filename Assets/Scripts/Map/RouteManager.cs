@@ -38,9 +38,12 @@ public class RouteManager : MonoBehaviour
     private Vector3 lastRecalculatedPlayerPos;
     private float rerouteTimer;
     private Coroutine activeRouteCoroutine;
+    private Map2DController cachedMap2DController;
 
     void Start()
     {
+        cachedMap2DController = UnityEngine.Object.FindAnyObjectByType<Map2DController>(FindObjectsInactive.Include);
+
         if (lineRenderer == null) lineRenderer = GetComponent<LineRenderer>();
         if (lineRenderer == null) lineRenderer = gameObject.AddComponent<LineRenderer>();
 
@@ -60,8 +63,7 @@ public class RouteManager : MonoBehaviour
             lineRenderer.startWidth = pathLineWidth;
             lineRenderer.endWidth = pathLineWidth;
             Color routeColor = Color.yellow;
-            Map2DController map2D = UnityEngine.Object.FindAnyObjectByType<Map2DController>(FindObjectsInactive.Include);
-            if (map2D != null) routeColor = map2D.GetRouteLineColor();
+            if (cachedMap2DController != null) routeColor = cachedMap2DController.GetRouteLineColor();
             lineRenderer.startColor = routeColor;
             lineRenderer.endColor = routeColor;
             lineRenderer.alignment = LineAlignment.View;
@@ -130,10 +132,9 @@ public class RouteManager : MonoBehaviour
             return simulatedGpsPlayer.position;
         }
 
-        Map2DController map2D = UnityEngine.Object.FindAnyObjectByType<Map2DController>(FindObjectsInactive.Include);
-        if (map2D != null)
+        if (cachedMap2DController != null)
         {
-            return map2D.GetUserCurrentWorldPosition();
+            return cachedMap2DController.GetUserCurrentWorldPosition();
         }
 
         return Vector3.zero;
@@ -147,7 +148,6 @@ public class RouteManager : MonoBehaviour
 
     public bool IsInModalitaPercorso() => isRoutePlanningActive;
     public List<string> GetSelectedStoneIDs() => selectedStoneIDs;
-
     public void GestisciTappa(string stoneID, InteractiveMapPin pinInstance)
     {
         if (!isRoutePlanningActive) return;

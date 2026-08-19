@@ -19,7 +19,11 @@ public class NavigationHUD : MonoBehaviour
     private Transform userTransform;
     private TourManager tourManager;
     private MemorialSpawner memorialSpawner;
+    private MemorialDataManager memorialDataManager;
     [SerializeField] private Image directionIndicator;
+
+    private string lastTargetId = null;
+    private float lastDistance = -1f;
 
     private void OnEnable()
     {
@@ -31,12 +35,14 @@ public class NavigationHUD : MonoBehaviour
         if (routeManager == null) routeManager = UnityEngine.Object.FindAnyObjectByType<RouteManager>(FindObjectsInactive.Include);
         tourManager = UnityEngine.Object.FindAnyObjectByType<TourManager>(FindObjectsInactive.Include);
         memorialSpawner = UnityEngine.Object.FindAnyObjectByType<MemorialSpawner>(FindObjectsInactive.Include);
+        memorialDataManager = UnityEngine.Object.FindAnyObjectByType<MemorialDataManager>(FindObjectsInactive.Include);
         EnsureDirectionIndicator();
     }
 
     void Start()
     {
         if (routeManager == null) routeManager = UnityEngine.Object.FindAnyObjectByType<RouteManager>(FindObjectsInactive.Include);
+        if (memorialDataManager == null) memorialDataManager = UnityEngine.Object.FindAnyObjectByType<MemorialDataManager>(FindObjectsInactive.Include);
         EnsureDirectionIndicator();
         
         // Hide UI elements initially if no active tracking route is running (only in Play mode)
@@ -105,10 +111,15 @@ public class NavigationHUD : MonoBehaviour
         }
 
         // 1. Update Target Stone Text
-        if (targetStoneText != null)
+        if (immediateNextTargetId != lastTargetId)
         {
-            Color targetColor = GetTargetCategoryColor(immediateNextTargetId);
-            targetStoneText.text = $"Walking towards: <b><color=#{ColorUtility.ToHtmlStringRGB(targetColor)}>Stone {immediateNextTargetId}</color></b>";
+            lastTargetId = immediateNextTargetId;
+            lastDistance = -1f;
+            if (targetStoneText != null)
+            {
+                Color targetColor = GetTargetCategoryColor(immediateNextTargetId);
+                targetStoneText.text = $"Walking towards: <b><color=#{ColorUtility.ToHtmlStringRGB(targetColor)}>Stone {immediateNextTargetId}</color></b>";
+            }
         }
 
         // 2. Update Dynamic Distance Text (Calculates real-time straight-line displacement vector)
@@ -124,14 +135,16 @@ public class NavigationHUD : MonoBehaviour
             {
                 float physicalDistanceMeters = Vector3.Distance(userTransform.position, targetMonumentObject.transform.position);
                 
-                if (distanceIndicatorText != null)
+                if (distanceIndicatorText != null && (lastDistance < 0f || Mathf.Abs(physicalDistanceMeters - lastDistance) >= 0.05f))
                 {
+                    lastDistance = physicalDistanceMeters;
                     distanceIndicatorText.text = $"Distance: <b>{physicalDistanceMeters:F1} meters</b>";
                 }
                 UpdateDirectionIndicator(targetMonumentObject.transform.position);
             }
-            else if (distanceIndicatorText != null)
+            else if (distanceIndicatorText != null && lastDistance != -999f)
             {
+                lastDistance = -999f;
                 distanceIndicatorText.text = "Distance: <b>--</b>";
             }
         }
@@ -139,8 +152,11 @@ public class NavigationHUD : MonoBehaviour
 
     private Color GetTargetCategoryColor(string id)
     {
-        MemorialDataManager data = UnityEngine.Object.FindAnyObjectByType<MemorialDataManager>(FindObjectsInactive.Include);
-        object target = data != null ? data.GetDataByID(id) : null;
+        if (memorialDataManager == null)
+        {
+            memorialDataManager = UnityEngine.Object.FindAnyObjectByType<MemorialDataManager>(FindObjectsInactive.Include);
+        }
+        object target = memorialDataManager != null ? memorialDataManager.GetDataByID(id) : null;
         if (target is MemorialDataManager.MassGrave) return new Color(0.902f, 0.624f, 0f, 1f);
         if (target is MemorialDataManager.OtherMemorial) return new Color(0.8f, 0.475f, 0.655f, 1f);
         return new Color(0f, 0.447f, 0.698f, 1f);
@@ -347,6 +363,12 @@ public class NavigationHUD : MonoBehaviour
 
     private void ToggleHudVisibility(bool isVisible)
     {
+        if (!isVisible)
+        {
+            lastTargetId = null;
+            lastDistance = -1f;
+        }
+
         if (hudPanelContainer == null)
         {
             var t = transform.Find("Navigation_HUD_Panel") ?? transform.Find("NavigationHUDPanel");

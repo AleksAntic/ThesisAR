@@ -126,7 +126,11 @@ public class Map2DController : MonoBehaviour, IScrollHandler, IBeginDragHandler,
         public InteractiveMapPin associatedPin;
         public Color categoryColor;
         public Sprite categorySprite;
+        public string cachedStoneID;
     }
+
+    // Pre-cached arrays for FormatClusterSummary to avoid per-frame allocation
+    private static readonly string[] clusterSymbols = { "■", "▲", "●" };
 
     private RectTransform rectTransform;
     private InteractiveMapPin selectedPin;
@@ -529,6 +533,9 @@ public class Map2DController : MonoBehaviour, IScrollHandler, IBeginDragHandler,
                 textRect.sizeDelta = Vector2.zero;
                 textRect.anchoredPosition = Vector2.zero;
 
+                Transform cachedPointTr = GetPointTransform(pin.transform);
+                string precomputedStoneID = cachedPointTr != null ? cachedPointTr.name.Replace("point_", "").Trim() : string.Empty;
+
                 UiMarkerData data = new UiMarkerData
                 {
                     rectTransform = markerRect,
@@ -536,7 +543,8 @@ public class Map2DController : MonoBehaviour, IScrollHandler, IBeginDragHandler,
                     textComponent = textComp,
                     associatedPin = pin,
                     categoryColor = pinColor,
-                    categorySprite = markerImg != null ? markerImg.sprite : null
+                    categorySprite = markerImg != null ? markerImg.sprite : null,
+                    cachedStoneID = precomputedStoneID
                 };
                 activeUiMarkers.Add(data);
             }
@@ -617,8 +625,7 @@ public class Map2DController : MonoBehaviour, IScrollHandler, IBeginDragHandler,
                 // Sequence number rendering
                 if (markerText != null)
                 {
-                    string stoneID = pointTr.name.Replace("point_", "").Trim();
-                    int tourIndex = (activeTourOrderedStones != null) ? activeTourOrderedStones.IndexOf(stoneID) : -1;
+                    int tourIndex = (activeTourOrderedStones != null) ? activeTourOrderedStones.IndexOf(marker.cachedStoneID) : -1;
                     if (tourIndex != -1)
                     {
                         markerText.text = (tourIndex + 1).ToString();
@@ -955,14 +962,13 @@ public class Map2DController : MonoBehaviour, IScrollHandler, IBeginDragHandler,
     private string FormatClusterSummary(int[,] categoryCounts, int clusterIndex)
     {
         string summary = string.Empty;
-        string[] symbols = { "■", "▲", "●" };
-        Color[] colors = { mapStyling.normalStoneColor, mapStyling.massGraveColor, mapStyling.otherMemorialColor };
         for (int category = 0; category < 3; category++)
         {
             int count = categoryCounts[clusterIndex, category];
             if (count == 0) continue;
             if (summary.Length > 0) summary += "  ";
-            summary += $"<color=#{ColorUtility.ToHtmlStringRGB(colors[category])}>{symbols[category]}</color>{count}";
+            Color catColor = category == 0 ? mapStyling.normalStoneColor : (category == 1 ? mapStyling.massGraveColor : mapStyling.otherMemorialColor);
+            summary += $"<color=#{ColorUtility.ToHtmlStringRGB(catColor)}>{clusterSymbols[category]}</color>{count}";
         }
         return summary;
     }
@@ -989,7 +995,7 @@ public class Map2DController : MonoBehaviour, IScrollHandler, IBeginDragHandler,
         foreach (UiMarkerData marker in activeUiMarkers)
         {
             Transform point = marker.associatedPin != null ? GetPointTransform(marker.associatedPin.transform) : null;
-            string id = point != null ? point.name.Replace("point_", string.Empty).Trim() : string.Empty;
+            string id = marker.cachedStoneID;
             if (string.IsNullOrEmpty(id) || !countedMarkerIDs.Add(id)) continue;
 
             int categoryIndex = marker.categoryColor == mapStyling.normalStoneColor ? 0 :

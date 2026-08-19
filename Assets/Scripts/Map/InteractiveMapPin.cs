@@ -10,6 +10,8 @@ public class InteractiveMapPin : MonoBehaviour
     private UIManager ui;
     private Color originalColor = Color.red;
     private MeshRenderer meshRenderer;
+    private MaterialPropertyBlock mpb;
+    private static readonly int ColorID = Shader.PropertyToID("_BaseColor");
 
     private Vector3 localMeshOffset;
     private bool hasMeshOffset = false;
@@ -18,9 +20,12 @@ public class InteractiveMapPin : MonoBehaviour
     void Awake()
     {
         meshRenderer = GetComponent<MeshRenderer>();
-        if (meshRenderer != null && meshRenderer.material != null)
+        mpb = new MaterialPropertyBlock();
+        if (meshRenderer != null)
         {
-            originalColor = meshRenderer.material.color;
+            meshRenderer.GetPropertyBlock(mpb);
+            originalColor = mpb.GetColor(ColorID) != default ? mpb.GetColor(ColorID) : 
+                            (meshRenderer.sharedMaterial != null ? meshRenderer.sharedMaterial.color : Color.red);
         }
 
         MeshFilter filter = GetComponent<MeshFilter>();
@@ -85,9 +90,10 @@ public class InteractiveMapPin : MonoBehaviour
 
     public void SetMarkerColor(Color color)
     {
-        if (meshRenderer != null && meshRenderer.material != null)
+        if (meshRenderer != null)
         {
-            meshRenderer.material.color = color;
+            mpb.SetColor(ColorID, color);
+            meshRenderer.SetPropertyBlock(mpb);
         }
     }
 

@@ -52,13 +52,27 @@ public class SiteHistoryDropdownController : MonoBehaviour
     [Header("🌐 Language")]
     [SerializeField] private AppLanguage currentLanguage = AppLanguage.EN;
 
+    private struct ChapterButtonEntryUI
+    {
+        public GameObject root;
+        public Button button;
+        public TextMeshProUGUI titleText;
+        public Image iconImage;
+    }
+
     private List<ChapterEntry> chapters = new List<ChapterEntry>();
     private readonly List<GameObject> spawnedButtons = new List<GameObject>();
+    private readonly List<ChapterButtonEntryUI> cachedChapterButtons = new List<ChapterButtonEntryUI>();
+    private Sprite cachedPlaySprite;
+    private Sprite cachedPauseSprite;
     private string currentlyLoadedChapterId = "";
     private Coroutine playbackRoutine = null;
 
     private void Awake()
     {
+        cachedPlaySprite = LoadSpriteFromResources("UI/Icons/White Play");
+        cachedPauseSprite = LoadSpriteFromResources("UI/Icons/White Pause");
+
         if (nowPlayingText != null) nowPlayingText.text = "";
         if (subtitleText != null) subtitleText.text = "";
 
@@ -124,6 +138,7 @@ public class SiteHistoryDropdownController : MonoBehaviour
             }
         }
         spawnedButtons.Clear();
+        cachedChapterButtons.Clear();
 
         if (chapterButtonPrefab != null && chapterButtonPrefab.scene.IsValid())
         {
@@ -273,7 +288,27 @@ public class SiteHistoryDropdownController : MonoBehaviour
                 rowBtn.onClick.AddListener(() => PlayChapter(capturedId));
             }
 
+            // Cache image and components at instantiation time
+            Image iconImg = null;
+            if (playTransform != null) iconImg = playTransform.GetComponent<Image>() ?? playTransform.GetComponentInChildren<Image>();
+            if (iconImg == null)
+            {
+                Image[] childImgs = buttonGO.GetComponentsInChildren<Image>(true);
+                foreach (var img in childImgs)
+                {
+                    if (img.gameObject != buttonGO) { iconImg = img; break; }
+                }
+                if (iconImg == null) iconImg = buttonGO.GetComponent<Image>();
+            }
+
             spawnedButtons.Add(buttonGO);
+            cachedChapterButtons.Add(new ChapterButtonEntryUI
+            {
+                root = buttonGO,
+                button = rowBtn ?? playBtn ?? buttonGO.GetComponent<Button>(),
+                titleText = label,
+                iconImage = iconImg
+            });
         }
 
         var rt = chapterListContainer as RectTransform;
@@ -294,10 +329,10 @@ public class SiteHistoryDropdownController : MonoBehaviour
     {
         currentLanguage = language;
 
-        for (int i = 0; i < chapters.Count && i < spawnedButtons.Count; i++)
+        for (int i = 0; i < chapters.Count && i < cachedChapterButtons.Count; i++)
         {
-            TextMeshProUGUI label = spawnedButtons[i].GetComponentInChildren<TextMeshProUGUI>();
-            if (label != null) label.text = GetTitleFor(chapters[i]);
+            if (cachedChapterButtons[i].titleText != null)
+                cachedChapterButtons[i].titleText.text = GetTitleFor(chapters[i]);
         }
 
         if (audioSource != null && audioSource.isPlaying)
@@ -568,55 +603,35 @@ public class SiteHistoryDropdownController : MonoBehaviour
 
     private void UpdateChapterButtonVisuals()
     {
-        Sprite playSprite = LoadSpriteFromResources("UI/Icons/White Play");
-        Sprite pauseSprite = LoadSpriteFromResources("UI/Icons/White Pause");
+        if (cachedPlaySprite == null) cachedPlaySprite = LoadSpriteFromResources("UI/Icons/White Play");
+        if (cachedPauseSprite == null) cachedPauseSprite = LoadSpriteFromResources("UI/Icons/White Pause");
 
-        for (int i = 0; i < chapters.Count && i < spawnedButtons.Count; i++)
+        for (int i = 0; i < chapters.Count && i < cachedChapterButtons.Count; i++)
         {
-            var btn = spawnedButtons[i].GetComponent<Button>();
-            var txt = spawnedButtons[i].GetComponentInChildren<TextMeshProUGUI>();
+            var entry = cachedChapterButtons[i];
             bool isCurrent = chapters[i].id == currentlyLoadedChapterId;
             bool isPlayingCurrent = isCurrent && audioSource != null && audioSource.isPlaying;
 
-            if (txt != null)
+            if (entry.titleText != null)
             {
-                txt.fontStyle = isCurrent ? FontStyles.Bold : FontStyles.Normal;
+                entry.titleText.fontStyle = isCurrent ? FontStyles.Bold : FontStyles.Normal;
             }
 
-            // Find icon Image component (checking named children then any child Image)
-            Image iconImg = null;
-            Transform playTransform = spawnedButtons[i].transform.Find("PlayButton") ??
-                                       spawnedButtons[i].transform.Find("Play") ??
-                                       spawnedButtons[i].transform.Find("Btn_Play") ??
-                                       spawnedButtons[i].transform.Find("Icon_Play") ??
-                                       spawnedButtons[i].transform.Find("Icon");
-
-            if (playTransform != null) iconImg = playTransform.GetComponent<Image>() ?? playTransform.GetComponentInChildren<Image>();
-            if (iconImg == null)
+            if (entry.iconImage != null)
             {
-                Image[] childImgs = spawnedButtons[i].GetComponentsInChildren<Image>(true);
-                foreach (var img in childImgs)
+                if (isPlayingCurrent && cachedPauseSprite != null)
                 {
-                    if (img.gameObject != spawnedButtons[i]) { iconImg = img; break; }
+                    entry.iconImage.sprite = cachedPauseSprite;
                 }
-                if (iconImg == null) iconImg = spawnedButtons[i].GetComponent<Image>();
-            }
-
-            if (iconImg != null)
-            {
-                if (isPlayingCurrent && pauseSprite != null)
+                else if (cachedPlaySprite != null)
                 {
-                    iconImg.sprite = pauseSprite;
-                }
-                else if (playSprite != null)
-                {
-                    iconImg.sprite = playSprite;
+                    entry.iconImage.sprite = cachedPlaySprite;
                 }
             }
 
-            if (btn != null && chapterButtonPrefab == null)
+            if (entry.button != null && chapterButtonPrefab == null)
             {
-                var colors = btn.colors;
+                var colors = entry.button.colors;
                 if (isCurrent)
                 {
                     colors.normalColor = new Color(0.61f, 0.34f, 0.82f, 0.9f);
@@ -627,7 +642,7 @@ public class SiteHistoryDropdownController : MonoBehaviour
                     colors.normalColor = Color.white;
                     colors.selectedColor = Color.white;
                 }
-                btn.colors = colors;
+                entry.button.colors = colors;
             }
         }
     }

@@ -20400,7 +20400,6 @@ GameObject:
   m_Component:
   - component: {fileID: 937966661}
   - component: {fileID: 937966660}
-  - component: {fileID: 937966662}
   m_Layer: 0
   m_Name: --- STONE BAKER ---
   m_TagString: Untagged
@@ -20954,18 +20953,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &937966662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 937966659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cae07f95a7c27944a588e7d4b0b27cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::QuickTextureOptimizer
 --- !u!1 &940098008
 GameObject:
   m_ObjectHideFlags: 0

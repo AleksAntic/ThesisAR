@@ -38,6 +38,7 @@ public class IntermediateGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistr
     private int nextCampInfoIndex;
     private List<string> activeSymbolKeys;
     private Dictionary<string, List<string>> stoneSymbolsMap;
+    private Transform cachedCameraTransform;
 
     // ── Lifecycle ──────────────────────────────────────────────
 
@@ -47,8 +48,17 @@ public class IntermediateGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistr
         Instance = this;
     }
 
+    private void Start()
+    {
+        if (cachedCameraTransform == null && Camera.main != null)
+            cachedCameraTransform = Camera.main.transform;
+    }
+
     protected override void OnInitialize()
     {
+        if (cachedCameraTransform == null && Camera.main != null)
+            cachedCameraTransform = Camera.main.transform;
+
         ParseStoneSymbolsMap();
 
         if (askMoreButton == null)
@@ -71,6 +81,9 @@ public class IntermediateGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistr
 
     private void OnEnable()
     {
+        if (cachedCameraTransform == null && Camera.main != null)
+            cachedCameraTransform = Camera.main.transform;
+
         if (askMoreButton == null)
             askMoreButton = Object.FindAnyObjectByType<AskMoreButtonController>(FindObjectsInactive.Include);
         if (askMoreButton != null)
@@ -119,9 +132,11 @@ public class IntermediateGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistr
 
         if (ikController != null)
         {
-            Transform cam = Camera.main != null ? Camera.main.transform : null;
+            if (cachedCameraTransform == null && Camera.main != null)
+                cachedCameraTransform = Camera.main.transform;
+
             bool isTalking = avatarAnimator != null && avatarAnimator.GetBool("IsTalking");
-            ikController.SetTrackingTargets(cam, null, isTalking);
+            ikController.SetTrackingTargets(cachedCameraTransform, null, isTalking);
 
         }
     }
@@ -227,7 +242,10 @@ public class IntermediateGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistr
         string narrationId = isWelcome ? "WELCOME_INTERMEDIATE" : memorialID;
         activeTargetID = narrationId;
 
-        Transform cam = Camera.main != null ? Camera.main.transform : null;
+        if (cachedCameraTransform == null && Camera.main != null)
+            cachedCameraTransform = Camera.main.transform;
+
+        Transform cam = cachedCameraTransform;
         Vector3 spawnPos;
         Quaternion spawnRot;
 
@@ -295,7 +313,10 @@ public class IntermediateGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistr
         EnsureActiveInHierarchy();
         ActiveGuideAvatarRegistry.ClaimOwnership(this);
 
-        Transform cam = Camera.main != null ? Camera.main.transform : null;
+        if (cachedCameraTransform == null && Camera.main != null)
+            cachedCameraTransform = Camera.main.transform;
+
+        Transform cam = cachedCameraTransform;
         Vector3 spawnPos = CalculateGroundSpawnPosition(cam, 2.0f);
         Quaternion spawnRot = FaceCamera(spawnPos, cam);
 
@@ -494,9 +515,12 @@ public class IntermediateGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistr
         string langSuffix = currentLanguage.ToString().ToUpper();
         isPlayingAuxiliaryTopic = true;
 
+        if (cachedCameraTransform == null && Camera.main != null)
+            cachedCameraTransform = Camera.main.transform;
+
         // Extra content is a visitor interaction, so keep the guide beside the
         // visitor instead of leaving it at a later tour waypoint.
-        Transform visitorCamera = Camera.main != null ? Camera.main.transform : null;
+        Transform visitorCamera = cachedCameraTransform;
         if (visitorCamera != null)
         {
             Vector3 visitorPosition = CalculateGroundSpawnPosition(visitorCamera, 2.0f);
@@ -505,7 +529,7 @@ public class IntermediateGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistr
         
         if (guideAvatarInstance == null || !guideAvatarInstance.activeSelf)
         {
-            Transform cam = Camera.main != null ? Camera.main.transform : null;
+            Transform cam = cachedCameraTransform;
             Vector3 spawnPos;
             Quaternion spawnRot;
             GameObject memorialTarget = (memorialSpawner != null && !string.IsNullOrEmpty(activeTargetID)) ? memorialSpawner.GetSpawnedMemorial(activeTargetID) : null;

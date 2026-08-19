@@ -14,7 +14,7 @@ public class FixMissingBakedVisualPrefabs
         EditorSceneManager.OpenScene("Assets/Scenes/emptyy.unity", OpenSceneMode.Single);
 
         int unpackedCount = 0;
-        GameObject[] allObjects = Object.FindObjectsByType<GameObject>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        GameObject[] allObjects = Object.FindObjectsByType<GameObject>(FindObjectsInactive.Include);
 
         foreach (GameObject go in allObjects)
         {

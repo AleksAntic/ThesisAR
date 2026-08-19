@@ -53,7 +53,10 @@ public class UIHoverFeedback : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
         Color targetColor = isHovered ? hoverColor : normalColor;
         currentColor = Color.Lerp(currentColor, targetColor, Time.deltaTime * transitionSpeed);
-        targetImage.color = currentColor;
+        if (targetImage.color != currentColor)
+        {
+            targetImage.color = currentColor;
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)

@@ -9,10 +9,13 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class CompanionIKController : MonoBehaviour
 {
+    private static readonly int IsTalkingHash = Animator.StringToHash("IsTalking");
+
     private Animator animator;
     private AudioSource audioSource;
     private Transform lookAtTarget;
     private Transform pointingTarget;
+    private Transform rightHandBone;
 
     private float headLookWeight = 0f;
     private float armPointingWeight = 0f;
@@ -25,6 +28,10 @@ public class CompanionIKController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         audioSource = GetComponentInChildren<AudioSource>();
+        if (animator != null)
+        {
+            rightHandBone = animator.GetBoneTransform(HumanBodyBones.RightHand);
+        }
     }
 
     void Update()
@@ -35,7 +42,7 @@ public class CompanionIKController : MonoBehaviour
         // (IntermediateGuidance) gets disabled or crashes due to parent hierarchy issues,
         // leaving the animator stuck in IsTalking = true forever.
         // This failsafe runs on the avatar itself and forcefully stops the animation if no audio is playing.
-        if (animator.GetBool("IsTalking"))
+        if (animator.GetBool(IsTalkingHash))
         {
             bool isPlaying = false;
             if (audioSource != null && audioSource.isPlaying) isPlaying = true;
@@ -43,7 +50,7 @@ public class CompanionIKController : MonoBehaviour
 
             if (!isPlaying)
             {
-                animator.SetBool("IsTalking", false);
+                animator.SetBool(IsTalkingHash, false);
                 if (animator.layerCount > 1)
                 {
                     animator.SetLayerWeight(1, 0f);
@@ -107,7 +114,10 @@ public class CompanionIKController : MonoBehaviour
             // Capture the CURRENT physical hand bone position before overwriting the IK target,
             // otherwise GetIKPosition() would just return the value we are about to set below,
             // making the direction vector collapse to zero every frame.
-            Transform rightHandBone = animator.GetBoneTransform(HumanBodyBones.RightHand);
+            if (rightHandBone == null && animator != null)
+            {
+                rightHandBone = animator.GetBoneTransform(HumanBodyBones.RightHand);
+            }
             Vector3 currentHandPosition = rightHandBone != null ? rightHandBone.position : transform.position;
 
             animator.SetIKPosition(AvatarIKGoal.RightHand, handTargetPosition);

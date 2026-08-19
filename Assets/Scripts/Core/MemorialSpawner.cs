@@ -188,5 +188,5 @@ public class MemorialSpawner : MonoBehaviour
         if (fallback != null) boundMemorialNodes[id] = fallback;
         return fallback;
     }
-    public Dictionary<string, GameObject> GetAllSpawnedMemorials() => new Dictionary<string, GameObject>(boundMemorialNodes);
+    public IReadOnlyDictionary<string, GameObject> GetAllSpawnedMemorials() => boundMemorialNodes;
 }

@@ -148,19 +148,21 @@ public class ARWayfindingManager : MonoBehaviour
         {
             if (navMeshPath.status == NavMeshPathStatus.PathComplete)
             {
+                Vector3[] corners = navMeshPath.corners;
+
                 if (pathLineRenderer != null)
                 {
-                    pathLineRenderer.positionCount = navMeshPath.corners.Length;
-                    for (int i = 0; i < navMeshPath.corners.Length; i++)
+                    pathLineRenderer.positionCount = corners.Length;
+                    for (int i = 0; i < corners.Length; i++)
                     {
-                        pathLineRenderer.SetPosition(i, navMeshPath.corners[i]);
+                        pathLineRenderer.SetPosition(i, corners[i]);
                     }
                 }
 
-                if (HasPathChangedSignificantly(navMeshPath.corners))
+                if (HasPathChangedSignificantly(corners))
                 {
-                    GenerateDynamicArrowTrail(navMeshPath.corners);
-                    lastArrowTrailCorners = (Vector3[])navMeshPath.corners.Clone();
+                    GenerateDynamicArrowTrail(corners);
+                    lastArrowTrailCorners = (Vector3[])corners.Clone();
                 }
             }
             else

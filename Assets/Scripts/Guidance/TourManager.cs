@@ -187,12 +187,7 @@ public class TourManager : MonoBehaviour
 
         string activeStoneID = stops[currentWaypointIndex];
 
-        // UX Feedback: Apri la UI didascalica solo se l'utente NON è guidato dall'Avatar fisico (Condition C).
-        // Nelle condizioni Impersonal (A) e Intermediate (B), l'apertura automatica fornisce il giusto Signifier di arrivo.
-        if (false)
-        {
-            if (uiManager != null) uiManager.OpenMemorialDetailFromMap(activeStoneID);
-        }
+        // UX Feedback: In Condition C, the physical avatar guides the user without auto-opening modal details.
 
         GuidanceSystemBase guidance = ThesisManager.Instance != null ? ThesisManager.Instance.CurrentGuidanceSystem : UnityEngine.Object.FindAnyObjectByType<GuidanceSystemBase>(FindObjectsInactive.Include);
         if (guidance != null)
@@ -328,7 +323,7 @@ public class TourManager : MonoBehaviour
     {
         if (continueTourButton == null)
         {
-            Button[] sceneButtons = UnityEngine.Object.FindObjectsByType<Button>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+            Button[] sceneButtons = UnityEngine.Object.FindObjectsByType<Button>(FindObjectsInactive.Include);
             foreach (Button sceneButton in sceneButtons)
             {
                 if (sceneButton != null && sceneButton.name == "Btn_Continue_Tour")
@@ -343,7 +338,7 @@ public class TourManager : MonoBehaviour
         {
             Button template = null;
             Transform hub = null;
-            foreach (Button sceneButton in UnityEngine.Object.FindObjectsByType<Button>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+            foreach (Button sceneButton in UnityEngine.Object.FindObjectsByType<Button>(FindObjectsInactive.Include))
             {
                 if (sceneButton != null && (sceneButton.name == "Btn_GuideMe" || sceneButton.name == "Btn_Guide_Me"))
                 {
@@ -351,7 +346,7 @@ public class TourManager : MonoBehaviour
                     break;
                 }
             }
-            foreach (Transform candidate in UnityEngine.Object.FindObjectsByType<Transform>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+            foreach (Transform candidate in UnityEngine.Object.FindObjectsByType<Transform>(FindObjectsInactive.Include))
             {
                 if (candidate != null && candidate.name == "AR_Exploration_Hub")
                 {
@@ -478,7 +473,7 @@ public class TourManager : MonoBehaviour
         if (continueTourButton != null) return;
 
         Button template = null;
-        foreach (Button button in UnityEngine.Object.FindObjectsByType<Button>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+        foreach (Button button in UnityEngine.Object.FindObjectsByType<Button>(FindObjectsInactive.Include))
         {
             if (button != null && (button.name == "Btn_GuideMe" || button.name == "Btn_Guide_Me"))
             {
@@ -489,7 +484,7 @@ public class TourManager : MonoBehaviour
         if (template == null) return;
 
         Transform hub = null;
-        foreach (Transform candidate in UnityEngine.Object.FindObjectsByType<Transform>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+        foreach (Transform candidate in UnityEngine.Object.FindObjectsByType<Transform>(FindObjectsInactive.Include))
         {
             if (candidate != null && candidate.name == "AR_Exploration_Hub")
             {

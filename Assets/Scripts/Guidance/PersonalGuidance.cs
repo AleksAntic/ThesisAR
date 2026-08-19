@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 using System.Collections.Generic;
+#pragma warning disable 0414
 
 /// <summary>
 /// Condition C (Personal): Fully dynamic embodied companion navigation.
@@ -201,7 +202,7 @@ public class PersonalGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistry.IA
 
         isTrackingMovement = false;
         isWaitingForUser = true;
-        if (characterAnimator != null) characterAnimator.SetFloat("Speed", 0f);
+        if (characterAnimator != null) characterAnimator.SetFloat(SpeedHash, 0f);
 
         if (uiManager != null)
         {
@@ -265,6 +266,7 @@ public class PersonalGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistry.IA
     }
 
     private static readonly int IsTalkingHash = Animator.StringToHash("IsTalking");
+    private static readonly int SpeedHash = Animator.StringToHash("Speed");
 
     void Update()
     {
@@ -288,7 +290,7 @@ public class PersonalGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistry.IA
             agentEngine.isStopped = false;
             isTrackingMovement = true;
             isWaitingForUser = false;
-            if (characterAnimator != null) characterAnimator.SetFloat("Speed", 1f);
+            if (characterAnimator != null) characterAnimator.SetFloat(SpeedHash, 1f);
             pendingDestinationSet = false;
             Debug.Log($"[PersonalGuidance] Deferred destination set to {targetNodeObject.name} at {targetNodeObject.transform.position}");
         }
@@ -310,7 +312,7 @@ public class PersonalGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistry.IA
 
         if (talking) characterAnimator.speed = 1f;
 
-        characterAnimator.SetBool("IsTalking", talking);
+        characterAnimator.SetBool(IsTalkingHash, talking);
         if (characterAnimator.layerCount > 1)
         {
             characterAnimator.SetLayerWeight(1, talking ? 1.0f : 0.0f);
@@ -321,8 +323,6 @@ public class PersonalGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistry.IA
     {
         if (characterAnimator != null)
         {
-            characterAnimator.cullingMode = AnimatorCullingMode.AlwaysAnimate;
-
             bool audioActuallyPlaying = (characterAudioSource != null && characterAudioSource.isPlaying) ||
                                         (NarrationManager.Instance != null && NarrationManager.Instance.IsSpeaking);
             bool shouldAnimateTalking = audioActuallyPlaying && !isTrackingMovement;
@@ -336,7 +336,6 @@ public class PersonalGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistry.IA
             }
         }
     }
-
     /// <summary>
     /// Plays a footstep sound every time the companion has physically covered stepDistanceInterval
     /// meters, based on real NavMeshAgent displacement rather than fixed timers or animation events.
@@ -448,6 +447,7 @@ public class PersonalGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistry.IA
     [SerializeField] private float nearbyMemorialClearance = 0.25f;
     private readonly List<Transform> memorialAnchorCache = new List<Transform>();
 
+
     private void HandleFrontLeadingTethering()
     {
         if (!isTrackingMovement || userCameraTransform == null || targetNodeObject == null) return;
@@ -457,7 +457,7 @@ public class PersonalGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistry.IA
         {
             isWaitingForUser = true;
             if (agentEngine != null && agentEngine.enabled && agentEngine.isOnNavMesh) agentEngine.isStopped = true;
-            if (characterAnimator != null) characterAnimator.SetFloat("Speed", 0f);
+            if (characterAnimator != null) characterAnimator.SetFloat(SpeedHash, 0f);
             return;
         }
 
@@ -489,7 +489,7 @@ public class PersonalGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistry.IA
             isWaitingForUser = true;
             agentEngine.isStopped = true;
             agentEngine.speed = 0f;
-            if (characterAnimator != null) characterAnimator.SetFloat("Speed", 0f);
+            if (characterAnimator != null) characterAnimator.SetFloat(SpeedHash, 0f);
         }
         else
         {
@@ -501,7 +501,7 @@ public class PersonalGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistry.IA
                 agentEngine.speed = matchingSpeed;
                 if (characterAnimator != null)
                 {
-                    characterAnimator.SetFloat("Speed", shouldWaitAtLeadDistance ? 0f : Mathf.Clamp(matchingSpeed / baseWalkSpeed, 0.35f, 2.5f));
+                    characterAnimator.SetFloat(SpeedHash, shouldWaitAtLeadDistance ? 0f : Mathf.Clamp(matchingSpeed / baseWalkSpeed, 0.35f, 2.5f));
                     characterAnimator.speed = shouldWaitAtLeadDistance ? 1f : Mathf.Clamp(matchingSpeed / baseWalkSpeed, 0.8f, 2.5f);
                 }
             }
@@ -532,7 +532,7 @@ public class PersonalGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistry.IA
                 float speedRatio = Mathf.Clamp01(agentEngine.velocity.magnitude / 1.5f);
                 animSpeed = Mathf.Lerp(0.3f, 1.0f, speedRatio);
             }
-            characterAnimator.SetFloat("Speed", animSpeed);
+            characterAnimator.SetFloat(SpeedHash, animSpeed);
         }
 
         // Target arrival verification sequence
@@ -640,7 +640,7 @@ public class PersonalGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistry.IA
         if (characterAnimator != null)
         {
             // Read active layer indices to verify if speech animations are driving the skeletal layers
-            isCurrentlyTalking = characterAnimator.GetBool("IsTalking");
+            isCurrentlyTalking = characterAnimator.GetBool(IsTalkingHash);
         }
 
         // The arm is reserved for an on-site explanation, never for background narration while walking.
@@ -1002,7 +1002,7 @@ public class PersonalGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistry.IA
         isTrackingMovement = true;
         hasArrivedAtActiveTarget = false;
         SetTalkingState(false);
-        if (characterAnimator != null) characterAnimator.SetFloat("Speed", 1f);
+        if (characterAnimator != null) characterAnimator.SetFloat(SpeedHash, 1f);
     }
 
     public override void OnMemorialReached(string memorialID)
@@ -1056,7 +1056,7 @@ public class PersonalGuidance : GuidanceSystemBase, ActiveGuideAvatarRegistry.IA
 
         if (characterAnimator != null)
         {
-            characterAnimator.SetFloat("Speed", 0f);
+            characterAnimator.SetFloat(SpeedHash, 0f);
         }
         if (!hasArrivedAtActiveTarget && !string.IsNullOrEmpty(activeTargetID) && NarrationManager.Instance != null)
         {

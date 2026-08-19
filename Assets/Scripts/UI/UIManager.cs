@@ -303,6 +303,7 @@ public class UIManager : MonoBehaviour
     private Coroutine panelAnimationRoutine;
     private ModelInspectorUI cachedModelInspectorUI;
     private SiteHistoryDropdownController cachedSiteHistoryDropdown;
+    private Transform cachedTutorialOverlay;
     private void OnEnable()
     {
         DialogueManager.OnSubtitleUpdated += HandleSubtitleUpdated;
@@ -3569,8 +3570,11 @@ public class UIManager : MonoBehaviour
             }
         }
 
-        Transform tutorialOverlay = uiCanvas != null ? uiCanvas.transform.Find("TutorialOverlay") : null;
-        bool isTutorialActive = tutorialOverlay != null && tutorialOverlay.gameObject.activeSelf;
+        if (cachedTutorialOverlay == null && uiCanvas != null)
+        {
+            cachedTutorialOverlay = uiCanvas.transform.Find("TutorialOverlay");
+        }
+        bool isTutorialActive = cachedTutorialOverlay != null && cachedTutorialOverlay.gameObject.activeSelf;
 
         return (onboardingPanel != null && onboardingPanel.activeSelf) ||
                (databaseSearchPanel != null && databaseSearchPanel.activeSelf) ||
@@ -3584,11 +3588,41 @@ public class UIManager : MonoBehaviour
 
     private bool IsSubtitleBlockingPanelActive()
     {
-        bool sidebarWasOpen = sidebarMenuPanel != null && sidebarMenuPanel.activeSelf;
-        if (sidebarWasOpen) sidebarMenuPanel.SetActive(false);
-        bool blocking = IsAnyModalPanelActive();
-        if (sidebarWasOpen) sidebarMenuPanel.SetActive(true);
-        return blocking;
+        bool is3DInspectorActive = false;
+        if (cachedModelInspectorUI == null)
+        {
+            cachedModelInspectorUI = UnityEngine.Object.FindAnyObjectByType<ModelInspectorUI>(FindObjectsInactive.Include);
+        }
+        ModelInspectorUI inspector = cachedModelInspectorUI;
+        if (inspector != null && inspector.gameObject != null) is3DInspectorActive = inspector.gameObject.activeSelf;
+
+        bool isSiteHistoryActive = (siteHistoryPanel != null && siteHistoryPanel.activeSelf);
+        if (!isSiteHistoryActive)
+        {
+            if (cachedSiteHistoryDropdown == null)
+            {
+                cachedSiteHistoryDropdown = UnityEngine.Object.FindAnyObjectByType<SiteHistoryDropdownController>(FindObjectsInactive.Include);
+            }
+            var dropdownCtrl = cachedSiteHistoryDropdown;
+            if (dropdownCtrl != null)
+            {
+                isSiteHistoryActive = dropdownCtrl.IsDropdownOpen();
+            }
+        }
+
+        if (cachedTutorialOverlay == null && uiCanvas != null)
+        {
+            cachedTutorialOverlay = uiCanvas.transform.Find("TutorialOverlay");
+        }
+        bool isTutorialActive = cachedTutorialOverlay != null && cachedTutorialOverlay.gameObject.activeSelf;
+
+        return (onboardingPanel != null && onboardingPanel.activeSelf) ||
+               (databaseSearchPanel != null && databaseSearchPanel.activeSelf) ||
+               (map2DPanel != null && map2DPanel.activeSelf) ||
+               (memorialDetailPanel != null && memorialDetailPanel.activeSelf) ||
+               isTutorialActive ||
+               isSiteHistoryActive ||
+               is3DInspectorActive;
     }
 
     public void RefreshSubtitleVisibility()
